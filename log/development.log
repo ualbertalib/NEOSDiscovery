@@ -1,0 +1,174 @@
+  [1m[36m (276.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (324.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSearches (20160506175919)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "searches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "query_params" text, "user_id" integer, "user_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_searches_on_user_id" ON "searches" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160506175919"]]
+  [1m[36m (308.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateBookmarks (20160506175920)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "user_type" varchar, "document_id" varchar, "title" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160506175920"]]
+  [1m[36m (306.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddPolymorphicTypeToBookmarks (20160506175921)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "bookmarks" ADD "document_type" varchar[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160506175921"]]
+  [1m[35m (306.7ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20160506175923)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160506175923"]]
+  [1m[36m (305.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddDeviseGuestsToUsers (20160506175925)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "guest" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160506175925"]]
+  [1m[36m (306.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_bookmarks_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_bookmarks_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_searches_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_searches_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_bookmarks_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_bookmarks_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_searches_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_searches_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/catalog" for ::1 at 2016-05-06 12:05:46 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatalogController#index as HTML
+Solr query: get select {"qt"=>nil, "facet.field"=>["format", "{!ex=pub_date_single}pub_date", "subject_topic_facet", "language_facet", "lc_1letter_facet", "subject_geo_facet", "subject_era_facet"], "facet.query"=>["pub_date:[2011 TO *]", "pub_date:[2006 TO *]", "pub_date:[1991 TO *]"], "facet.pivot"=>["format,language_facet"], "fq"=>[], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (166.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (124.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (4.6ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (6.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (5.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (3.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_pivot.html.erb (4.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_pivot.html.erb (0.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_pivot.html.erb (10.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (2.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (205.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (206.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_home_text.html.erb (0.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_home.html.erb (2.1ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_sitelinks_search_box.html.erb (0.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (230.2ms)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "guest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "guest_hUBFTchLpXfWgG_cnH7j_1462557950_1@example.com"], ["guest", "t"], ["created_at", "2016-05-06 18:05:50.487378"], ["updated_at", "2016-05-06 18:05:50.487378"]]
+  [1m[35m (329.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."user_type" = ?[0m  [["user_id", 1], ["user_type", "User"]]
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (63.9ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (412.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (2.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_header_navbar.html.erb (462.1ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_ajax_modal.html.erb (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (2.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 4097ms (Views: 3580.4ms | ActiveRecord: 330.2ms)
+
+
+Started GET "/assets/blacklight.self-1118af2bb31c8eff777ad3b1015127985fecd19e2fd897962712a690f49d2b1a.css?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/twitter/typeahead.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/blacklight/facet_load.self-b9d6d4f2a3a98be6650636a42aa8ec91227b2e0261a8a0b6c2934e869a9627de.js?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/blacklight/autocomplete.self-47da2dce02bafa1d32a40b8c2e88c18b7d7c52cfac6541b5f3eeb208877da31d.js?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/twitter/typeahead/typeahead.bundle.self-7d0ec0be4d31a26122c3f2780527cd624a8bcbd7350f5f5d6cb23a5a51f516ef.js?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/blacklight/blacklight.self-e31ad10d3575ebb78ddbd51b884e3c9d3babd3d89cf52711e1279bfcade4ded8.js?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/application.self-769e7950f3471853780abdfea7ba47c84b25f0a54a6808e42a96c04ebeb85954.js?body=1" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/blacklight/logo-e368f4faad4c5310352e175e1fba8220b57aab2e29cbe0f3ca1189a2ef085f9b.png" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/assets/favicon-b4185c7dd08c0b4f2142c58bbcca322b3a01f50adc3413438b98be2b664bb4b6.ico" for ::1 at 2016-05-06 12:05:51 -0600

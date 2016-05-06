@@ -45,11 +45,11 @@ group :development do
   gem 'spring'
 end
 
-gem "blacklight"
 
-group :development, :test do
-  gem 'solr_wrapper', '>= 0.3'
-end
-
-gem 'rsolr', '~> 1.0.6'
-gem 'globalid'
+gem 'blacklight', '>= 6.1'
+gem 'jettywrapper', '>= 2.0'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'rsolr', '~> 1.0'
+gem 'devise'
+gem 'devise-guests', '~> 0.3'
+gem 'blacklight-marc', '~> 6.0'

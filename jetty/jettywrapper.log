@@ -1,0 +1,380 @@
+0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+25   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/asdp/projects/NEOSDiscovery/jetty/contexts at interval 0
+28   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/asdp/projects/NEOSDiscovery/jetty/contexts/solr.xml
+54   [main] INFO  org.eclipse.jetty.webapp.WebInfConfiguration  – Extract jar:file:/home/asdp/projects/NEOSDiscovery/jetty/webapps/solr.war!/ to /home/asdp/projects/NEOSDiscovery/jetty/solr-webapp/webapp
+1101 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+1132 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+1141 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+1141 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/asdp/projects/NEOSDiscovery/jetty/solr
+1141 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/NEOSDiscovery/jetty/solr/'
+1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
+1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
+1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
+1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/' to classloader
+1215 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/asdp/projects/NEOSDiscovery/jetty/solr/solr.xml
+1261 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/asdp/projects/NEOSDiscovery/jetty/solr
+1265 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 7690110
+1266 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/]
+1266 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /home/asdp/projects/NEOSDiscovery/jetty/solr/lib
+1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
+1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
+1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
+1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/' to classloader
+1282 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1283 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1286 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1286 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+1286 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting useRetries to: false
+1399 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=true
+1400 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1400 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1401 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+1421 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/asdp/projects/NEOSDiscovery/jetty/solr
+1425 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/
+1426 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+1427 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/'
+1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
+1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
+1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
+1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-53.1.jar' to classloader
+1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.10.4.jar' to classloader
+1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.10.4.jar' to classloader
+1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.10.4.jar' to classloader
+1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.10.4.jar' to classloader
+1503 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.0.0
+1565 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+1568 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf/schema.xml
+1598 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=Blacklight Demo Index
+1637 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+1639 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+1641 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+1643 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+1645 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+1749 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
+1750 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
+1750 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+1857 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/
+1867 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
+1871 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/, dataDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/
+1871 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
+1877 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data
+1878 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index/
+1878 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrCore  – [blacklight-core] Solr index directory '/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index' doesn't exist. Creating new index...
+1883 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index
+2076 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_1,generation=1}
+2076 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+2122 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+2125 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+2125 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+2125 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+2126 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+2126 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
+2126 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+2127 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
+2127 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+2128 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+2128 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+2128 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+2129 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
+2130 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+2132 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
+2132 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
+2132 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
+2142 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2144 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2144 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2145 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2145 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2151 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
+2152 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+2154 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_1,generation=1}
+2154 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+2157 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@102f207[blacklight-core] main
+2161 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
+2161 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf}
+2166 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
+2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
+2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
+2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2351 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
+2534 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
+2718 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
+2902 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
+2902 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2914 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
+2914 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@102f207[blacklight-core] main{StandardDirectoryReader(segments_1:1:nrt)}
+2915 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/asdp/projects/NEOSDiscovery/jetty
+2915 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+2930 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+240351 [qtp12218612-11] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {} 0 7
+240351 [qtp12218612-11] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: missing content stream
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:69)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1976)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+
+240622 [qtp12218612-11] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[00282214, 00282371, 00313831, 00314247, 43037890, 85910001, 86207417, 87931798, 90142413, 92117465, ... (30 adds)]} 0 189
+240625 [qtp12218612-16] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+242116 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_1,generation=1}
+	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_2,generation=2}
+242116 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 2
+242127 [qtp12218612-16] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@1d10c69[blacklight-core] main
+242127 [qtp12218612-16] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+242128 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: default
+243128 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: author
+243838 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: subject
+244531 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: title
+245274 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@1d10c69[blacklight-core] main{StandardDirectoryReader(segments_1:3:nrt _0(4.10.4):C30)}
+245274 [qtp12218612-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={commit=true} {commit=} 0 4649
+255985 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=pub_date,memSize=4548,tindexSize=44,time=1,phase1=1,nTerms=22,bigTerms=1,termInstances=26,uses=0}
+255987 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_topic_facet,memSize=4485,tindexSize=58,time=0,phase1=0,nTerms=48,bigTerms=0,termInstances=54,uses=0}
+255987 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=language_facet,memSize=4553,tindexSize=46,time=0,phase1=0,nTerms=13,bigTerms=1,termInstances=27,uses=0}
+255988 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=lc_1letter_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+255989 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_geo_facet,memSize=4465,tindexSize=57,time=0,phase1=0,nTerms=20,bigTerms=0,termInstances=23,uses=0}
+255989 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_era_facet,memSize=4453,tindexSize=45,time=0,phase1=0,nTerms=6,bigTerms=0,termInstances=10,uses=0}
+255994 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={facet=true&sort=score+desc,+pub_date_sort+desc,+title_sort+asc&facet.query=pub_date:[2011+TO+*]&facet.query=pub_date:[2006+TO+*]&facet.query=pub_date:[1991+TO+*]&f.subject_topic_facet.facet.limit=21&f.language_facet.facet.limit=11&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&wt=ruby&facet.pivot=format,language_facet&rows=10} hits=30 status=0 QTime=64 
+404470 [qtp12218612-13] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {} 0 0
+404470 [qtp12218612-13] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: missing content stream
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:69)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1976)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+
+404790 [qtp12218612-13] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100000, 1000000, 1000001, 1000002, 1000007, 1000008, 1000009, 100001, 1000010, 1000011, ... (100 adds)]} 0 160
+404791 [qtp12218612-13] ERROR org.apache.solr.servlet.SolrDispatchFilter  – null:org.eclipse.jetty.io.EofException
+	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:914)
+	at org.eclipse.jetty.http.AbstractGenerator.flush(AbstractGenerator.java:443)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:100)
+	at org.eclipse.jetty.server.AbstractHttpConnection$Output.flush(AbstractHttpConnection.java:1094)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at org.apache.solr.util.FastWriter.flush(FastWriter.java:137)
+	at org.apache.solr.servlet.SolrDispatchFilter.writeResponse(SolrDispatchFilter.java:766)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:426)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.eclipse.jetty.io.ByteArrayBuffer.writeTo(ByteArrayBuffer.java:375)
+	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:164)
+	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:194)
+	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:838)
+	... 35 more
+
+404793 [qtp12218612-13] ERROR org.apache.solr.servlet.SolrDispatchFilter  – null:org.eclipse.jetty.io.EofException
+	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:914)
+	at org.eclipse.jetty.http.AbstractGenerator.flush(AbstractGenerator.java:443)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:100)
+	at org.eclipse.jetty.server.AbstractHttpConnection$Output.flush(AbstractHttpConnection.java:1094)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at org.apache.solr.util.FastWriter.flush(FastWriter.java:137)
+	at org.apache.solr.servlet.SolrDispatchFilter.writeResponse(SolrDispatchFilter.java:766)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:426)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.eclipse.jetty.io.ByteArrayBuffer.writeTo(ByteArrayBuffer.java:375)
+	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:164)
+	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:194)
+	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:838)
+	... 35 more
+
+404793 [qtp12218612-13] WARN  org.eclipse.jetty.server.Response  – Committed before 500 {msg=Broken pipe,trace=org.eclipse.jetty.io.EofException
+	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:914)
+	at org.eclipse.jetty.http.AbstractGenerator.flush(AbstractGenerator.java:443)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:100)
+	at org.eclipse.jetty.server.AbstractHttpConnection$Output.flush(AbstractHttpConnection.java:1094)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at org.apache.solr.util.FastWriter.flush(FastWriter.java:137)
+	at org.apache.solr.servlet.SolrDispatchFilter.writeResponse(SolrDispatchFilter.java:766)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:426)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.eclipse.jetty.io.ByteArrayBuffer.writeTo(ByteArrayBuffer.java:375)
+	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:164)
+	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:194)
+	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:838)
+	... 35 more
+,code=500}
+404794 [qtp12218612-13] WARN  org.eclipse.jetty.servlet.ServletHandler  – /solr/blacklight-core/update/json
+java.lang.IllegalStateException: Committed
+	at org.eclipse.jetty.server.Response.resetBuffer(Response.java:1144)
+	at org.eclipse.jetty.server.Response.sendError(Response.java:314)
+	at org.apache.solr.servlet.SolrDispatchFilter.sendError(SolrDispatchFilter.java:821)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:434)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
