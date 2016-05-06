@@ -1,0 +1,16 @@
+import org.marc4j.marc.Record;
+
+org.solrmarc.index.SolrIndexer indexer = null;
+
+public String isElectronic(Record record){
+
+  String val = indexer.getFirstFieldVal(record, "8563");
+
+  if ((val != null) && (val.contains("Access"))){
+    return "Online";
+  }
+  else {
+    return "At Library";
+  }
+}
+

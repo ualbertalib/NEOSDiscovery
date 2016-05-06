@@ -1,0 +1,21 @@
+import org.marc4j.marc.Record;
+
+org.solrmarc.index.SolrIndexer indexer = null;
+
+public Set getLocations(Record record){
+
+  Set locations = new LinkedHashSet();
+  Set val = indexer.getFieldList(record, "926m");
+
+ for (String loc : val)
+{
+  if (loc != null){
+    locations.add(loc.toLowerCase().replaceAll("_", "").replaceAll("-",""));
+  }
+  else {
+    locations.add(loc);
+  }
+  }
+  return locations;
+}
+
