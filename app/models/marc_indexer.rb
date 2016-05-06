@@ -20,7 +20,7 @@ class MarcIndexer < Blacklight::Marc::Indexer
     end
      
     to_field "language_facet", marc_languages("008[35-37]:041a:041d:")
-    to_field "format", get_format
+    #to_field "format", get_format
     to_field "isbn_t",  extract_marc('020a', :separator=>nil) do |rec, acc|
          orig = acc.dup
          acc.map!{|x| StdNum::ISBN.allNormalizedValues(x)}

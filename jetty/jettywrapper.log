@@ -1,122 +1,117 @@
 0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
-25   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/asdp/projects/NEOSDiscovery/jetty/contexts at interval 0
-28   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/asdp/projects/NEOSDiscovery/jetty/contexts/solr.xml
-54   [main] INFO  org.eclipse.jetty.webapp.WebInfConfiguration  – Extract jar:file:/home/asdp/projects/NEOSDiscovery/jetty/webapps/solr.war!/ to /home/asdp/projects/NEOSDiscovery/jetty/solr-webapp/webapp
-1101 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-1132 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
-1141 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
-1141 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/asdp/projects/NEOSDiscovery/jetty/solr
-1141 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/NEOSDiscovery/jetty/solr/'
-1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
-1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
-1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
-1142 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/' to classloader
-1215 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/asdp/projects/NEOSDiscovery/jetty/solr/solr.xml
-1261 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/asdp/projects/NEOSDiscovery/jetty/solr
-1265 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 7690110
-1266 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/]
-1266 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /home/asdp/projects/NEOSDiscovery/jetty/solr/lib
-1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
-1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
-1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
-1267 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/' to classloader
-1282 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
-1283 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
-1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
-1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
-1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
-1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
-1285 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
-1286 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
-1286 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
-1286 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting useRetries to: false
-1399 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=true
-1400 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
-1400 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
-1401 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
-1421 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/asdp/projects/NEOSDiscovery/jetty/solr
-1425 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/
-1426 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
-1427 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/'
-1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
-1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
-1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
-1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
-1448 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-53.1.jar' to classloader
-1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.10.4.jar' to classloader
-1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.10.4.jar' to classloader
-1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.10.4.jar' to classloader
-1449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.10.4.jar' to classloader
-1503 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.0.0
-1565 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
-1568 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf/schema.xml
-1598 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=Blacklight Demo Index
-1637 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
-1639 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
-1641 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
-1643 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
-1645 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
-1749 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
-1750 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
-1750 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
-1857 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/
-1867 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
-1871 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/, dataDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/
-1871 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
-1877 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data
-1878 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index/
-1878 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrCore  – [blacklight-core] Solr index directory '/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index' doesn't exist. Creating new index...
-1883 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index
-2076 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=1
-	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_1,generation=1}
-2076 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
-2122 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
-2125 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
-2125 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
-2125 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
-2126 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
-2126 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
-2126 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
-2127 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
-2127 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-2128 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
-2128 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
-2128 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
-2129 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
-2130 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
-2132 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
-2132 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
-2132 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
-2142 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-2144 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-2144 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-2145 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-2145 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-2151 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
-2152 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
-2154 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
-	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_1,generation=1}
-2154 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
-2157 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@102f207[blacklight-core] main
-2161 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
-2161 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf}
-2166 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
-2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
-2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
-2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
-2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-2351 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
-2534 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
-2718 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
-2902 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
-2902 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-2914 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
-2914 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@102f207[blacklight-core] main{StandardDirectoryReader(segments_1:1:nrt)}
-2915 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/asdp/projects/NEOSDiscovery/jetty
-2915 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
-2930 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
-240351 [qtp12218612-11] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {} 0 7
-240351 [qtp12218612-11] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: missing content stream
+17   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/asdp/projects/NEOSDiscovery/jetty/contexts at interval 0
+20   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/asdp/projects/NEOSDiscovery/jetty/contexts/solr.xml
+761  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+797  [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+805  [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+805  [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/asdp/projects/NEOSDiscovery/jetty/solr
+805  [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/NEOSDiscovery/jetty/solr/'
+806  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
+806  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
+806  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
+807  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/' to classloader
+874  [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/asdp/projects/NEOSDiscovery/jetty/solr/solr.xml
+924  [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/asdp/projects/NEOSDiscovery/jetty/solr
+929  [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 4380842
+929  [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/]
+930  [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /home/asdp/projects/NEOSDiscovery/jetty/solr/lib
+930  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
+930  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
+930  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
+930  [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/' to classloader
+942  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+942  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+944  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+944  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+945  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+945  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+945  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+945  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+945  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+945  [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting useRetries to: false
+1064 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=true
+1065 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1066 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1066 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+1085 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/asdp/projects/NEOSDiscovery/jetty/solr
+1090 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/
+1091 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+1092 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/'
+1113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+1113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
+1113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
+1113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
+1113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-53.1.jar' to classloader
+1114 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.10.4.jar' to classloader
+1114 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.10.4.jar' to classloader
+1114 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.10.4.jar' to classloader
+1114 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/asdp/projects/NEOSDiscovery/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.10.4.jar' to classloader
+1184 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.0.0
+1271 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+1276 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf/schema.xml
+1308 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=Blacklight Demo Index
+1351 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+1358 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+1360 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+1362 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+1364 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+1472 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
+1472 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
+1473 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+1539 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/
+1549 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
+1553 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/, dataDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/
+1553 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
+1558 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data
+1560 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index/
+1560 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index
+1609 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+1613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+1613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+1613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+1613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+1613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
+1614 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+1615 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
+1615 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+1615 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+1616 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+1616 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+1616 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
+1617 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+1619 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
+1619 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
+1619 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
+1627 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1628 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1628 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1629 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1629 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1634 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
+1634 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+1656 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_3,generation=3}
+1656 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 3
+1682 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@1424adc[blacklight-core] main
+1686 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
+1686 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf}
+1691 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
+1693 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/conf
+1693 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+1693 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
+1693 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+1698 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
+1700 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
+1701 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
+1703 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
+1703 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+1710 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
+1710 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@1424adc[blacklight-core] main{StandardDirectoryReader(segments_3:7:nrt _0(4.10.4):C30 _1(4.10.4):C2565/258:delGen=1 _2(4.10.4):C7692)}
+1711 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/asdp/projects/NEOSDiscovery/jetty
+1711 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+1724 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+9116 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {} 0 7
+9117 [qtp16497440-16] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: missing content stream
 	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:69)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1976)
@@ -149,232 +144,123 @@
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
 	at java.lang.Thread.run(Thread.java:745)
 
-240622 [qtp12218612-11] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[00282214, 00282371, 00313831, 00314247, 43037890, 85910001, 86207417, 87931798, 90142413, 92117465, ... (30 adds)]} 0 189
-240625 [qtp12218612-16] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-242116 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
-	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_1,generation=1}
-	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_2,generation=2}
-242116 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 2
-242127 [qtp12218612-16] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@1d10c69[blacklight-core] main
-242127 [qtp12218612-16] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-242128 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: default
-243128 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: author
-243838 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: subject
-244531 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: title
-245274 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@1d10c69[blacklight-core] main{StandardDirectoryReader(segments_1:3:nrt _0(4.10.4):C30)}
-245274 [qtp12218612-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={commit=true} {commit=} 0 4649
-255985 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=pub_date,memSize=4548,tindexSize=44,time=1,phase1=1,nTerms=22,bigTerms=1,termInstances=26,uses=0}
-255987 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_topic_facet,memSize=4485,tindexSize=58,time=0,phase1=0,nTerms=48,bigTerms=0,termInstances=54,uses=0}
-255987 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=language_facet,memSize=4553,tindexSize=46,time=0,phase1=0,nTerms=13,bigTerms=1,termInstances=27,uses=0}
-255988 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=lc_1letter_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-255989 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_geo_facet,memSize=4465,tindexSize=57,time=0,phase1=0,nTerms=20,bigTerms=0,termInstances=23,uses=0}
-255989 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_era_facet,memSize=4453,tindexSize=45,time=0,phase1=0,nTerms=6,bigTerms=0,termInstances=10,uses=0}
-255994 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={facet=true&sort=score+desc,+pub_date_sort+desc,+title_sort+asc&facet.query=pub_date:[2011+TO+*]&facet.query=pub_date:[2006+TO+*]&facet.query=pub_date:[1991+TO+*]&f.subject_topic_facet.facet.limit=21&f.language_facet.facet.limit=11&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&wt=ruby&facet.pivot=format,language_facet&rows=10} hits=30 status=0 QTime=64 
-404470 [qtp12218612-13] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {} 0 0
-404470 [qtp12218612-13] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: missing content stream
-	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:69)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1976)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
-	at org.eclipse.jetty.server.Server.handle(Server.java:368)
-	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
-	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
-	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
-	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
-	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
-	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
-	at java.lang.Thread.run(Thread.java:745)
-
-404790 [qtp12218612-13] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100000, 1000000, 1000001, 1000002, 1000007, 1000008, 1000009, 100001, 1000010, 1000011, ... (100 adds)]} 0 160
-404791 [qtp12218612-13] ERROR org.apache.solr.servlet.SolrDispatchFilter  – null:org.eclipse.jetty.io.EofException
-	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:914)
-	at org.eclipse.jetty.http.AbstractGenerator.flush(AbstractGenerator.java:443)
-	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:100)
-	at org.eclipse.jetty.server.AbstractHttpConnection$Output.flush(AbstractHttpConnection.java:1094)
-	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
-	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
-	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:137)
-	at org.apache.solr.servlet.SolrDispatchFilter.writeResponse(SolrDispatchFilter.java:766)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:426)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
-	at org.eclipse.jetty.server.Server.handle(Server.java:368)
-	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
-	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
-	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
-	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
-	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
-	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.SocketException: Broken pipe
-	at java.net.SocketOutputStream.socketWrite0(Native Method)
-	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
-	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
-	at org.eclipse.jetty.io.ByteArrayBuffer.writeTo(ByteArrayBuffer.java:375)
-	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:164)
-	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:194)
-	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:838)
-	... 35 more
-
-404793 [qtp12218612-13] ERROR org.apache.solr.servlet.SolrDispatchFilter  – null:org.eclipse.jetty.io.EofException
-	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:914)
-	at org.eclipse.jetty.http.AbstractGenerator.flush(AbstractGenerator.java:443)
-	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:100)
-	at org.eclipse.jetty.server.AbstractHttpConnection$Output.flush(AbstractHttpConnection.java:1094)
-	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
-	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
-	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:137)
-	at org.apache.solr.servlet.SolrDispatchFilter.writeResponse(SolrDispatchFilter.java:766)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:426)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
-	at org.eclipse.jetty.server.Server.handle(Server.java:368)
-	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
-	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
-	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
-	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
-	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
-	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.SocketException: Broken pipe
-	at java.net.SocketOutputStream.socketWrite0(Native Method)
-	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
-	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
-	at org.eclipse.jetty.io.ByteArrayBuffer.writeTo(ByteArrayBuffer.java:375)
-	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:164)
-	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:194)
-	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:838)
-	... 35 more
-
-404793 [qtp12218612-13] WARN  org.eclipse.jetty.server.Response  – Committed before 500 {msg=Broken pipe,trace=org.eclipse.jetty.io.EofException
-	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:914)
-	at org.eclipse.jetty.http.AbstractGenerator.flush(AbstractGenerator.java:443)
-	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:100)
-	at org.eclipse.jetty.server.AbstractHttpConnection$Output.flush(AbstractHttpConnection.java:1094)
-	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
-	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
-	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:137)
-	at org.apache.solr.servlet.SolrDispatchFilter.writeResponse(SolrDispatchFilter.java:766)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:426)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
-	at org.eclipse.jetty.server.Server.handle(Server.java:368)
-	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
-	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
-	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
-	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
-	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
-	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.SocketException: Broken pipe
-	at java.net.SocketOutputStream.socketWrite0(Native Method)
-	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
-	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
-	at org.eclipse.jetty.io.ByteArrayBuffer.writeTo(ByteArrayBuffer.java:375)
-	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:164)
-	at org.eclipse.jetty.io.bio.StreamEndPoint.flush(StreamEndPoint.java:194)
-	at org.eclipse.jetty.http.HttpGenerator.flushBuffer(HttpGenerator.java:838)
-	... 35 more
-,code=500}
-404794 [qtp12218612-13] WARN  org.eclipse.jetty.servlet.ServletHandler  – /solr/blacklight-core/update/json
-java.lang.IllegalStateException: Committed
-	at org.eclipse.jetty.server.Response.resetBuffer(Response.java:1144)
-	at org.eclipse.jetty.server.Response.sendError(Response.java:314)
-	at org.apache.solr.servlet.SolrDispatchFilter.sendError(SolrDispatchFilter.java:821)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:434)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
-	at org.eclipse.jetty.server.Server.handle(Server.java:368)
-	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
-	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
-	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
-	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
-	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
-	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
-	at java.lang.Thread.run(Thread.java:745)
+9714 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100000, 1000004, 1000005, 1000006, 1000007, 1000008, 1000009, 100001, 1000010, 1000011, ... (100 adds)]} 0 400
+9965 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000094, 1000095, 1000096, 1000097, 1000098, 1000099, 10001, 100010, 1000100, 1000101, ... (100 adds)]} 0 151
+10122 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000454, 1000455, 1000456, 1000457, 1000458, 1000459, 100046, 1000460, 1000465, 1000466, ... (100 adds)]} 0 75
+10209 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000184, 1000163, 1000164, 1000165, 1000166, 1000185, 1000186, 1000187, 1000188, 1000189, ... (100 adds)]} 0 78
+10297 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000272, 1000273, 1000279, 1000275, 1000276, 1000277, 1000278, 100028, 1000280, 1000281, ... (100 adds)]} 0 48
+10378 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000367, 1000368, 1000369, 100037, 1000370, 1000371, 1000372, 1000373, 1000374, 1000375, ... (100 adds)]} 0 42
+10569 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000517, 1000518, 1000519, 100052, 1000548, 1000549, 100055, 1000554, 1000555, 1000556, ... (100 adds)]} 0 37
+10671 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000639, 100064, 1000640, 1000641, 1000634, 1000635, 1000636, 1000637, 1000642, 1000643, ... (100 adds)]} 0 35
+10770 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000758, 1000759, 100076, 1000760, 1000761, 1000762, 1000763, 1000765, 1000767, 100077, ... (100 adds)]} 0 36
+10969 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000856, 1000857, 1000858, 1000859, 100086, 1000860, 1000861, 1000862, 1000863, 1000865, ... (100 adds)]} 0 37
+11182 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001224, 1001225, 1001226, 1001230, 1001231, 1001232, 1001233, 1001234, 1001235, 1001236, ... (100 adds)]} 0 41
+11310 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1000947, 1000948, 1000949, 100095, 1000950, 1000951, 1000911, 1000952, 1000912, 1000913, ... (100 adds)]} 0 36
+11372 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001037, 1001038, 1001039, 100104, 1001040, 1001041, 1001042, 1001043, 1001044, 1001045, ... (100 adds)]} 0 36
+11555 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100150, 1001500, 1001501, 1001503, 1001504, 1001505, 1001506, 1001507, 1001508, 1001509, ... (100 adds)]} 0 34
+11613 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001137, 1001138, 1001139, 100114, 1001140, 1001141, 1001142, 1001143, 1001144, 1001127, ... (100 adds)]} 0 50
+11712 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001317, 1001318, 1001319, 100132, 1001320, 1001321, 1001322, 1001323, 1001324, 1001325, ... (100 adds)]} 0 46
+11908 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001314, 1001315, 1001316, 1001412, 1001413, 1001414, 1001415, 1001416, 1001417, 1001418, ... (100 adds)]} 0 44
+12018 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001522, 1001523, 1001524, 1001525, 1001591, 1001592, 1001593, 1001594, 1001595, 10016, ... (100 adds)]} 0 48
+12218 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001681, 1001682, 1001683, 1001684, 1001685, 1001686, 1001687, 1001688, 1001689, 100169, ... (100 adds)]} 0 52
+12407 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001772, 1001773, 1001774, 1001775, 1001776, 1001777, 1001778, 1001779, 100178, 1001780, ... (100 adds)]} 0 43
+12522 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001857, 1001863, 1001859, 1001860, 1001862, 1001868, 1001869, 1001864, 1001865, 1001866, ... (100 adds)]} 0 55
+12615 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1001914, 1001955, 1001956, 1001957, 1001961, 1001962, 1001963, 1001964, 1001965, 1001966, ... (100 adds)]} 0 48
+12721 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002047, 1002048, 1002049, 100205, 1002050, 1002051, 1002052, 1002053, 1002054, 1002055, ... (100 adds)]} 0 51
+12913 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002138, 1002139, 100214, 1002140, 1002141, 1002142, 1002143, 1002144, 1002145, 1002146, ... (100 adds)]} 0 57
+13120 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002224, 1002225, 1002226, 1002227, 1002228, 1002229, 100223, 1002234, 1002235, 1002236, ... (100 adds)]} 0 54
+13186 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002325, 1002326, 1002327, 1002328, 1002329, 100233, 1002330, 1002331, 1002332, 1002333, ... (100 adds)]} 0 36
+13403 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002417, 1002418, 1002419, 100242, 1002420, 1002421, 1002422, 1002423, 1002424, 1002425, ... (100 adds)]} 0 36
+13508 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002508, 1002509, 100251, 1002510, 1002512, 1002513, 1002514, 1002517, 1002519, 100252, ... (100 adds)]} 0 33
+13747 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002923, 1002924, 1002925, 1002926, 1002927, 1002928, 1002929, 100293, 1002930, 1002931, ... (100 adds)]} 0 32
+13789 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100265, 1002650, 1002651, 1002652, 1002653, 1002654, 1002655, 1002656, 1002657, 1002658, ... (100 adds)]} 0 33
+14003 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003105, 1003106, 1003107, 1003097, 1003108, 1003099, 10031, 100310, 1003109, 1003113, ... (100 adds)]} 0 30
+14052 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002742, 1002743, 1002744, 1002745, 1002746, 1002747, 1002748, 1002749, 100275, 1002750, ... (100 adds)]} 0 38
+14263 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003287, 1003288, 1003289, 100329, 1003290, 1003291, 1003292, 1003293, 1003294, 1003295, ... (100 adds)]} 0 33
+14339 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002832, 1002833, 1002834, 1002835, 1002784, 1002836, 1002785, 1002786, 1002787, 1002837, ... (100 adds)]} 0 33
+14526 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003469, 100347, 1003470, 1003471, 1003472, 1003473, 1003474, 1003475, 1003476, 1003477, ... (100 adds)]} 0 31
+14604 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1002973, 1003014, 1002974, 1002975, 1003018, 1003019, 100302, 1003020, 1003021, 1003022, ... (100 adds)]} 0 33
+14730 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003192, 1003193, 1003194, 1003195, 1003197, 1003198, 1003199, 10032, 100320, 1003200, ... (100 adds)]} 0 32
+14813 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003330, 1003331, 1003332, 1003333, 1003378, 1003379, 1003383, 1003384, 1003385, 1003386, ... (100 adds)]} 0 39
+14906 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003542, 1003543, 1003544, 1003545, 1003559, 100356, 1003560, 1003565, 1003566, 1003567, ... (100 adds)]} 0 33
+14949 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003649, 100365, 1003650, 1003651, 1003652, 1003653, 1003654, 1003655, 1003656, 1003657, ... (100 adds)]} 0 31
+15005 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[10037, 100370, 1003700, 1003738, 1003739, 1003742, 100374, 1003740, 1003741, 1003743, ... (100 adds)]} 0 31
+15188 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003828, 1003824, 1003826, 1003827, 1003829, 100383, 1003830, 1003831, 1003835, 1003832, ... (100 adds)]} 0 51
+15260 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1003919, 100392, 1003920, 1003921, 1003922, 1003923, 1003924, 1003925, 1003926, 1003927, ... (100 adds)]} 0 34
+15406 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004000, 1004001, 1004002, 1004003, 1004011, 1004012, 1004013, 1004014, 1004015, 1004016, ... (100 adds)]} 0 32
+15536 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004099, 10041, 100410, 1004100, 1004101, 1004102, 1004103, 1004104, 1004105, 1004106, ... (100 adds)]} 0 36
+15618 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004184, 100419, 1004190, 1004191, 1004192, 1004193, 1004194, 1004195, 1004196, 1004197, ... (100 adds)]} 0 35
+15769 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004279, 1004271, 1004272, 1004273, 1004274, 1004283, 1004284, 1004285, 1004286, 1004287, ... (100 adds)]} 0 40
+15917 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004363, 1004366, 1004370, 1004371, 1004372, 1004373, 1004374, 1004367, 1004368, 1004369, ... (100 adds)]} 0 44
+16015 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004456, 1004457, 1004458, 1004462, 1004463, 1004464, 1004465, 1004466, 1004467, 1004468, ... (100 adds)]} 0 34
+16149 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100455, 1004550, 1004551, 1004552, 1004553, 1004554, 1004555, 1004556, 1004557, 1004558, ... (100 adds)]} 0 32
+16280 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100464, 1004640, 1004641, 1004642, 1004643, 1004644, 1004645, 1004646, 1004647, 1004648, ... (100 adds)]} 0 37
+16409 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004731, 1004732, 1004733, 1004734, 1004735, 1004736, 1004737, 1004738, 10047, 1004700, ... (100 adds)]} 0 32
+16526 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004821, 1004822, 1004823, 1004824, 1004825, 1004826, 1004827, 1004828, 1004829, 100483, ... (100 adds)]} 0 30
+16630 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1004911, 1004912, 1004913, 1004914, 1004915, 1004916, 1004917, 1004918, 1004919, 100492, ... (100 adds)]} 0 31
+16814 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005, 10050, 100500, 1005000, 1005004, 1005001, 1005002, 1005003, 1005005, 1005006, ... (100 adds)]} 0 31
+16965 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005074, 1005075, 1005076, 1005077, 1005097, 1005098, 1005099, 10051, 100510, 1005100, ... (100 adds)]} 0 30
+17054 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005183, 1005184, 1005185, 1005186, 1005187, 1005188, 1005189, 100519, 1005190, 1005191, ... (100 adds)]} 0 32
+17212 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005273, 1005274, 1005275, 1005276, 1005277, 1005278, 1005267, 1005268, 1005269, 1005281, ... (100 adds)]} 0 33
+17349 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005363, 1005364, 1005365, 1005366, 1005367, 1005368, 1005369, 100537, 1005370, 1005371, ... (100 adds)]} 0 37
+17487 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100545, 1005450, 1005451, 1005452, 1005453, 1005454, 1005459, 100546, 1005460, 1005461, ... (100 adds)]} 0 32
+17610 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005538, 1005539, 1005545, 1005546, 1005547, 1005548, 1005549, 100555, 1005541, 1005550, ... (100 adds)]} 0 31
+17739 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005628, 1005635, 1005636, 1005637, 1005631, 1005632, 1005633, 1005634, 1005638, 1005642, ... (100 adds)]} 0 32
+17867 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005724, 1005725, 1005726, 1005727, 1005728, 1005719, 100572, 1005720, 1005721, 1005732, ... (100 adds)]} 0 32
+17985 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005810, 1005815, 1005816, 1005817, 1005818, 1005819, 1005811, 1005812, 1005813, 1005814, ... (100 adds)]} 0 32
+18155 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005901, 1005902, 1005903, 1005904, 1005905, 1005906, 1005907, 1005908, 1005909, 1005913, ... (100 adds)]} 0 33
+18370 [qtp16497440-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1005932, 1005933, 1005934, 10060, 100600, 1006000, 1006001, 1006002, 1006003, 1006004, ... (100 adds)]} 0 29
+18665 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006360, 1006361, 1006362, 1006363, 1006364, 1006365, 1006366, 1006367, 1006368, 1006369, ... (100 adds)]} 0 32
+18703 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006077, 1006078, 100609, 1006090, 1006091, 1006092, 1006093, 1006094, 1006095, 1006096, ... (100 adds)]} 0 30
+18808 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006179, 100618, 1006180, 1006181, 1006182, 1006183, 1006184, 1006185, 1006186, 1006187, ... (100 adds)]} 0 31
+19008 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100627, 1006270, 1006271, 1006272, 1006273, 1006274, 1006275, 1006276, 1006277, 1006278, ... (100 adds)]} 0 29
+19106 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006421, 1006422, 1006453, 1006423, 1006424, 1006452, 1006454, 1006455, 1006456, 1006457, ... (100 adds)]} 0 28
+19283 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006539, 100654, 1006544, 1006541, 1006546, 1006542, 1006543, 1006545, 1006547, 1006551, ... (100 adds)]} 0 40
+19369 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006635, 1006636, 1006637, 1006638, 1006639, 100664, 1006640, 1006641, 1006642, 1006643, ... (100 adds)]} 0 37
+19508 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006725, 1006726, 1006727, 1006728, 1006729, 100673, 1006730, 1006732, 1006733, 1006734, ... (100 adds)]} 0 30
+19553 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006816, 1006817, 1006818, 1006819, 1006763, 1006764, 1006765, 1006766, 100682, 1006824, ... (100 adds)]} 0 31
+19624 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006906, 1006907, 1006908, 1006898, 1006899, 10069, 100690, 1006912, 1006913, 1006914, ... (100 adds)]} 0 32
+19714 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1006997, 1006998, 1006999, 1007, 10070, 100700, 1007000, 1007001, 1007002, 1007003, ... (100 adds)]} 0 33
+19875 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007086, 1007087, 1007088, 1007089, 100709, 1007090, 1007091, 1007094, 1007095, 1007096, ... (100 adds)]} 0 34
+19918 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007178, 1007179, 100718, 1007131, 1007180, 1007132, 1007133, 1007134, 1007181, 1007182, ... (100 adds)]} 0 34
+20010 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007269, 100727, 1007270, 1007271, 1007272, 1007273, 1007274, 1007275, 1007276, 1007277, ... (100 adds)]} 0 29
+20098 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007355, 100736, 1007360, 1007361, 1007362, 1007363, 1007364, 1007365, 1007366, 1007367, ... (100 adds)]} 0 29
+20247 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007449, 100745, 1007450, 1007451, 1007452, 1007453, 1007454, 1007455, 1007456, 1007457, ... (100 adds)]} 0 35
+20405 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007536, 1007537, 1007538, 1007539, 1007543, 1007544, 1007545, 1007546, 1007547, 1007548, ... (100 adds)]} 0 28
+20610 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007630, 1007631, 1007632, 1007633, 1007634, 1007635, 1007636, 1007637, 1007638, 1007639, ... (100 adds)]} 0 30
+20811 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007723, 1007724, 1007725, 1007726, 1007727, 1007728, 1007729, 100773, 1007730, 1007731, ... (100 adds)]} 0 32
+20909 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007814, 1007815, 1007816, 1007817, 1007818, 1007819, 100782, 1007820, 1007821, 1007822, ... (100 adds)]} 0 31
+21023 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007904, 1007905, 1007906, 1007907, 1007908, 1007909, 100791, 1007910, 1007911, 1007912, ... (100 adds)]} 0 30
+21184 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1007996, 1007997, 1007998, 1007999, 1008, 10080, 100800, 1008000, 1008001, 1008002, ... (100 adds)]} 0 28
+21402 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100808, 1008080, 1008081, 1008088, 1008089, 100809, 1008090, 1008084, 1008085, 1008086, ... (100 adds)]} 0 30
+21447 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1008175, 1008176, 1008177, 1008178, 1008179, 100818, 1008180, 1008181, 1008182, 1008162, ... (100 adds)]} 0 32
+21506 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1008243, 1008244, 1008268, 1008269, 100827, 1008270, 1008271, 1008272, 1008273, 1008274, ... (100 adds)]} 0 35
+21591 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100836, 1008360, 1008361, 1008362, 1008363, 1008364, 1008356, 1008357, 1008358, 1008359, ... (100 adds)]} 0 29
+21715 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1008444, 1008445, 1008446, 1008452, 1008453, 1008454, 1008449, 100845, 1008450, 1008451, ... (100 adds)]} 0 31
+21869 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1008542, 1008543, 1008544, 1008545, 1008546, 1008547, 1008548, 1008549, 100855, 1008550, ... (100 adds)]} 0 36
+21917 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1008633, 1008634, 1008635, 1008636, 1008637, 1008638, 1008639, 100864, 1008640, 1008641, ... (100 adds)]} 0 33
+22112 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1008723, 1008724, 1008725, 1008726, 1008727, 1008728, 1008729, 100873, 1008719, 1008730, ... (100 adds)]} 0 29
+22209 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1008817, 1008818, 1008819, 100882, 1008820, 1008821, 1008822, 1008823, 1008785, 1008786, ... (100 adds)]} 0 27
+22464 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100891, 1008910, 1008911, 1008912, 1008913, 1008914, 1008915, 1008916, 1008917, 1008918, ... (100 adds)]} 0 29
+22499 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[100900, 1009000, 1009001, 1009002, 1009003, 1009004, 1009005, 1009006, 1009007, 1009008, ... (100 adds)]} 0 28
+22534 [qtp16497440-16] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[1009090, 1009091, 1009092, 1009093, 1009094, 1009095, 1009096, 1009097, 1009098, 1009099, ... (100 adds)]} 0 28
+22537 [qtp16497440-19] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+25095 [qtp16497440-19] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_3,generation=3}
+	commit{dir=/home/asdp/projects/NEOSDiscovery/jetty/solr/blacklight-core/data/index,segFN=segments_4,generation=4}
+25096 [qtp16497440-19] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 4
+25102 [qtp16497440-19] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@1c37bc1[blacklight-core] main
+25103 [qtp16497440-19] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+25104 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Index is not optimized therefore skipping building spell check index for: default
+25105 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Index is not optimized therefore skipping building spell check index for: author
+25105 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Index is not optimized therefore skipping building spell check index for: subject
+25105 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Index is not optimized therefore skipping building spell check index for: title
+25105 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@1c37bc1[blacklight-core] main{StandardDirectoryReader(segments_3:11:nrt _0(4.10.4):C30 _3(4.10.4):C10000)}
+25105 [qtp16497440-19] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={commit=true} {commit=} 0 2568
+55536 [qtp16497440-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=pub_date,memSize=44764,tindexSize=68,time=3,phase1=3,nTerms=289,bigTerms=3,termInstances=7963,uses=0}
+55562 [qtp16497440-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_topic_facet,memSize=77222,tindexSize=1434,time=24,phase1=24,nTerms=5975,bigTerms=0,termInstances=15554,uses=0}
+55567 [qtp16497440-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=language_facet,memSize=44761,tindexSize=58,time=1,phase1=1,nTerms=57,bigTerms=3,termInstances=1167,uses=0}
+55569 [qtp16497440-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=lc_1letter_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+55575 [qtp16497440-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_geo_facet,memSize=45351,tindexSize=196,time=6,phase1=5,nTerms=903,bigTerms=2,termInstances=3868,uses=0}
+55578 [qtp16497440-12] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_era_facet,memSize=44491,tindexSize=77,time=2,phase1=2,nTerms=283,bigTerms=0,termInstances=719,uses=0}
+55586 [qtp16497440-12] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={facet=true&sort=score+desc,+pub_date_sort+desc,+title_sort+asc&facet.query=pub_date:[2011+TO+*]&facet.query=pub_date:[2006+TO+*]&facet.query=pub_date:[1991+TO+*]&f.subject_topic_facet.facet.limit=21&f.language_facet.facet.limit=11&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&wt=ruby&facet.pivot=format,language_facet&rows=10} hits=10030 status=0 QTime=136 

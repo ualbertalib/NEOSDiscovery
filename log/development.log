@@ -172,3 +172,37 @@ Started GET "/assets/blacklight/logo-e368f4faad4c5310352e175e1fba8220b57aab2e29c
 
 
 Started GET "/assets/favicon-b4185c7dd08c0b4f2142c58bbcca322b3a01f50adc3413438b98be2b664bb4b6.ico" for ::1 at 2016-05-06 12:05:51 -0600
+
+
+Started GET "/" for ::1 at 2016-05-06 12:17:34 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatalogController#index as HTML
+Solr query: get select {"qt"=>nil, "facet.field"=>["format", "{!ex=pub_date_single}pub_date", "subject_topic_facet", "language_facet", "lc_1letter_facet", "subject_geo_facet", "subject_era_facet"], "facet.query"=>["pub_date:[2011 TO *]", "pub_date:[2006 TO *]", "pub_date:[1991 TO *]"], "facet.pivot"=>["format,language_facet"], "fq"=>[], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (230.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (69.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (4.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (8.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (5.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (4.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (4.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_pivot.html.erb (4.1ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_pivot.html.erb (0.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_pivot.html.erb (9.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (2.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (141.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (142.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_home_text.html.erb (0.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_home.html.erb (1.6ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_sitelinks_search_box.html.erb (0.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (151.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "guest_hUBFTchLpXfWgG_cnH7j_1462557950_1@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."user_type" = ?[0m  [["user_id", 1], ["user_type", "User"]]
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (20.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (5.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (173.9ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (2.1ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_header_navbar.html.erb (178.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_ajax_modal.html.erb (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (2.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 3433ms (Views: 3188.5ms | ActiveRecord: 0.8ms)
