@@ -45,3 +45,11 @@ group :development do
   gem 'spring'
 end
 
+gem "blacklight"
+
+group :development, :test do
+  gem 'solr_wrapper', '>= 0.3'
+end
+
+gem 'rsolr', '~> 1.0.6'
+gem 'globalid'
