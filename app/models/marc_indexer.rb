@@ -116,7 +116,7 @@ class MarcIndexer < Blacklight::Marc::Indexer
     end
 
     to_field 'lc_b4cutter_facet', extract_marc('050a', :first=>true)
-     
+
     # URL Fields
      
     notfulltext = /abstract|description|sample text|table of contents|/i
