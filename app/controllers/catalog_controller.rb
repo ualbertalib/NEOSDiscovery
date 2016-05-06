@@ -69,21 +69,18 @@ class CatalogController < ApplicationController
     #  (useful when user clicks "more" on a large facet and wants to navigate alphabetically across a large set of results)
     # :index_range can be an array or range of prefixes that will be used to create the navigation (note: It is case sensitive when searching values)
 
-    config.add_facet_field 'format', label: 'Format'
-    config.add_facet_field 'pub_date', label: 'Publication Year', single: true
-    config.add_facet_field 'subject_topic_facet', label: 'Topic', limit: 20, index_range: 'A'..'Z'
-    config.add_facet_field 'language_facet', label: 'Language', limit: true
-    config.add_facet_field 'lc_1letter_facet', label: 'Call Number'
-    config.add_facet_field 'subject_geo_facet', label: 'Region'
-    config.add_facet_field 'subject_era_facet', label: 'Era'
-
-    config.add_facet_field 'example_pivot_field', label: 'Pivot Field', :pivot => ['format', 'language_facet']
-
-    config.add_facet_field 'example_query_facet_field', label: 'Publish Date', :query => {
-       :years_5 => { label: 'within 5 Years', fq: "pub_date:[#{Time.zone.now.year - 5 } TO *]" },
-       :years_10 => { label: 'within 10 Years', fq: "pub_date:[#{Time.zone.now.year - 10 } TO *]" },
-       :years_25 => { label: 'within 25 Years', fq: "pub_date:[#{Time.zone.now.year - 25 } TO *]" }
-    }
+    config.add_facet_field 'electronic_tesim', :label => 'Access', collapse: false
+    config.add_facet_field 'institution_tesim', :label => 'Institution'
+    config.add_facet_field 'location_tesim', :label => 'Library', sort: 'index'
+    config.add_facet_field 'lc_1letter_facet', :label => 'Call Number', :limit => 10
+    config.add_facet_field 'format', :label => 'Format', :limit => 10
+    config.add_facet_field 'pub_date', :label => 'Publication Year', :range => true
+    config.add_facet_field 'author_display', :label => 'Author', :limit => 20 
+    config.add_facet_field 'subject_topic_facet', :label => 'Subject', :limit => 20 
+    config.add_facet_field 'language_facet', :label => 'Language', :limit => 10
+    config.add_facet_field 'subject_geo_facet', :label => 'Geographic Region', :limit => 10 
+    config.add_facet_field 'subject_era_facet', :label => 'Historic Period', :limit => 10
+    config.add_facet_field 'owning_library_tesim', :label => 'Owning Library'
 
 
     # Have BL send all facet field names to Solr, which has been the default

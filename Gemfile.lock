@@ -58,6 +58,10 @@ GEM
       marc-fastxmlwriter
       rails
       traject (~> 2.1)
+    blacklight_range_limit (6.0.0)
+      blacklight (>= 6.0.0.pre2, < 7)
+      jquery-rails
+      rails (>= 3.0, < 5.0)
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -227,6 +231,7 @@ PLATFORMS
 DEPENDENCIES
   blacklight (>= 6.1)
   blacklight-marc (~> 6.0)
+  blacklight_range_limit
   byebug
   coffee-rails (~> 4.1.0)
   devise
