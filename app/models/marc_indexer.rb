@@ -200,5 +200,10 @@ class MarcIndexer < Blacklight::Marc::Indexer
     to_field "numbering_tesim", extract_marc("515a")
     to_field "use_repro_tesim", extract_marc("540a")
     to_field "language_note_tesim", extract_marc("546a")
+    to_field 'size_tesim', extract_marc('300c', :trim_punctuation => true)
+    to_field 'description_tesim', extract_marc('300b', :trim_punctuation => true)
+    to_field 'contains_tesim', extract_marc('300abcefg', :trim_punctuation => true)
+    to_field 'publisher_tesim', extract_marc('260b:264b', :trim_punctuation => true)
+
   end
 end
