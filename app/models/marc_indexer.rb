@@ -28,6 +28,8 @@ class MarcIndexer < Blacklight::Marc::Indexer
          acc.flatten!
          acc.uniq!
     end
+    
+    to_field "issn_t",  extract_marc('022a', :separator=>nil)
      
     to_field 'material_type_display', extract_marc('300a', :trim_punctuation => true)
      
@@ -159,5 +161,7 @@ class MarcIndexer < Blacklight::Marc::Indexer
         end
       end
     end
+
+    to_field "edition_tesim", extract_marc('250a', :first=>true)
   end
 end
