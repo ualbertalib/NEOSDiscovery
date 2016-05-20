@@ -6,6 +6,10 @@ class MarcIndexer < Blacklight::Marc::Indexer
   def initialize
     super
 
+    institutions ||= YAML.load_file("#{Rails.root}/config/institutions.yml")
+    locations ||= YAML.load_file("#{Rails.root}/config/locations.yml")
+
+
     settings do
       # type may be 'binary', 'xml', or 'json'
       provide "marc_source.type", "binary"
@@ -216,6 +220,24 @@ class MarcIndexer < Blacklight::Marc::Indexer
         end
       else
         acc << "At Library"
+      end
+    end
+
+    to_field "institution_tesim" do |rec, acc|
+      rec.each_by_tag("596") do |field|
+        acc << institutions[field['a']]
+      end
+    end
+    
+    to_field "location_tesim" do |rec, acc|
+      rec.each_by_tag("926") do |field|
+        acc << locations[field['m'].downcase.gsub("_","").gsub("-","")]
+      end
+    end
+    
+    to_field "gmd_tesim" do |rec, acc|
+      rec.each_by_tag("245") do |field|
+        acc << field['h'] if field['h'] # .gsub("[","").gsub("]","").gsub(":","") if field['h']
       end
     end
   end
