@@ -82,13 +82,15 @@ class MarcIndexer < Blacklight::Marc::Indexer
      
     # Subject fields
     to_field 'subject_t', extract_marc(%W(
-      600#{ATOU}
-      610#{ATOU}
-      611#{ATOU}
-      630#{ATOU}
-      650abcde
-      651ae
-      653a:654abcde:655abc
+      600#{ATOZ}
+      610#{ATOZ}
+      611#{ATOZ}
+      630#{ATOZ}
+      650#{ATOZ}
+      651#{ATOZ}
+      653a
+      654#{ATOZ}
+      655#{ATOZ}
     ).join(':'))
     to_field 'subject_addl_t', extract_marc("600vwxyz:610vwxyz:611vwxyz:630vwxyz:650vwxyz:651vwxyz:654vwxyz:655vwxyz")
     to_field 'subject_topic_facet', extract_marc("600abcdq:610ab:611ab:630aa:650aa:653aa:654ab:655ab", :trim_punctuation => true)
