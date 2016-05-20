@@ -3,6 +3,18 @@ class CatalogController < ApplicationController
 
   include Blacklight::Catalog
   include Blacklight::Marc::Catalog
+  include HoldingsHelper
+
+  def show
+    super
+    load_lookup_tables
+    @holdings = []
+    @holdings = holdings(@document, :items)
+    unless @holdings.nil? || @holdings.first.nil?
+      @holdable = @holdings.first[:holdable]
+      @holdings.sort! { |a,b| b[:location].downcase <=> a[:location].downcase }
+    end
+  end
 
 
   configure_blacklight do |config|

@@ -1,0 +1,26 @@
+body { 
+  #holdings{
+    padding-top: 10px;
+  }
+  #holdings table{
+    width: 100%;
+  }
+  #holdings table th{
+    font-weight: bold;
+    background-color: #B2C6D1;
+    padding: 5px 25px 5px 10px;
+    border-left: 3px solid #fff;
+  }
+  #holdings table td{
+    padding: 5px 25px 5px 15px;
+    border-left: 3px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #eceff4;
+  }
+  #holdings table td.call-number{
+    min-width: 250px;
+  }
+  .holding-status, .holding-type{
+    text-transform: capitalize;
+  }
+}
