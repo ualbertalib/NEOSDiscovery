@@ -205,5 +205,18 @@ class MarcIndexer < Blacklight::Marc::Indexer
     to_field 'contains_tesim', extract_marc('300abcefg', :trim_punctuation => true)
     to_field 'publisher_tesim', extract_marc('260b:264b', :trim_punctuation => true)
 
+    to_field 'electronic_tesim' do |rec, acc|
+      if rec['856']
+        rec.each_by_tag('856') do |field|
+          if field['3'] && field['3'].include?("Access")
+            acc << "Online"
+          else
+            acc << "At Library"
+          end
+        end
+      else
+        acc << "At Library"
+      end
+    end
   end
 end
