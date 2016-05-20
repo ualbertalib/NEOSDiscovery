@@ -30,6 +30,16 @@ class MarcIndexer < Blacklight::Marc::Indexer
     end
     
     to_field "issn_t",  extract_marc('022a', :separator=>nil)
+    
+    to_field "isbn_tesim",  extract_marc('020a', :separator=>nil) do |rec, acc|
+         orig = acc.dup
+         acc.map!{|x| StdNum::ISBN.allNormalizedValues(x)}
+         acc << orig
+         acc.flatten!
+         acc.uniq!
+    end
+    
+    to_field "issn_tesim",  extract_marc('022a', :separator=>nil)
      
     to_field 'material_type_display', extract_marc('300a', :trim_punctuation => true)
      
@@ -163,5 +173,32 @@ class MarcIndexer < Blacklight::Marc::Indexer
     end
 
     to_field "edition_tesim", extract_marc('250a', :first=>true)
+    to_field "alternate_display_tesim", extract_marc('880a', :first=>true)
+    to_field "holdings_tesim", extract_marc('949#{ATOZ}')
+    to_field "owning_library_tesim", extract_marc('990m')
+    to_field "general_note_tesim", extract_marc('500a')
+    to_field "target_audience_note", extract_marc('521a')
+    to_field "awards_note_tesim", extract_marc('586a')
+    to_field "local_note_tesim", extract_marc('590a')
+    to_field "contents_tesim", extract_marc('505a')
+    to_field "bibliography_note_tesim", extract_marc('504a')
+    to_field "summary_tesim", extract_marc("520a")
+    to_field "earlier_title_tesim", extract_marc("780t")
+    to_field "later_title_tesim", extract_marc("785t")
+    to_field "section_number_tesim", extract_marc("245n")
+    to_field "section_name_tesim", extract_marc("245p")
+    to_field "summary_holdings_tesim", extract_marc("8563")
+    to_field "uniform_title_tesim", extract_marc("240a")
+    to_field "performers_tesim", extract_marc("511a")
+    to_field "publisher_number_tesim", extract_marc("028abq")
+    to_field "held_by_tesim", extract_marc("596a")
+    to_field "arrangement_tesim , extract_marc("351a")
+    to_field "time_of_event_tesim , extract_marc("518a")
+    to_field "issuing_body_tesim , extract_marc("550a")
+    to_field "supplementary_note_tesim , extract_marc("525a")
+    to_field "title_history_tesim , extract_marc("580a")
+    to_field "numbering_tesim , extract_marc("515a")
+    to_field "use_repro_tesim , extract_marc("540a")
+    to_field "language_note_tesim , extract_marc("546a")
   end
 end
