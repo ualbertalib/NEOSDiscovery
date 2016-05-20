@@ -89,33 +89,68 @@ class CatalogController < ApplicationController
     config.add_facet_fields_to_solr_request!
 
     # solr fields to be displayed in the index (search results) view
-    #   The ordering of the field names is the order of the display
-    config.add_index_field 'title_display', label: 'Title'
-    config.add_index_field 'title_vern_display', label: 'Title'
-    config.add_index_field 'author_display', label: 'Author'
-    config.add_index_field 'author_vern_display', label: 'Author'
-    config.add_index_field 'format', label: 'Format'
-    config.add_index_field 'language_facet', label: 'Language'
-    config.add_index_field 'published_display', label: 'Published'
-    config.add_index_field 'published_vern_display', label: 'Published'
-    config.add_index_field 'lc_callnum_display', label: 'Call number'
+    #   The ordering of the field names is the order of the display 
+    config.add_index_field 'author_display', :label => 'Author'
+    config.add_index_field 'edition_tesim', :label => 'Edition'
+    config.add_index_field 'author_vern_display', :label => 'Author'
+    config.add_index_field 'format', :label => 'Format'
+    config.add_index_field 'language_note_tesim', :label => 'Language'
+    config.add_index_field 'pub_date', :label => 'Publication Year'
 
     # solr fields to be displayed in the show (single result) view
-    #   The ordering of the field names is the order of the display
-    config.add_show_field 'title_display', label: 'Title'
-    config.add_show_field 'title_vern_display', label: 'Title'
-    config.add_show_field 'subtitle_display', label: 'Subtitle'
-    config.add_show_field 'subtitle_vern_display', label: 'Subtitle'
-    config.add_show_field 'author_display', label: 'Author'
-    config.add_show_field 'author_vern_display', label: 'Author'
-    config.add_show_field 'format', label: 'Format'
-    config.add_show_field 'url_fulltext_display', label: 'URL'
-    config.add_show_field 'url_suppl_display', label: 'More Information'
-    config.add_show_field 'language_facet', label: 'Language'
-    config.add_show_field 'published_display', label: 'Published'
-    config.add_show_field 'published_vern_display', label: 'Published'
-    config.add_show_field 'lc_callnum_display', label: 'Call number'
-    config.add_show_field 'isbn_t', label: 'ISBN'
+    #   The ordering of the field names is the order of the display 
+    # config.add_show_field 'title_display', :label => 'Title'
+    # config.add_show_field 'title_vern_display', :label => 'Title'
+    config.add_show_field 'title_addl_t', :label => 'Full/Alternate Title(s)'
+    # config.add_show_field 'subtitle_display', :label => 'Subtitle'
+    # config.add_show_field 'subtitle_vern_display', :label => 'Subtitle'
+    config.add_show_field 'section_number_tesim', :label => "Section Number"
+    config.add_show_field 'section_name_tesim', :label => "Section Name"
+    config.add_show_field 'alternate_display_tesim', :label => "Original"
+    #config.add_show_field 'edition_tesim', :label => "Edition"
+    config.add_show_field 'author_display', :label => 'Author'
+    config.add_show_field 'author_addl_t', :label => "Additional authors/performers"
+    config.add_show_field 'author_vern_display', :label => 'Author'
+    #config.add_show_field 'uniform_title_tesim', :label => 'Uniform Title'
+    config.add_show_field 'format', :label => 'Format'
+    #config.add_show_field 'language_facet', :label => 'Language'
+    config.add_show_field 'publisher_tesim', :label => 'Publisher'
+    config.add_show_field 'published_display', :label => 'Published'
+    config.add_show_field 'published_vern_display', :label => 'Published'
+    config.add_show_field 'pub_date', :label => 'Year'
+    #config.add_show_field 'material_type_display', :label => 'Contains'
+    #config.add_show_field 'size_tesim', :label => 'Size'
+    #config.add_show_field 'description_tesim', :label => 'Other Details'
+    config.add_show_field 'contains_tesim', :label => "Other Physical Details"
+    config.add_show_field 'moreinfo_tesim', :label => 'Additional Information'
+    config.add_show_field 'isbn_tesim', :label => 'ISBN'
+    config.add_show_field 'issn_tesim', :label => 'ISSN'
+    config.add_show_field 'general_note_tesim', :label => 'General Note', separator: ' -- '
+    config.add_show_field 'local_note_tesim', :label => 'Note', separator: ' -- '
+    config.add_show_field 'contents_tesim', :label => 'Contents'
+    config.add_show_field 'summary_tesim', :label => 'Summary'
+    config.add_show_field 'target_audience_note_tesim', :label => 'Target Audience'
+    config.add_show_field 'awards_note_tesim', :label => 'Awards'
+    config.add_show_field 'bibliography_note_tesim', :label => 'Bibliography Note'
+    config.add_show_field 'earlier_title_tesim', :label => 'Earlier title'
+    config.add_show_field 'later_title_tesim', :label => 'Later title'
+    config.add_show_field 'gmd_tesim', :label => 'Object type'
+    config.add_show_field 'performers_tesim', :label => 'Performers'
+    config.add_show_field 'title_series_t', :label => 'Series'
+    config.add_show_field 'publisher_number_tesim', :label => 'Publisher/issue number'
+    config.add_show_field 'arrangement_tesim', :label => "Organization and Arrangement"
+    config.add_show_field 'time_of_event_tesim', :label => "Date and Time of Event"
+    config.add_show_field 'issuing_body_tesim', :label => "Issuing Body"
+    config.add_show_field 'supplementary_note_tesim', :label => "Supplement Note"
+    config.add_show_field 'title_history_tesim', :label => "Title History"
+    config.add_show_field 'numbering_tesim', :label => "Numbering System"
+    config.add_show_field 'use_repro_tesim', :label => "Use and Reproduction"
+    config.add_show_field 'language_note_tesim', :label => "Language Note"
+
+    # config.add_show_field 'subject_topic_facet', :label => 'Subject'
+    # config.add_show_field 'subject_addl_t', :label => 'Additional subject'
+    # config.add_show_field 'subject_era_facet', :label => 'Time period'
+    # config.add_show_field 'subject_geo_facet', :label => 'Geographic subject'
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
