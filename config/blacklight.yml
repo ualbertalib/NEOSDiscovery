@@ -13,12 +13,12 @@
 
 development:
   adapter: solr
-  url: "http://tottenham.library.ualberta.ca:8080/solr/discovery"
+  url: "http://solr-test.library.ualberta.ca:8080/solr/discovery-test-2016-08-23_shard1_replica1"
 
 test: &test
   adapter: solr
-  url: "http://tottenham.library.ualberta.ca:8080/solr/discovery"
+  url: "http://solr-test.library.ualberta.ca:8081/solr/discovery-test-2016-08-23_shard1_replica1"
 
 production:
   adapter: solr
-  url: "http://tottenham.library.ualberta.ca:8080/solr/discovery"
+  url: "http://solr-test.library.ualberta.ca:8080/solr/discovery-test-2016-08-23_shard1_replica1"
