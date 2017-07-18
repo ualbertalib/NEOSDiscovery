@@ -5,6 +5,11 @@ class CatalogController < ApplicationController
   include Blacklight::Marc::Catalog
   include HoldingsHelper
 
+  def index
+    super
+    load_lookup_tables
+  end
+
   def show
     super
     load_lookup_tables
