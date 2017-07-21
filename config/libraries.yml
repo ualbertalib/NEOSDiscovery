@@ -1,0 +1,54 @@
+burman:
+  name: "Burman University"
+  url: "https://www.burmanu.ca/library"
+concordia:
+  name: "Concordia University of Edmonton"
+  url: "http://library.concordia.ab.ca/"
+gp:
+  name: "Grande Prairie Regional College"
+  url: "https://www.gprc.ab.ca/library/"
+macewan:
+  name: "MacEwan University"
+  url: "http://library.macewan.ca/"
+keyano:
+  name: "Keyano College"
+  url: "http://www.keyano.ca/Services/Library"
+kings:
+  name: "King's University College"
+  url: "https://www.kingsu.ca/library"
+lakeland:
+  name: "Lakeland College"
+  url: "http://www.lakelandcollege.ca/commons/library/"
+newman:
+  name: "Newman Theological College"
+  url: "http://www.newman.edu/Library"
+norquest:
+  name: "Norquest College"
+  url: "https://library.norquest.ca/"
+nlc:
+  name: "Northern Lakes College"
+  url: "https://www.northernlakescollege.ca/current-students/library-services"
+olds:
+  name: "Olds College"
+  url: "https://www.oldscollege.ca/learning-commons/library/"
+reddeer:
+  name: "Red Deer College"
+  url: "http://rdc.ab.ca/current-students/library/library"
+uofa:
+  name: "University of Alberta"
+  url: "https://library.ualberta.ca"
+vanguard:
+  name: "Vanguard College"
+  url: "https://www.vanguardcollege.com/library/"
+gov:
+  name: "Alberta Government"
+  url: "https://www.servicealberta.ca/alberta-government-library.cfm"
+innovates:
+  name: "Alberta Innovates - Technology Futures"
+  url: "http://www.albertatechfutures.ca/"
+abhealth:
+  name: "Alberta Health Services"
+  url: "https://www.neoslibraries.ca/"
+covenant:
+  name: "Covenant Health"
+  url: "https://www.covenanthealth.ca/"
