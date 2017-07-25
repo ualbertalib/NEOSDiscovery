@@ -1,20 +1,38 @@
 .navbar-inverse {
   background-color:#207399;
+  border-color: #273946;
 }
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
 }
 #header-navbar .navbar-brand {
   background-image:none;
-  color:#fff;
+  color:#FFFBED;
   text-indent:0;
+  margin:0 20px 0 0;
+  width:100px;
+  padding: 5px;
+  text-align: center;
+  height: 70px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+#header-navbar .navbar-brand span{
+  display: block;
+  font-size: 30px;
+  border:2px solid #FFFBED;
+  border-width: 2px 0;
+  padding: 5px;
+  margin-top: 5px;
 }
 .navbar-header img{
   background-color:#fff;
 }
-
-#holdings{
-  padding-top: 10px;
+.navbar-static-top {
+    border-width:5px 0;
+}
+#search-navbar {
+    padding:10px 0;
 }
 #holdings table{
   width: 100%;
