@@ -1,12 +1,12 @@
 <%- @libraries = YAML.load_file("config/libraries.yml") %>
   <div class="row">
     <div class="col-sm-6">
-    <h2>NEOS Library Consortium Catalogue</h2>
       <%- if params.has_key?(:lib) %>
         <%- @library = params[:lib] %>
         <h2><%= @libraries[@library]["name"] %></h2>
         <p>This is some welcome text</p>
       <%- else %>
+      <h2>NEOS Library Consortium Catalogue</h2>
       <ul> 
         <%- @libraries.each do |key, value| %>
           <li>
