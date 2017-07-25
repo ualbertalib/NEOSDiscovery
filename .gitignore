@@ -1,1 +1,4 @@
 tmp
+config/blacklight.yml
+log/development.log
+.DS_Store
