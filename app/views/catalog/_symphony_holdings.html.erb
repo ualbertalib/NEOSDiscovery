@@ -12,11 +12,12 @@
   <% @links = @urls.reduce Hash.new, :merge if @urls %>
 
   <% for item in @holdings %>
+    <% if @links %>
+      <% @links.each{|link| %>
+        <% @current_link = link.last if link.first.include?(@locations[item[:location].downcase.gsub("_","")].gsub("Internet","")) %>
 
-    <% @links.each{|link| %>
-      <% @current_link = link.last if link.first.include?(@locations[item[:location].downcase.gsub("_","")].gsub("Internet","")) %>
-
-    <% } %>
+      <% } %>
+    <% end %>
 
     <% @unavailable = true if @statuses[item[:status].to_s.downcase] == "unavailable" %>
     <tr>
