@@ -39,6 +39,26 @@
   float: right;
   margin: 0 20px 5px 0;
 }
+#documents .document .document-title-heading{
+  font-size: 17px;
+  line-height: 24px;
+}
+.hold {
+    background-color: #207399;
+    -webkit-background-size: 8px;
+    background-size: 8px;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+.hold:hover{
+  color: #fff;
+  background-color: #273946;
+}
 #holdings table{
   width: 100%;
 }
