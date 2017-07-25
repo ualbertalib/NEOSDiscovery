@@ -19,6 +19,12 @@ class CatalogController < ApplicationController
       @holdable = @holdings.first[:holdable]
       @holdings.sort! { |a,b| b[:location].downcase <=> a[:location].downcase }
     end
+
+    if @document['title_display']
+      @document['title_display'] = "#{@document['title_display'].first}: #{@document['subtitle_display'].first}" if @document['subtitle_display']
+    else
+      @document['title_display'] = "Untitled document"
+    end
   end
 
 
