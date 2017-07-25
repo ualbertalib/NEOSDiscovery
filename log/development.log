@@ -14350,3 +14350,927 @@ Looking for document partial show_default
   Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.5ms)
   Rendered shared/_footer.html.erb (0.0ms)
 Completed 200 OK in 818ms (Views: 147.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:16:24 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.7ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (579.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (69.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (21.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (40.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (280.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (285.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (16.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (38.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (58.9ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.3ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (13.9ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.7ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (412.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (51.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (555.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (852.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (12.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (6.7ms)
+  Rendered shared/_header_navbar.html.erb (29.8ms)
+  Rendered shared/_ajax_modal.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 1875ms (Views: 1244.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:17:04 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (402.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (6.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (21.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (40.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (204.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (208.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (15.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (36.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (54.4ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (2.4ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (367.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (49.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (495.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (713.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (0.9ms)
+  Rendered shared/_header_navbar.html.erb (21.3ms)
+  Rendered shared/_ajax_modal.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1201ms (Views: 791.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:19:40 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (412.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (5.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (31.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (45.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (20.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (17.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (238.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (243.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (14.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (33.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (52.2ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (1.8ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (365.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (47.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (487.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (739.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (11.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (0.9ms)
+  Rendered shared/_header_navbar.html.erb (22.4ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1232ms (Views: 813.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:25:14 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (175.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (7.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (21.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (52.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (14.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (228.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (233.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (7.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (15.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (37.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (58.6ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (2.0ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (379.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (50.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (514.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (756.8ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (11.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (1.1ms)
+  Rendered shared/_header_navbar.html.erb (22.3ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1025ms (Views: 842.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:26:51 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (121.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (6.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (14.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (28.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (40.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (21.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (228.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (232.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (13.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (33.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (53.1ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (2.0ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (369.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (48.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (494.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (736.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (10.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (0.8ms)
+  Rendered shared/_header_navbar.html.erb (21.7ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 989ms (Views: 859.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/neos-blacklight.self-d0241f98c7fb8bd2cf51e55a2dec582334a5f660d5d8e49aeb1b2b441a9cb505.css?body=1" for ::1 at 2017-07-25 11:26:52 -0600
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:27:07 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (152.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (6.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (24.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (46.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (19.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (232.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (237.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (14.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (35.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (55.8ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.3ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (2.9ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (392.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (51.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (522.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (769.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (11.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (1.0ms)
+  Rendered shared/_header_navbar.html.erb (23.2ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 1071ms (Views: 911.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/neos-blacklight.self-d47aa45eaec8e18ef3e42d8b8a6a7e3cee79bb56ca14313236cce5046d4f4c1e.css?body=1" for ::1 at 2017-07-25 11:27:09 -0600
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:27:33 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (100.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (7.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (14.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (27.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (58.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (17.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (16.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (28.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (270.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (275.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (14.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (37.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (57.3ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (2.2ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.7ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (417.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (55.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (554.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (838.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (11.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (1.0ms)
+  Rendered shared/_header_navbar.html.erb (23.1ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1224ms (Views: 1115.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/neos-blacklight.self-938b2ef3827f2d52936e5f2d45d9db58cd83ec74175e56a92092bbc69851ae28.css?body=1" for ::1 at 2017-07-25 11:27:35 -0600
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:27:44 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (337.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (8.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (14.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (26.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (43.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (9.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (221.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (226.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (14.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (34.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (53.0ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (1.8ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (386.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (49.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (512.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (748.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (10.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (1.1ms)
+  Rendered shared/_header_navbar.html.erb (22.1ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1217ms (Views: 873.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/neos-blacklight.self-95b3ae7069f2aa630e699d4a0e3a2c2a2461febc8f56c6b1af3238f1527132b2.css?body=1" for ::1 at 2017-07-25 11:27:45 -0600
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:28:02 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (98.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (7.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (26.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (49.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (14.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (15.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (233.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (238.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (5.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (14.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (36.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (54.8ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (1.9ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (407.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (52.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (538.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (785.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (1.0ms)
+  Rendered shared/_header_navbar.html.erb (22.0ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1014ms (Views: 906.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/neos-blacklight.self-96044eceebc9eaa873116a1fd74ea106d4a670cedef1fe59d1263a9b04c6f485.css?body=1" for ::1 at 2017-07-25 11:28:03 -0600
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:28:39 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (98.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (7.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (14.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (27.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (12.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (52.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (15.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (16.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (243.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (248.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (5.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (13.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (34.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (53.3ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (2.2ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.8ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (395.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (51.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (524.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (782.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (11.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (1.0ms)
+  Rendered shared/_header_navbar.html.erb (22.4ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1014ms (Views: 908.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/neos-blacklight.self-94deb565d1f9db97b0826894c4e972d92bc98586d1590a292d1b907df255cb62.css?body=1" for ::1 at 2017-07-25 11:28:40 -0600
+
+
+Started GET "/?f%5Binstitution_tesim%5D%5B%5D=Concordia+Lutheran+Seminary&lib=lakeland" for ::1 at 2017-07-25 11:28:51 -0600
+Processing by CatalogController#index as HTML
+  Parameters: {"f"=>{"institution_tesim"=>["Concordia Lutheran Seminary"]}, "lib"=>"lakeland"}
+  [1m[35mSearch Load (0.3ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (28, 27)  ORDER BY updated_at desc
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["{!term f=institution_tesim}Concordia Lutheran Seminary", "source:Symphony"], "hl.fl"=>[], "rows"=>10, "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc"}
+Solr fetch (103.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (6.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (13.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (25.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (48.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (15.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (15.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.9ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (10.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facet_limit.html.erb (11.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_facets.html.erb (233.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_sidebar.html.erb (238.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_constraints.html.erb (6.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_paginate_compact.html.erb (14.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_widget.html.erb (1.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_per_page_widget.html.erb (1.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_view_type_group.html.erb (0.1ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_sort_and_per_page.html.erb (34.8ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_header.html.erb (54.9ms)
+Looking for document index partial document_list
+Looking for document partial index_header_list_journal
+Looking for document partial index_header_list_default
+Looking for document partial index_header_journal
+Looking for document partial index_header_default
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "guest_xWXFDsnyc8-et1eQaiiT_1501001873_1@example.com"]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2 AND "bookmarks"."document_type" = $3 AND "bookmarks"."document_id" IN ('2869692', '6243337', '7349462', '7420781', '6815681', '6609256', '6601203', '6713969', '6275523', '6277464')  [["user_id", 2], ["user_type", "User"], ["document_type", "SolrDocument"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (2.1ms)
+Looking for document partial thumbnail_list_journal
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_journal
+Looking for document partial thumbnail_default
+Looking for document partial index_list_journal
+Looking for document partial index_list_default
+Looking for document partial index_journal
+Looking for document partial index_default
+Looking for document partial index_header_list_book
+Looking for document partial index_header_list_default
+Looking for document partial index_header_book
+Looking for document partial index_header_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+Looking for document partial thumbnail_list_book
+Looking for document partial thumbnail_list_default
+Looking for document partial thumbnail_book
+Looking for document partial thumbnail_default
+Looking for document partial index_list_book
+Looking for document partial index_list_default
+Looking for document partial index_book
+Looking for document partial index_default
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.6ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.4ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_bookmark_control.html.erb (0.5ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_document.html.erb (394.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_results_pagination.html.erb (52.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_results.html.erb (524.7ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/index.html.erb within layouts/blacklight (772.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 2], ["user_type", "User"]]
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_bookmark.html.erb (1.2ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/blacklight/nav/_search_history.html.erb (0.3ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_user_util_links.html.erb (11.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/catalog/_search_form.html.erb (0.9ms)
+  Rendered shared/_header_navbar.html.erb (22.5ms)
+  Rendered shared/_ajax_modal.html.erb (0.0ms)
+  Rendered /Users/nnunn/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/blacklight-6.1.0/app/views/_flash_msg.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1005ms (Views: 895.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/neos-blacklight.self-0b93fb5d1369e442bc99bec9333d8e96a369b10b71789ea1113216cb6f436e5c.css?body=1" for ::1 at 2017-07-25 11:28:52 -0600
