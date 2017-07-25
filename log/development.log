@@ -16711,3 +16711,406 @@ Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47
 
 
 Started GET "/assets/favicon-b4185c7dd08c0b4f2142c58bbcca322b3a01f50adc3413438b98be2b664bb4b6.ico" for ::1 at 2017-07-25 11:29:27 -0600
+
+
+Started GET "/advanced" for ::1 at 2017-07-25 11:35:41 -0600
+
+ActionController::RoutingError (No route matches [GET] "/advanced"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.7ms)
+
+
+Started GET "/advanced" for ::1 at 2017-07-25 11:35:51 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/advanced"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.7ms)
+
+
+Started GET "/advanced" for ::1 at 2017-07-25 11:53:34 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AdvancedController#index as HTML
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["source:Symphony"], "hl.fl"=>[], "rows"=>"0", "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc", "q"=>"{!lucene}*:*"}
+Solr fetch (374.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_form.html.erb (4.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/index.html.erb within layouts/blacklight (23.5ms)
+Completed 500 Internal Server Error in 419ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `to_unsafe_h' for {}:ActiveSupport::HashWithIndifferentAccess):
+    1:   <% unless (search_context_str = render_search_to_s( advanced_search_context)).blank? %>
+    2:     <div class="constraints well search_history">
+    3:       <h4><%= t 'blacklight_advanced_search.form.search_context' %></h4>
+    4:       <%= search_context_str %>
+  blacklight (6.1.0) lib/blacklight/search_state.rb:19:in `initialize'
+  blacklight_advanced_search (6.3.1) lib/blacklight_advanced_search/advanced_query_parser.rb:13:in `new'
+  blacklight_advanced_search (6.3.1) lib/blacklight_advanced_search/advanced_query_parser.rb:13:in `initialize'
+  blacklight_advanced_search (6.3.1) lib/blacklight_advanced_search/render_constraints_override.rb:95:in `new'
+  blacklight_advanced_search (6.3.1) lib/blacklight_advanced_search/render_constraints_override.rb:95:in `render_search_to_s_q'
+  blacklight (6.1.0) app/helpers/blacklight/search_history_constraints_helper_behavior.rb:15:in `render_search_to_s'
+  blacklight_advanced_search (6.3.1) app/views/advanced/_advanced_search_form.html.erb:1:in `__home_asdp__rvm_gems_ruby_______gems_blacklight_advanced_search_______app_views_advanced__advanced_search_form_html_erb___949648618_88787080'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.6) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:51:in `render_partial'
+  actionview (4.2.6) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  blacklight_advanced_search (6.3.1) app/views/advanced/index.html.erb:13:in `__home_asdp__rvm_gems_ruby_______gems_blacklight_advanced_search_______app_views_advanced_index_html_erb__449352685_89335340'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.6) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.6) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/asdp/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.0ms)
+Started GET "/advanced" for ::1 at 2017-07-25 13:26:16 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdvancedController#index as HTML
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["source:Symphony"], "hl.fl"=>[], "rows"=>"0", "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc", "q"=>"{!lucene}*:*"}
+Solr fetch (456.5ms)
+  Rendering /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/index.html.erb within layouts/blacklight
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_fields.html.erb (0.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (151.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (45.6ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (25.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_facets.html.erb (229.9ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_form.html.erb (237.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/index.html.erb within layouts/blacklight (275.3ms)
+Completed 500 Internal Server Error in 781ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7: 
+     8:         <span class="label-and-count">
+     9:             <%= label_tag "f_inclusive_#{solr_field}_#{item.value.parameterize}"  do %>
+    10:                 <%= render_facet_value(solr_field, item, :suppress_link => true) %>  
+    11:             <% end %>
+    12:         <span>
+    13:   </li>
+  
+app/helpers/blacklight/facets_helper_behavior.rb:125:in `block in render_facet_value'
+app/helpers/blacklight/facets_helper_behavior.rb:124:in `render_facet_value'
+app/helpers/blacklight/facets_helper_behavior.rb:50:in `render_facet_limit'
+app/helpers/blacklight/facets_helper_behavior.rb:24:in `block in render_facet_partials'
+app/helpers/blacklight/facets_helper_behavior.rb:23:in `map'
+app/helpers/blacklight/facets_helper_behavior.rb:23:in `render_facet_partials'
+Started GET "/advanced" for ::1 at 2017-07-25 13:30:41 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdvancedController#index as HTML
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["source:Symphony"], "hl.fl"=>[], "rows"=>"0", "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc", "q"=>"{!lucene}*:*"}
+Solr fetch (407.3ms)
+  Rendering /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/index.html.erb within layouts/blacklight
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_fields.html.erb (0.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (95.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (18.6ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (12.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_facets.html.erb (133.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_form.html.erb (138.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/index.html.erb within layouts/blacklight (159.6ms)
+Completed 500 Internal Server Error in 584ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7: 
+     8:         <span class="label-and-count">
+     9:             <%= label_tag "f_inclusive_#{solr_field}_#{item.value.parameterize}"  do %>
+    10:                 <%= render_facet_value(solr_field, item, :suppress_link => true) %>  
+    11:             <% end %>
+    12:         <span>
+    13:   </li>
+  
+app/helpers/blacklight/facets_helper_behavior.rb:126:in `block in render_facet_value'
+app/helpers/blacklight/facets_helper_behavior.rb:124:in `render_facet_value'
+app/helpers/blacklight/facets_helper_behavior.rb:50:in `render_facet_limit'
+app/helpers/blacklight/facets_helper_behavior.rb:24:in `block in render_facet_partials'
+app/helpers/blacklight/facets_helper_behavior.rb:23:in `map'
+app/helpers/blacklight/facets_helper_behavior.rb:23:in `render_facet_partials'
+Started GET "/advanced" for ::1 at 2017-07-25 13:32:51 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (undefined local variable or method `load_lookup_tables' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:18:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/catalog_controller.rb:2:in `<top (required)>'
+Started GET "/advanced" for ::1 at 2017-07-25 13:33:18 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (undefined method `load_lookup_tables' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:18:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/catalog_controller.rb:2:in `<top (required)>'
+Started GET "/advanced" for ::1 at 2017-07-25 13:34:40 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdvancedController#index as HTML
+Solr query: get select {"qt"=>nil, "facet.field"=>["electronic_tesim", "institution_tesim", "location_tesim", "lc_1letter_facet", "format", "pub_date", "author_display", "subject_topic_facet", "language_facet", "subject_geo_facet", "subject_era_facet", "owning_library_tesim"], "facet.query"=>[], "facet.pivot"=>[], "fq"=>["source:Symphony"], "hl.fl"=>[], "rows"=>"0", "facet"=>true, "f.location_tesim.facet.sort"=>"index", "f.lc_1letter_facet.facet.limit"=>11, "f.format.facet.limit"=>11, "f.author_display.facet.limit"=>21, "f.subject_topic_facet.facet.limit"=>21, "f.language_facet.facet.limit"=>11, "f.subject_geo_facet.facet.limit"=>11, "f.subject_era_facet.facet.limit"=>11, "sort"=>"score desc, pub_date_sort desc, title_sort asc", "q"=>"{!lucene}*:*"}
+Solr fetch (591.6ms)
+  Rendering /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/index.html.erb within layouts/blacklight
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_fields.html.erb (0.6ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (83.9ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (13.1ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (27.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (9.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (12.9ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (44.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (14.6ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (13.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (12.7ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (9.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (9.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_facet_limit.html.erb (9.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_facets.html.erb (277.0ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_submit_btns.html.erb (0.9ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_form.html.erb (285.8ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/_advanced_search_help.html.erb (0.2ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight_advanced_search-6.3.1/app/views/advanced/index.html.erb within layouts/blacklight (312.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "guest_cxPizyCzQ-xsnSEMkz_6_1500391546_1@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."user_type" = $2[0m  [["user_id", 1], ["user_type", "User"]]
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight-6.10.1/app/views/blacklight/nav/_bookmark.html.erb (15.3ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight-6.10.1/app/views/blacklight/nav/_search_history.html.erb (0.5ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight-6.10.1/app/views/_user_util_links.html.erb (81.0ms)
+  Rendered catalog/_search_form.html.erb (1.9ms)
+  Rendered shared/_header_navbar.html.erb (122.8ms)
+  Rendered shared/_ajax_modal.html.erb (0.4ms)
+  Rendered /home/asdp/.rvm/gems/ruby-2.4.1/gems/blacklight-6.10.1/app/views/_flash_msg.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 5118ms (Views: 4458.1ms | ActiveRecord: 43.3ms)
+
+
+Started GET "/assets/blacklight_advanced_search/advanced_results.self-398970bc03a1030717dc0009e66560cc744d3b48b109f4ceaff6706a953cac39.css?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/blacklight_advanced_search/blacklight_advanced_search_styles.self-240b3783e034206e4690351592041640c26a6e90b400ecf1c4463096df7393d0.css?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/application.self-7ea84b205ddf6d6a4c89c85c0c11169be082729e145e919da1708100cdb127ee.css?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/blacklight.self-c56c83c82683ae0c04a0c1c5b50b908b89a746df296bce8024a72ec9a73d76bf.css?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/neos-blacklight.self-665b2d2ba34b9d35382d3d1da6e85845312ca37cbf9771bc73a698e2e8c919b4.css?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/blacklight_advanced_search.self-cc0962a1fdf1162e64afeb7d2d99d5c51138b69186ee83db980fe447b885c6b1.css?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/blacklight_advanced_search.self-f156efb06054b3ea6f06e5b1191dab6e9ff02880c4d61bee48117ceaaff29ce6.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/blacklight/autocomplete.self-292f009b8820d5fd3280ad7ea9d5817f8ab277040574b256984730ae0f476013.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/blacklight/core.self-e031fb8c0ca3c81276d0c01490bcff1366bcec5ed64f6901b6a5c229dfd0829f.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/application.self-71f8c2f4f57651945365bd80976acc923ee78318d1bee1f2d0a82498e16529af.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
+Started GET "/assets/twitter/typeahead/typeahead.bundle.self-07ac3152c91da597ccb340e32a6b84f92c29bb7b89c65ec5b22b4cdbbed44de0.js?body=1" for ::1 at 2017-07-25 13:34:46 -0600
