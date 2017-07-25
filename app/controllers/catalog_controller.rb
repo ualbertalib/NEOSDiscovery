@@ -25,6 +25,13 @@ class CatalogController < ApplicationController
     else
       @document['title_display'] = "Untitled document"
     end
+
+    if @document["subject_t"]
+        @subjects = []
+        @document["subject_t"].each do |subject|
+            @subjects << subject.split("--")
+        end
+    end
   end
 
 
