@@ -40,7 +40,14 @@
     <% end %>
   <div id="sidebar" class="col-sm-3 top-margin">
   <%= render_document_sidebar_partial %>
-</div>
+  </div>
+
+  <div class="visible-xs">
+    <% if @holdable == "true" %>
+      <%= render "place_hold" %>
+    <% end %>
+
+  </div>
  
 <div class="col-sm-12">
 
