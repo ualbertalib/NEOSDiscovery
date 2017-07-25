@@ -13,7 +13,7 @@
 
 development:
   adapter: solr
-  url: "http://tottenham.library.ualberta.ca:8080/solr/discovery"
+  url: "http://aston.library.ualberta.ca:8080/solr/discovery-prod"
 
 test: &test
   adapter: solr

@@ -41,8 +41,7 @@ class SymphonyService
   end
 
   def links
-    ua, nonua = populate_electronic_items
-    return ua, nonua
+    return populate_electronic_items
   end
 
   private

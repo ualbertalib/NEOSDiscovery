@@ -9,11 +9,22 @@
 
   <br />
 
-  <% for item in @holdings %> 
+  <% @links = @urls.reduce Hash.new, :merge if @urls %>
+
+  <% for item in @holdings %>
+
+    <% @links.each{|link| %>
+      <% @current_link = link.last if link.first.include?(@locations[item[:location].downcase.gsub("_","")].gsub("Internet","")) %>
+
+    <% } %>
 
     <% @unavailable = true if @statuses[item[:status].to_s.downcase] == "unavailable" %>
     <tr>
-      <td><%= item[:call] %></td>
+      <% if item[:call] == "Internet Access" %>
+        <td><a href="<%= @current_link %>" target="_blank">Internet Access</a></td>
+      <% else %>
+        <td><%= item[:call] %></td>
+      <% end %>
       <% if item[:status] == "CHECKEDOUT" %>
         <% if item[:due] %>
           <td>Due: <%= Date.parse(item[:due]) %></td>

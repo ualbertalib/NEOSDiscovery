@@ -26,6 +26,10 @@ class CatalogController < ApplicationController
     else
       @document['title_display'] = "Untitled document"
     end
+
+    if @document["url_fulltext_display"]
+      @urls = holdings(@document, :links)
+    end
   end
 
 
