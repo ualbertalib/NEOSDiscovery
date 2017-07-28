@@ -1,4 +1,4 @@
-burman:
+burmanuniversity:
   name: "Burman University"
   url: "https://www.burmanu.ca/library"
   proxy: "http://ezproxy.achcu.talonline.ca/login?url="
@@ -22,7 +22,7 @@ lakeland:
   name: "Lakeland College"
   url: "http://www.lakelandcollege.ca/commons/library/"
   proxy: "http://ezproxy.avc.talonline.ca/login?url="
-macewan:
+macewanuniversity:
   name: "MacEwan University"
   url: "https://library.macewan.ca/"
   proxy: "http://ezproxy.macewan.ca/login?url="
@@ -46,10 +46,10 @@ reddeer:
   name: "Red Deer College"
   url: "http://rdc.ab.ca/current-students/library/library"
   proxy: "http://ardc.talonline.ca/login?url="
-uofa:
+universityofalberta:
   name: "University of Alberta"
   url: "https://library.ualberta.ca"
-  proxy: "login.ezproxy.library.ualberta.ca/login?url="
+  proxy: "https://login.ezproxy.library.ualberta.ca/login?url="
 vanguard:
   name: "Vanguard College"
   url: "https://www.vanguardcollege.com/library/"
