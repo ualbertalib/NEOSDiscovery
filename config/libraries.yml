@@ -1,54 +1,72 @@
 burman:
   name: "Burman University"
   url: "https://www.burmanu.ca/library"
+  proxy: "http://ezproxy.achcu.talonline.ca/login?url="
 concordia:
   name: "Concordia University of Edmonton"
   url: "http://library.concordia.ab.ca/"
+  proxy: "http://aec.talonline.ca/login?url="
 gp:
   name: "Grande Prairie Regional College"
   url: "https://www.gprc.ab.ca/library/"
-macewan:
-  name: "MacEwan University"
-  url: "http://library.macewan.ca/"
+  proxy: "http://agpc.talonline.ca/login?url="
 keyano:
   name: "Keyano College"
   url: "http://www.keyano.ca/Services/Library"
+  proxy: "http://ezproxy.afmk.talonline.ca/login?url="
 kings:
   name: "King's University College"
   url: "https://www.kingsu.ca/library"
+  proxy: "http://aekc.talonline.ca/login?url="
 lakeland:
   name: "Lakeland College"
   url: "http://www.lakelandcollege.ca/commons/library/"
+  proxy: "http://ezproxy.avc.talonline.ca/login?url="
+macewan:
+  name: "MacEwan University"
+  url: "https://library.macewan.ca/"
+  proxy: "http://ezproxy.macewan.ca/login?url="
 newman:
   name: "Newman Theological College"
   url: "http://www.newman.edu/Library"
+  proxy: "http://ezproxy.newman.edu:81/login"
 norquest:
   name: "Norquest College"
   url: "https://library.norquest.ca/"
+  proxy: "http://auth01.norquest.ca/login?url="
 nlc:
   name: "Northern Lakes College"
   url: "https://www.northernlakescollege.ca/current-students/library-services"
+  proxy: "http://ezproxy.asav.talonline.ca/login?url="
 olds:
   name: "Olds College"
   url: "https://www.oldscollege.ca/learning-commons/library/"
+  proxy: "http://ezproxy.aoac.talonline.ca/login?url="
 reddeer:
   name: "Red Deer College"
   url: "http://rdc.ab.ca/current-students/library/library"
+  proxy: "http://ardc.talonline.ca/login?url="
 uofa:
   name: "University of Alberta"
   url: "https://library.ualberta.ca"
+  proxy: "login.ezproxy.library.ualberta.ca/login?url="
 vanguard:
   name: "Vanguard College"
   url: "https://www.vanguardcollege.com/library/"
+  proxy: ""
 gov:
   name: "Alberta Government"
   url: "https://www.servicealberta.ca/alberta-government-library.cfm"
+  proxy: "http://login.ezproxy.library.ualberta.ca/login?url="
 innovates:
   name: "Alberta Innovates - Technology Futures"
   url: "http://www.albertatechfutures.ca/"
+  proxy: ""
 abhealth:
   name: "Alberta Health Services"
   url: "https://www.neoslibraries.ca/"
+  proxy: "http://ahs.idm.oclc.org/login?url="
 covenant:
   name: "Covenant Health"
   url: "https://www.covenanthealth.ca/"
+  proxy: "http://ahs.idm.oclc.org/login?url="
