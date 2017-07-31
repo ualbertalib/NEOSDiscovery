@@ -1,4 +1,4 @@
-burman:
+burmanuniversity:
   name: "Burman University"
   url: "https://www.burmanu.ca/library"
   neosurl: "https://www.neoslibraries.ca/member-libraries/burman-university/"
@@ -28,7 +28,7 @@ lakeland:
   url: "http://www.lakelandcollege.ca/commons/library/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/lakeland/"
   proxy: "http://ezproxy.avc.talonline.ca/login?url="
-macewan:
+macewanuniversity:
   name: "MacEwan University"
   url: "https://library.macewan.ca/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/macewan/"
@@ -58,11 +58,11 @@ reddeer:
   url: "http://rdc.ab.ca/current-students/library/library"
   neosurl: "https://www.neoslibraries.ca/member-libraries/red-deer-college-library/"
   proxy: "http://ardc.talonline.ca/login?url="
-uofa:
+universityofalberta:
   name: "University of Alberta"
   url: "https://library.ualberta.ca"
+  proxy: "https://login.ezproxy.library.ualberta.ca/login?url="
   neosurl: "https://www.neoslibraries.ca/member-libraries/university-of-alberta/"
-  proxy: "login.ezproxy.library.ualberta.ca/login?url="
 vanguard:
   name: "Vanguard College"
   url: "https://www.vanguardcollege.com/library/"

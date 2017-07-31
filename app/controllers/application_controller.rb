@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
     @locations ||= YAML.load_file("#{Rails.root}/config/locations.yml")
     @libraries ||= YAML.load_file("#{Rails.root}/config/libraries.yml")
     @item_types ||= YAML.load_file("#{Rails.root}/config/item_types.yml")
+    @libraries ||= YAML.load_file("#{Rails.root}/config/libraries.yml")
   end
 
 end

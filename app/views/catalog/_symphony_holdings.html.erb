@@ -10,11 +10,13 @@
   <br />
 
   <% @links = @urls.reduce Hash.new, :merge if @urls %>
-
   <% for item in @holdings %>
+    <% @current_loc = @locations[item[:location].downcase.gsub("_","")].gsub("Internet","") %>
+      <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
+      <% @proxy = @library['proxy'] %>
     <% if @links %>
       <% @links.each{|link| %>
-        <% @current_link = link.last if link.first.include?(@locations[item[:location].downcase.gsub("_","")].gsub("Internet","")) %>
+        <% @current_link = "#{@proxy}#{link.last}" if link.first.include?(@current_loc) %>
 
       <% } %>
     <% end %>
