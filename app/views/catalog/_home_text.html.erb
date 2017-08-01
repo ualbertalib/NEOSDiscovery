@@ -1,13 +1,12 @@
-<%- @libraries = YAML.load_file("config/libraries.yml") %>
-  <div class="row">
-    <div class="col-sm-10">
-      <%- if params.has_key?(:lib) %>
-        <%- @library = params[:lib] %>
-        <h2 class="welcome-head"><%= @libraries[@library]["name"] %> NEOS Catalogue</h2>
-        <%- @homeurl = @libraries[@library]["url"] %>
-        <%- @neosurl = @libraries[@library]["neosurl"] %>
-        <p class="welcome">Welcome to the NEOS Catalogue for <%= @libraries[@library]["name"] %> Library. Use the search box above to Search the Catalogue or use the links on the left to browse. If you would like more information about <%= @libraries[@library]["name"] %> Library you can visit their <%= link_to "Website", @homeurl %>  or their <%= link_to "NEOS information page", @neosbruurl %>.</p>
-      <%- else %>
+<div class="row">
+  <div class="col-sm-10">
+    <%- if params.has_key?(:lib) %>
+      <%- @library = params[:lib] %>
+      <h2 class="welcome-head"><%= @libraries[@library]["name"] %> NEOS Catalogue</h2>
+      <%- @homeurl = @libraries[@library]["url"] %>
+      <%- @neosurl = @libraries[@library]["neosurl"] %>
+      <p class="welcome">Welcome to the NEOS Catalogue for <%= @libraries[@library]["name"] %> Library. Use the search box above to Search the Catalogue or use the links on the left to browse. If you would like more information about <%= @libraries[@library]["name"] %> Library you can visit their <%= link_to "Website", @homeurl %>  or their <%= link_to "NEOS information page", @neosurl %>.</p>
+    <%- else %>
       <h2 class="welcome-head">NEOS Library Consortium Catalogue</h2>
       <ul> 
         <%- @libraries.each do |key, value| %>
@@ -16,6 +15,6 @@
           </li>
         <%- end %>
       </ul>
-    </div>
+    <%- end %>
   </div>
-<%- end %>
+</div>
