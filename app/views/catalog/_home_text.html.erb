@@ -5,7 +5,7 @@
       <h2 class="welcome-head"><%= @libraries[@library]["name"] %> NEOS Catalogue</h2>
       <%- @homeurl = @libraries[@library]["url"] %>
       <%- @neosurl = @libraries[@library]["neosurl"] %>
-      <p class="welcome">Welcome to the NEOS Catalogue for <%= @libraries[@library]["name"] %> Library. Use the search box above to Search the Catalogue or use the links on the left to browse. If you would like more information about <%= @libraries[@library]["name"] %> Library you can visit their <%= link_to "Website", @homeurl %>  or their <%= link_to "NEOS information page", @neosbruurl %>.</p>
+      <p class="welcome">Welcome to the NEOS Catalogue for <%= @libraries[@library]["name"] %> Library. Use the search box above to Search the Catalogue or use the links on the left to browse. If you would like more information about <%= @libraries[@library]["name"] %> Library you can visit their <%= link_to "Website", @homeurl %>  or their <%= link_to "NEOS information page", @neosurl %>.</p>
     <%- else %>
       <h2 class="welcome-head">NEOS Library Consortium Catalogue</h2>
       <ul> 
