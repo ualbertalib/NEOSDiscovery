@@ -13,12 +13,12 @@
 
 development:
   adapter: solr
-  url: "http://aston.library.ualberta.ca:8080/solr/discovery-prod"
+  url: "http://tottenham.library.ualberta.ca:8080/solr/discovery"
 
 test: &test
   adapter: solr
-  url: <%= "http://127.0.0.1:#{ENV['TEST_JETTY_PORT'] || 8888}/solr/blacklight-core" %>
+  url: "http://tottenham.library.ualberta.ca:8080/solr/discovery"
 
 production:
   adapter: solr
-  url: <%= ENV['SOLR_URL'] || "http://127.0.0.1:8983/solr/blacklight-core" %>
+  url: "http://tottenham.library.ualberta.ca:8080/solr/discovery"
