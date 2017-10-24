@@ -13,17 +13,17 @@ gp:
   url: "https://www.gprc.ab.ca/library/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/grande-prairie-regional-college/"
   proxy: "http://agpc.talonline.ca/login?url="
-keyano:
+keyanocollege:
   name: "Keyano College"
   url: "http://www.keyano.ca/Services/Library"
   neosurl: "https://www.neoslibraries.ca/member-libraries/keyano-college-library/"
   proxy: "http://ezproxy.afmk.talonline.ca/login?url="
-kings:
+kingscollege:
   name: "King's University College"
   url: "https://www.kingsu.ca/library"
   neosurl: "https://www.neoslibraries.ca/member-libraries/the-kings-university-library/"
   proxy: "http://aekc.talonline.ca/login?url="
-lakeland:
+lakelandcollege:
   name: "Lakeland College"
   url: "http://www.lakelandcollege.ca/commons/library/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/lakeland/"
@@ -53,7 +53,7 @@ olds:
   url: "https://www.oldscollege.ca/learning-commons/library/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/olds-college-library/"
   proxy: "http://ezproxy.aoac.talonline.ca/login?url="
-reddeer:
+reddeercollege:
   name: "Red Deer College"
   url: "http://rdc.ab.ca/current-students/library/library"
   neosurl: "https://www.neoslibraries.ca/member-libraries/red-deer-college-library/"
