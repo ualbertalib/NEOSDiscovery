@@ -61,6 +61,7 @@ norqwest: "Norquest College - Westmount"
 old: "Olds College"
 olds: "Olds College"
 reddeerc: "Red Deer College"
+reddeer: "Red Deer College"
 taylor: "Vanguard College - Taylor"
 uaarchiv: "University of Alberta - Archives"
 uaarchives: "University of Alberta - Archives"
@@ -81,3 +82,6 @@ uaspcol: "University of Alberta - Bruce Peel Special Collections"
 uaspcoll: "University of Alberta - Bruce Peel Special Collections"
 uatechserv: "University of Alberta - Bibliographic Services"
 vanguard: "Vanguard College"
+nlcgr: Northern Lakes College - Grouard
+nlcint: Northern Lakes College - Internet
+nlcsl: Northern Lakes College - Slave Lake

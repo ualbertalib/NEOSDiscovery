@@ -11,10 +11,21 @@
 
   <% @links = @urls.reduce Hash.new, :merge if @urls %>
   <% for item in @holdings %>
-    <% @current_loc = @locations[item[:location].downcase.gsub("_","")].split(" - ").first %>
-    <% puts "CURRENT LOC: #{@current_loc}" %>
+    <% if @locations[item[:location].downcase.gsub("_","")].include?(" - ") %>
+      <% @current_loc = @locations[item[:location].downcase.gsub("_","")].split(" - ").first %>
+    <% else %>
+      <% @current_loc = @locations[item[:location].downcase.gsub("_","")].split("College").first %>
+    <% end %>
+    <% if @current_loc.include? "Grande Prairie" then @current_loc = "gp" end %>
+    <% if @current_loc.include? "Concordia" then @current_loc = "concordia" end %>
+    <% if @current_loc.include? "Alberta Health" then @current_loc = "abhealth" end %>
+    <% if @current_loc.include? "Northern Lakes" then @current_loc = "nlc" end %>
+    <% if @current_loc.include? "Newman" then @current_loc = "newman" end %>
+    <% if @current_loc.include? "Government" then @current_loc = "gov" end %>
+    <% if @current_loc.include? "King" then @current_loc = "kings" end %>
       <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
-      <% @proxy = @library['proxy'] %>
+      <% puts "PROXY: #{@library['proxy']}" %>
+      <% @proxy = "" #@library['proxy'] %>
     <% if @links %>
       <% @links.each{|link| %>
         <% @current_link = "#{@proxy}#{link.last}" if link.first.include?(@current_loc) %>
