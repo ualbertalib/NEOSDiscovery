@@ -16,6 +16,7 @@
     <% else %>
       <% @current_loc = @locations[item[:location].downcase.gsub("_","")].split("College").first %>
     <% end %>
+    <% puts "CURRENT LOC: #{@current_loc}" %>
     <% if @current_loc.include? "Grande Prairie" then @current_loc = "gp" end %>
     <% if @current_loc.include? "Concordia" then @current_loc = "concordia" end %>
     <% if @current_loc.include? "Alberta Health" then @current_loc = "abhealth" end %>
@@ -23,6 +24,12 @@
     <% if @current_loc.include? "Newman" then @current_loc = "newman" end %>
     <% if @current_loc.include? "Government" then @current_loc = "gov" end %>
     <% if @current_loc.include? "King" then @current_loc = "kings" end %>
+    <% if @current_loc.include? "Norq" then @current_loc = "norquest" end %>
+    <% if @current_loc.include? "Lake" then @current_loc = "lakeland" end %>
+    <% if @current_loc.include? "MacEwan" then @current_loc = "macewanuniversity" end %>
+    <% if @current_loc.include? "Free" then @current_loc = "free" end %>
+    <% if @current_loc.include? "University of Alberta" then @current_loc = "universityofalberta" end %>
+    <% if @current_loc.include? "Covenant" then @current_loc = "covenant" end %>
       <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
       <% puts "PROXY: #{@library['proxy']}" %>
       <% @proxy = "" #@library['proxy'] %>

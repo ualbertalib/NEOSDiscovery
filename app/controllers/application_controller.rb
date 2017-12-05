@@ -11,9 +11,11 @@ class ApplicationController < ActionController::Base
 
   def load_lookup_tables
     @statuses ||= YAML.load_file("#{Rails.root}/config/statuses.yml")
+    @languages ||= YAML.load_file("#{Rails.root}/config/languages.yml")
     @locations ||= YAML.load_file("#{Rails.root}/config/locations.yml")
-    @libraries ||= YAML.load_file("#{Rails.root}/config/libraries.yml")
     @item_types ||= YAML.load_file("#{Rails.root}/config/item_types.yml")
+    @library_codes ||= YAML.load_file("#{Rails.root}/config/library_codes.yml")
+    @circ_rules ||= YAML.load_file("#{Rails.root}/config/circ_rules.yml")
     @libraries ||= YAML.load_file("#{Rails.root}/config/libraries.yml")
   end
 

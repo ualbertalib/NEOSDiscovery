@@ -39,7 +39,7 @@ newman:
   neosurl: "https://www.neoslibraries.ca/member-libraries/newman-theological-college-library/"
   proxy: "http://ezproxy.newman.edu:81/login"
 norquest:
-  name: "Norquest College"
+  name: "NorQuest College"
   url: "https://library.norquest.ca/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/norquest-college-library/"
   proxy: "http://auth01.norquest.ca/login?url="
@@ -88,3 +88,8 @@ covenant:
   url: "https://www.covenanthealth.ca/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/covenant-health-library-services/"
   proxy: "http://ahs.idm.oclc.org/login?url="
+free:
+  name: "Free E-Resources"
+  url: ""
+  neosurl: ""
+  proxy: ""
