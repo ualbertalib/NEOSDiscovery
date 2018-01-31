@@ -1,17 +1,31 @@
 <%# default partial to display solr document fields in catalog index view -%>
 <div class="col-sm-9">
-	<dl class="document-metadata dl-horizontal dl-invert">
-  		<% index_fields(document).each do |field_name, field| -%>
-    		<% if should_render_index_field? document, field %>
-	    		<dt class="blacklight-<%= field_name.parameterize %>"><%= render_index_field_label document, field: field_name %></dt>
-	    		<dd class="blacklight-<%= field_name.parameterize %>"><%= render_index_field_value document, field: field_name %></dd>
-    		<% end -%>
-  		<% end -%>
-	</dl>
+  <dl class="document-metadata dl-horizontal dl-invert">
+    <% index_fields(document).each do |field_name, field| -%>
+      <% if should_render_index_field? document, field %>
+        <dt class="blacklight-<%= field_name.parameterize %>"><%= render_index_field_label document, field: field_name %></dt>
+        <dd class="blacklight-<%= field_name.parameterize %>"><%= render_index_field_value document, field: field_name %></dd>
+      <% end -%>
+    <% end -%>
+<!-- Display owning libraries -->
+<% if document.to_h["source_tesim"] and document.to_h["source_tesim"].first == "Symphony" %> 
+  <dt class="blacklight-format">Copies owned by: </dt>
+  <dd class="blacklight-format">
+  <% if document["held_by_tesim"] %>
+    <% @held_by_locations = [] %>
+    <% document["held_by_tesim"].first.split.each do |held_by| %>
+      <% @held_by_locations << @library_codes[held_by.to_i] %>
+    <% end %>
+    <%= @held_by_locations.join(", ") %>
+  <% end %>
+<% end %>
+
+  </dl>
 </div>
 
 <div class="col-sm-3 results-img hidden-xs">
-	<% if document.to_h["isbn_tesim"] %>
-		<img src="https://books.google.com/books?vid=ISBN<%= document.to_h["isbn_tesim"].first %>&amp;printsec=frontcover&amp;img=1&amp;zoom=1">
-	<% end %>
+  <% if document.to_h["isbn_tesim"] %>
+    <img src="https://books.google.com/books?vid=ISBN<%= document.to_h["isbn_tesim"].first %>&amp;printsec=frontcover&amp;img=1&amp;zoom=1">
+  <% end %>
 </div>
+

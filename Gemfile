@@ -58,3 +58,4 @@ gem 'blacklight-marc', '~> 6.0'
 gem "blacklight_range_limit"
 gem 'traject', '2.3.3'
 gem 'sqlite3'
+gem 'blacklight_range_limit'

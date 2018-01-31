@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 class CatalogController < ApplicationController
+
+  include BlacklightRangeLimit::ControllerOverride
   include BlacklightAdvancedSearch::Controller
 
   include Blacklight::Catalog
@@ -40,6 +42,13 @@ class CatalogController < ApplicationController
 
 
       configure_blacklight do |config|
+    # default advanced config values
+    config.advanced_search ||= Blacklight::OpenStructWithHashAccess.new
+    # config.advanced_search[:qt] ||= 'advanced'
+    config.advanced_search[:url_key] ||= 'advanced'
+    config.advanced_search[:query_parser] ||= 'dismax'
+    config.advanced_search[:form_solr_parameters] ||= {}
+
         # default advanced config values
         config.advanced_search ||= Blacklight::OpenStructWithHashAccess.new
         # config.advanced_search[:qt] ||= 'advanced'
@@ -115,13 +124,13 @@ class CatalogController < ApplicationController
         config.add_facet_field 'location_tesim', :label => 'Library', sort: 'index'
         config.add_facet_field 'lc_1letter_facet', :label => 'Call Number', :limit => 10
         config.add_facet_field 'format', :label => 'Format', :limit => 10
-        config.add_facet_field 'pub_date', :label => 'Publication Year', :range => true
+        config.add_facet_field 'pub_date', :label => 'Publication Year', range: true
         config.add_facet_field 'author_display', :label => 'Author', :limit => 20 
         config.add_facet_field 'subject_topic_facet', :label => 'Subject', :limit => 20 
         config.add_facet_field 'language_facet', :label => 'Language', :limit => 10
         config.add_facet_field 'subject_geo_facet', :label => 'Geographic Region', :limit => 10 
         config.add_facet_field 'subject_era_facet', :label => 'Historic Period', :limit => 10
-        config.add_facet_field 'owning_library_tesim', :label => 'Owning Library'
+        #config.add_facet_field 'owning_library_tesim', :label => 'Owning Library'
 
 
         # Have BL send all facet field names to Solr, which has been the default
