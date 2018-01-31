@@ -31,11 +31,11 @@
     <% if @current_loc.include? "University of Alberta" then @current_loc = "universityofalberta" end %>
     <% if @current_loc.include? "Covenant" then @current_loc = "covenant" end %>
       <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
-      <% puts "PROXY: #{@library['proxy']}" %>
-      <% @proxy = "" #@library['proxy'] %>
+      <% @proxy = @library['proxy'] %>
     <% if @links %>
       <% @links.each{|link| %>
-        <% @current_link = "#{@proxy}#{link.last}" if link.first.include?(@current_loc) %>
+        <% puts "LINK: #{@current_loc}" %>
+        <% @current_link = "#{@proxy}#{link.last}" %>
 
       <% } %>
     <% end %>
