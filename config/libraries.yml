@@ -72,7 +72,7 @@ gov:
   name: "Alberta Government"
   url: "https://www.servicealberta.ca/alberta-government-library.cfm"
   neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-government-library/"
-  proxy: "http://login.ezproxy.library.ualberta.ca/login?url="
+  proxy: "https://ezproxy.aee.talonline.ca/login?url="
 innovates:
   name: "Alberta Innovates - Technology Futures"
   url: "http://www.albertatechfutures.ca/"
