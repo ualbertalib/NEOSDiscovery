@@ -1,0 +1,184 @@
+agdex: AGDEX Collection
+atc: Academic Technologies Centre
+ag_bus_dev: Agricultural Business Development Branch, Olds
+ag_tech: Agricultural Technology Centre, Lethbridge
+agl_arts: Alberta Government Library - Capital Arts
+ahfmr: Alberta Heritage Foundation for Medical Research
+annualrept: Annual Reports
+archives: Archives
+artists: Artists' Books
+lost-assum: Assumed lost
+atlasarcve: Atlas Archives
+atlas_os: Atlas Oversize
+atlas: Atlases
+audio: Audiobooks/Sound Recordings
+avail_soon: Available soon
+inprocess: Being Catalogued
+cataloging: Being Catalogued
+repair: Being Repaired
+reshelving: Being Reshelved
+inshipping: Being shipped to destination
+bindery: Bindery
+bison_elk: Bison and Elk Centres, Leduc
+borealwood: Boreal Wood Centre
+calendars: Calendars
+ccbcc: Canadian Children's Book Centre Collection
+canc_order: Cancelled Order
+capsites: Cap Sites
+cait: Centre for Agri-Industrial Technology
+checkedout: Checked Out
+chinese: Chinese Collection
+circ_desk: Circulation Desk
+polar: Circumpolar
+polaratlas: Circumpolar Atlases
+polar_cab: Circumpolar Cabinet
+polar_micr: Circumpolar Microforms
+polar_os: Circumpolar Oversize
+polar_pamp: Circumpolar Pamphlets
+polar_per: Circumpolar Periodicals
+polar_ref: Circumpolar Reference
+lost-claim: Claims lost
+closestack: Closed Stacks
+writing: Concordia Writing Collection
+cdc_south: Crop Diversification Centre, Brooks
+currentper: Current Periodicals
+curriculum: Curriculum
+curr_auth: Curriculum Authorized
+curr_fre: Curriculum French Collection
+curr_guide: Curriculum Guides
+currgdhist: Curriculum Guides Historical Collection
+curr_hist: Curriculum Historical Collection
+curr_media: Curriculum Media
+currmdhist: Curriculum Media Historical
+curmediaos: Curriculum Media Oversize
+curr_micro: Curriculum Micromaterials
+curr_over: Curriculum Oversize
+curr_ref: Curriculum Reference
+curric_ya: Curriculum YA Fiction
+dvd: DVD Collection
+stor_dark: Dark Storage - Non-circulating
+data: Data Library
+data_ref: Data Reference
+dept_loan: Department Loan
+distance: Distance Education Materials-ESL
+dsb: Donald School of Business [Red Deer]
+easy_read: Easy Reading Collection
+electrical: Electrical - Fairview College/Grande Prairie Site
+esl: English as a Second Language
+ethics: Ethics Collection
+art_cat: Exhibition Catalogues
+facultypub: Faculty Publications
+fiction: Fiction
+field_crop: Field Crops Branch, Lacombe
+floor_1: Floor 1
+floor_2: Floor 2
+floor_3: Floor 3
+floor_4: Floor 4
+food_proc: Food Processing Centre, Leduc
+foreign: Foreign Language Collection - Concordia
+fort_chip: Fort Chipewyan
+german: German Collection
+gov_info: Government Information
+govpub: Government Publications
+graphic: Graphic Novel
+studyguide: Guides for Composition, Grammar etc.
+heritage: Heritage
+horse_ind: Horse Industry Branch, Calgary
+in_process: In Process
+intransit: In Transit
+indexes: Indexes
+info_desk: Information Desk
+ir_office: Institutional Research Office
+internet: Internet
+longovrdue: Items Long Overdue
+javitch: Javitch Special Collection
+juvenile: Juvenile Collection
+kscentre: Keyano College Skill Centre
+lab: Lab
+last_copy: Last copy item being moved to Bard
+legal: Legal
+leisure: Leisure Reading
+lost: Lost
+lost-paid: Lost and Paid For
+mainstacks: Main Stacks
+makerspace: Maker Space
+map_arch_o: Map Archive Oversize
+map_archve: Map Archives
+map_cabt: Map Cabinet
+map_os: Map Oversize
+map_ref: Map Reference
+map_stack: Map Stacks
+maps: Maps
+m_family: Marital and Family Studies
+media: Media
+micropaque: Micro-opaque
+microfiche: Microfiche
+microfilm: Microfilm
+microform: Microforms
+micro_ref: Microforms Reference
+missing: Missing
+museum: Museum Items (NLC)
+music: Music
+music_cd: Music CD
+music_lp: Music LP Record
+musicmedia: Music Media
+music_mini: Music Miniature Scores
+music_os: Music Oversize
+music_ref: Music Reference
+niosh: NIOSH Reports
+newreceipt: New Receipt
+newspapers: Newspapers
+next_hold: Next Hold in Queue
+nursng_res: Nursing Reserve
+off_campus: Off Campus Resource - Ask for Assistance
+binderyspc: Off-site Book Restoration
+office: Office
+holds: On Hold
+ill_: On Loan to Another Library
+ill: On Loan to Another Library
+on-order: On Order
+on-order-h: On Order - Holdable
+on_shelf: On Shelf
+on_the_fly: On the Fly
+oversize: Oversize
+over_flat: Oversize Flat
+pamphlet: Pamphlets
+paperbacks: Paperbacks
+parish: Parish Services
+patfamcoll: Patient Family Collection
+patristic: Patristic Literature
+peaceriver: Peace River Campus (NLC)
+prcc: Peace River Correctional Centre
+periodical: Periodicals
+pop-up: Pop-Up Books
+biblio: Reading Room
+reference: Reference
+ref_aux: Reference Auxiliary
+regulatory: Regulatory
+reserves: Reserve Desk
+reserves_: Reserve Desk
+sec_stacks: Secondary Stacks
+avail_nh: See link above
+specialcol: Special Collections
+st_albert: St. Albert
+stacks: Standard Shelving Location
+stacks_: Standard Shelving Location
+standards: Standards
+statistics: Statistics
+stonypt: Stony Pt. Campus (NLC)
+storage: Storage
+sust_agric: Sustainable Agriculture Resource Centre
+tech_desk: Technology Desk
+tecdsk_res: Technology Helpdesk Reserve
+theses: Theses
+display: Topical Displays
+feature: Topics Related to Post-Secondary Education
+trades: Trades
+trades_sa: Trades - St. Albert
+trad_med: Traditional Medicine
+libuse: Unavailable
+stor_rcrf: Unavailable - stored during RCRF move
+unknown: Unknown
+videos: Videos
+discard: Withdrawn
+zines: Zines
