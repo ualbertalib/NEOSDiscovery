@@ -1,0 +1,7 @@
+<div class="footer">
+<div class="container"> 
+<%- if @library -%>
+	<%= link_to @libraries[@library]["name"]+" Library Website", @homeurl %>  <%= link_to @libraries[@library]["name"]+" Library NEOS information Website", @neosurl %> 
+<%- end -%>
+</div>
+</div>
