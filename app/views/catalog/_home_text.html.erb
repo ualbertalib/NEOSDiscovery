@@ -1,3 +1,5 @@
+
+
 <div class="row">
   <div class="col-sm-10">
     <%- if params.has_key?(:lib) %>
@@ -8,13 +10,14 @@
       <p class="welcome">Welcome to the NEOS Catalogue for <%= @libraries[@library]["name"] %> Library. Use the search box above to Search the Catalogue or use the links on the left to browse. If you would like more information about <%= @libraries[@library]["name"] %> Library you can visit their <%= link_to "Website", @homeurl %>  or their <%= link_to "NEOS information page", @neosurl %>.</p>
     <%- else %>
       <h2 class="welcome-head">NEOS Library Consortium Catalogue</h2>
-      <ul>
+      <ul class="library-list">
         <% @display_libs = {} %>
         <%- @libraries.each do |key, value| %>
           <% @display_libs[value["name"]] = key unless key == "free" %>
         <% end %>
         <% @display_libs.sort.each do |value, key| %>
           <li>
+            <%= link_to image_tag("library-images/"+key+".jpg"), "/?lib="+key %>
             <%= link_to value, "/?lib="+key %>
           </li>
         <%- end %>

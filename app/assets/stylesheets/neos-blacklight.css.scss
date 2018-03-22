@@ -7,7 +7,7 @@ html, body {
 }
 .content-inside {
   padding: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 .footer {
   margin-top: -100px;
@@ -58,6 +58,32 @@ html, body {
 }
 #search-navbar {
     padding:10px 0;
+}
+.library-list{
+  list-style: none;
+  padding:0;
+ 
+}
+.library-list>li{
+  width:150px;
+  height: 200px;
+  float: left;
+  margin: 0 20px 20px 0;
+    text-align: center;
+  }
+  .library-list>li>a{
+    font-size:16px;
+
+  }
+.library-list>li>a>img{
+  width:150px;
+  height: 150px;
+  border-radius:10px;
+  margin-bottom:5px;
+  box-shadow: 2px 2px 2px #888888;
+}
+.library-list>li>a>img:hover{
+  opacity: 0.8;
 }
 .welcome{
   font-size:20px;
