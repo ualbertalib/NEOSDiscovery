@@ -10,12 +10,15 @@
   
       <%- if params.has_key?(:lib) %>
         <%- @library = params[:lib] %>
-        <%= link_to image_tag(@library), @libraries[@library]["url"] %>
-      <%- end %>
-       <%- if @brand %>
+        <%= link_to image_tag(@library), root_path(:lib => @library) %>
+      
+       <%- elsif @brand %>
         <%- @library = @brand %>
-        <%= link_to image_tag(@library), @libraries[@library]["url"] %>
-      <%- end %>
+        <%= link_to image_tag(@library), root_path(:lib => @library) %>
+     
+       <%- else %>
+       <%= link_to image_tag("neos-logo", :class => "neos"), root_path %>
+       <%- end %>
       <p class="neos-tag">NEOS Catalogue</p>
     </div>
     <div class="collapse navbar-collapse" id="user-util-collapse">
