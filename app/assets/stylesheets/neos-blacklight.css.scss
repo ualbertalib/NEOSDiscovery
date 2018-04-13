@@ -55,8 +55,11 @@ html, body {
 }
 .navbar-header img.neos, .footer img{
   background-color:transparent;
-  height:90px;
-  padding-top:20px;
+  height:80px;
+  padding-top: 10px; 
+}
+.navbar-header img.neos{
+ margin-bottom: 20px;
 }
 .navbar-static-top {
     border-width:2px 0;
@@ -134,30 +137,92 @@ html, body {
   color: #fff;
   background-color: #273946;
 }
+#subject-list{
+  margin-left: 20px;
+}
 .subject-chain-links{
-  padding-left: 10px;
+  padding-left: 30px;
 }
 .subject-chain-links a{
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 #holdings table{
   width: 100%;
+  font-size: 15px;
+  margin-top:20px;
 }
 #holdings table th{
   font-weight: bold;
   background-color: #B2C6D1;
-  padding: 5px 25px 5px 10px;
-  border-left: 3px solid #fff;
+  padding: 5px 20px;
+  font-size:20px;
 }
 #holdings table td{
-  padding: 5px 25px 5px 15px;
-  border-left: 3px solid #fff;
-  border-bottom: 1px solid #fff;
+  padding: 10px 15px 10px 15px;
+  border: 3px solid #fff;
+  border-width: 3px 0;
   background-color: #eceff4;
 }
 #holdings table td.call-number{
   min-width: 250px;
+}
+#holdings>.statuses{
+  display:none;
+}
+.document h1{
+  font-size: 26px;
+}
+.loc-call{
+
+  display: block;
+
+  padding: 5px 0;
+}
+span.a-label{
+  display: inline;
+  font-size: 14px;
+  color: #666;
+  
+}
+.lib-loc{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.not-available{
+  padding:30px;
+  font-size:20px;
+  font-weight: bold;
+}
+.dl-horizontal{
+  margin-left: 20px;
+}
+.dl-horizontal dt {
+    float: left;
+    width: auto;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right:3px;
+}
+.dl-horizontal dd {
+    margin-left: auto;
+}
+.full-record-book-jacket{
+  padding-top: 20px;
+  text-align: center;
+}
+.full-record-book-jacket img{
+    border: 2px solid #000;
+  }
+  .full-record-book-jacket ul{
+    text-align: left;
+  }
+.nav > li > a {
+    padding: 5px 8px;
+}
+li.bookmark{
+  padding-left: 8px;
 }
 .holding-status, .holding-type{
   text-transform: capitalize;
@@ -168,8 +233,8 @@ html, body {
 .advanced_search{
   float: right;
 }
-.home-search{
-  padding-top: 100px;
+.home-search, .intro{
+  padding-top:80px;
 }
 .home-search .twitter-typeahead input.tt-input.form-control {
     height: 48px;
