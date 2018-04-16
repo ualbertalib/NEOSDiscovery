@@ -11,19 +11,16 @@ class CatalogController < ApplicationController
   def index
     super
     load_lookup_tables
+    if params.include?('lib')
+        $brand=params['lib']
+    else 
+        $brand="free"
+    end
   end
 
   def show
     super
     load_lookup_tables
-    @brandurl=request.headers["HTTP_REFERER"]
-    if @brandurl.include?('lib')
-        uri = URI.parse(@brandurl)
-        params = CGI.parse(uri.query)
-        @brand=params['lib'].first
-    else 
-        @brand="free"
-    end
     @holdings = []
     @holdings = holdings(@document, :items)
     unless @holdings.nil? || @holdings.first.nil?
