@@ -14,8 +14,11 @@ class CatalogController < ApplicationController
     if params.include?('lib')
         $brand=params['lib']
     else 
-        $brand="free"
+        $brand="neos"
     end
+        $libraryname= @libraries[$brand]["name"]
+        $homeurl = @libraries[$brand]["url"]
+        $neosurl= @libraries[$brand]["neosurl"]
   end
 
   def show

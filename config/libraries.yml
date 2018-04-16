@@ -93,3 +93,8 @@ free:
   url: ""
   neosurl: ""
   proxy: ""
+neos:
+  name: "NEOS Consortium"
+  url: "https://www.neoslibraries.ca/"
+  neosurl: "https://www.neoslibraries.ca/"
+  proxy: ""

@@ -36,9 +36,7 @@
         </div>
       <div class="col-sm-4 col-sm-offset-1 intro">
       
-      <%- @homeurl = @libraries[@library]["url"] %>
-      <%- @neosurl = @libraries[@library]["neosurl"] %>
-      <p class="welcome">Welcome to the NEOS Catalogue for the <strong><%= @libraries[@library]["name"] %> Library</strong>. Use the search box to search the Catalogue. If you would like more information about the <%= @libraries[@library]["name"] %> Library you can visit their <%= link_to "Website", @homeurl %>  or their <%= link_to "NEOS information page", @neosurl %>.</p>
+      <p class="welcome">Welcome to the NEOS Catalogue for the <strong><%= $libraryname %> Library</strong>. Use the search box to search the Catalogue. If you would like more information about the <%= $libraryname %> Library you can visit their <%= link_to "Website", $homeurl %>  or their <%= link_to "NEOS information page", $neosurl %>.</p>
     </div>
     <%- else %>
       <h2 class="welcome-head">NEOS Library Consortium Catalogue</h2>
@@ -46,7 +44,7 @@
       <ul class="library-list">
         <% @display_libs = {} %>
         <%- @libraries.each do |key, value| %>
-          <% @display_libs[value["name"]] = key unless key == "free" %>
+          <% @display_libs[value["name"]] = key unless key == "free" || key == "neos" %>
         <% end %>
         <% @display_libs.sort.each do |value, key| %>
           <li>

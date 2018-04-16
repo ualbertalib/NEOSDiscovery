@@ -5,7 +5,7 @@
 		</div>
 		<div class="col-sm-6 footer-links">
 			<%- if @library -%>
-				<%= link_to @libraries[@library]["name"]+" Library Website", @homeurl %>  <%= link_to @libraries[@library]["name"]+" Library NEOS information Website", @neosurl %> 
+				<%= link_to $libraryname+" Library Website", $homeurl %>  <%= link_to $libraryname+" Library NEOS information Website", $neosurl %> 
 			<%- end -%>
 		</div>
 	</div>
