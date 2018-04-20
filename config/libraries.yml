@@ -80,7 +80,7 @@ innovates:
   proxy: ""
 abhealth:
   name: "Alberta Health Services"
-  url: "https://www.neoslibraries.ca/"
+  url: "https://krs.libguides.com/home"
   neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-health-services/"
   proxy: "http://ahs.idm.oclc.org/login?url="
 covenant:
