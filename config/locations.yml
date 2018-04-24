@@ -1,88 +1,264 @@
-aegeo: "Alberta Geological Survey"
-aginternet: "Alberta Government Library - Internet"
-aglcap: "Alberta Government Library"
-ahsah: "Alberta Health Services - Alberta Hospital Edmonton"
-ahsahe: "Alberta Health Services - Alberta Hospital Edmonton"
-ahscenten: "Alberta Health Services - Centennial Centre"
-ahserc: "Alberta Health Services - Education Resource Centre"
-ahsmhrh: "Alberta Health Services - Medicine Hat Regional Hospital"
-ahsqeii: "Alberta Health Services - Queen Elizabeth II Hospital"
-ahsrah: "Alberta Health Services - Royal Alexandra Hospital"
-ahsreddr: "Alberta Health Services - Red Deer Regional Hospital"
-ahssturg: "Alberta Health Services - SturgeonIn TransitionExpect Delays"
-ahsplc: "Alberta Health Services - Peter Lougheed Centre"
-ahsrvgh: "Alberta Health Services - Rockyview General Hospital"
-ahstbcc: "Alberta Health Services - Tom Baker Cancer Centre"
-ahswhc: "Alberta Health Services - Women's Health Centre Alberta Children's Hospital"
-ahsach: "Alberta Health Services - Alberta Children's Hospital"
-ahsctr15: "Alberta Health Services - Centre 15"
-ahsctr: "Alberta Health Services - Centre 15"
-15: "Alberta Health Services - Centre 15"
-ahscross: "Alberta Health Services - Cross Cancer Institute"
-ahsint: "Alberta Health Services - Internet"
-ahskec: "Alberta Health Services - Kaye Edmonton Clinic"
-ahsglenrse: "Alberta Health Services - Glenrose Rehabilitation Hospital"
-ahsglenrs: "Alberta Health Services - Glenrose Rehabilitation Hospital"
-aitfcalg: "Alberta Innovates Technology Futures - Calgary"
-aitfc-fer: "Alberta Innovates Technology Futures - CFer Technologies"
-aitfcfer: "Alberta Innovates Technology Futures - CFer Technologies"
-aitfmw: "Alberta Innovates Technology Futures - Mill Woods"
-aitfveg: "Alberta Innovates Technology Futures - Vegreville"
-aitfdevon: "Alberta Innovates Technology Futures - Devon"
-concordia: "Concordia University of Edmonton"
-concordsem: "Concordia Lutheran Seminary"
-covenantgn: "Covenant Health - Grey Nuns Community Hospital"
-covenantmh: "Covenant Health - Misericordia Community Hospital"
-cross: "Alberta Health Services - Cross Cancer Institute"
-cuc: "Burman University"
-burman: "Burman University"
-gprc: "Grande Prairie Regional College"
-gprcfrvw: "Grande Prairie Regional College - Fairview"
-gprcgp: "Grande Prairie Regional College - Grande Prairie"
-gprcint: "Grande Prairie Regional College - Internet"
-grmacacc: "MacEwan University - Alberta College Campus"
-grmaccac: "MacEwan University - Centre for Arts & Communications"
-grmacint: "MacEwan University - Internet"
-grmacsoc: "MacEwan University - South CampusOn the MoveExpect Delay"
-grmactsv: "MacEwan University - Technical Services"
-grmacewan: "MacEwan University - City Centre Campus"
-justiceca: "Justice Canada"
-keyano: "Keyano College"
-king: "King's University"
-kings: "King's University"
-lakelndl: "Lakeland College - Lloydminster"
-lakelndll: "Lakeland College - Lloydminster"
-lakelndin: "Lakeland College - Internet"
-lakelndvr: "Lakeland College - Vermilion"
-neosfree: "NEOS Free Internet Resources"
-neosfre: "NEOS Free Internet Resources"
-newman: "Newman Theological College"
-norqmain: "Norquest College - Main Building"
-norqwest: "Norquest College - Westmount"
-old: "Olds College"
-olds: "Olds College"
-reddeerc: "Red Deer College"
-reddeer: "Red Deer College"
-taylor: "Vanguard College - Taylor"
-uaarchiv: "University of Alberta - Archives"
-uaarchives: "University of Alberta - Archives"
-uaaug: "University of Alberta - Augustana"
-uabard: "University of Alberta - Book and Record Depository"
-uabsj: "University of Alberta - Bibliothèque Saint-Jean"
-uabusi: "University of Alberta - Winspear Business"
-uabusiness: "University of Alberta - Winspear Business"
-uaeduc: "University of Alberta - HT Coutts Education"
-uahlthsc: "University of Alberta JW Scott Health Sciences"
-uahss: "University of Alberta - Rutherford Humanities & Social Science"
-uainternet: "University of Alberta - Internet"
-ualaw: "University of Alberta - JA Weir Law"
-uamath: "University of Alberta - Cameron Mathematics"
-uascitech: "University of Alberta - Cameron Science & Technology"
-uasjc: "University of Alberta - St Joseph's College"
-uaspcol: "University of Alberta - Bruce Peel Special Collections"
-uaspcoll: "University of Alberta - Bruce Peel Special Collections"
-uatechserv: "University of Alberta - Bibliographic Services"
-vanguard: "Vanguard College"
-nlcgr: Northern Lakes College - Grouard
-nlcint: Northern Lakes College - Internet
-nlcsl: Northern Lakes College - Slave Lake
+aegeo:  
+  name: "Alberta Geological Survey"
+  locationurl: "http://ags.aer.ca/about-the-ags/contact-us.htm"
+aginternet:  
+  name: "Alberta Government Library - Internet"
+  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-government-library/"
+aglcap:  
+  name: "Alberta Government Library"
+  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-government-library/"
+ahsah:  
+  name: "Alberta Health Services - Alberta Hospital Edmonton"
+  locationurl: 
+ahsahe:  
+  name: "Alberta Health Services - Alberta Hospital Edmonton"
+  locationurl: 
+ahscenten:  
+  name: "Alberta Health Services - Centennial Centre"
+  locationurl: 
+ahserc:  
+  name: "Alberta Health Services - Education Resource Centre"
+  locationurl: 
+ahsmhrh:  
+  name: "Alberta Health Services - Medicine Hat Regional Hospital"
+  locationurl: 
+ahsqeii:  
+  name: "Alberta Health Services - Queen Elizabeth II Hospital"
+  locationurl: 
+ahsrah:  
+  name: "Alberta Health Services - Royal Alexandra Hospital"
+  locationurl: 
+ahsreddr:  
+  name: "Alberta Health Services - Red Deer Regional Hospital"
+  locationurl: 
+ahssturg:  
+  name: "Alberta Health Services - SturgeonIn TransitionExpect Delays"
+  locationurl: 
+ahsplc:  
+  name: "Alberta Health Services - Peter Lougheed Centre"
+  locationurl: 
+ahsrvgh:  
+  name: "Alberta Health Services - Rockyview General Hospital"
+  locationurl: 
+ahstbcc:  
+  name: "Alberta Health Services - Tom Baker Cancer Centre"
+  locationurl: 
+ahswhc:  
+  name: "Alberta Health Services - Women's Health Centre Alberta Children's Hospital"
+  locationurl: 
+ahsach:  
+  name: "Alberta Health Services - Alberta Children's Hospital"
+  locationurl: 
+ahsctr15:   
+  name: "Alberta Health Services - Centre 15"
+  locationurl: 
+ahsctr:   
+  name: "Alberta Health Services - Centre 15"
+  locationurl: 
+15:   
+  name: "Alberta Health Services - Centre 15"
+  locationurl: 
+ahscross:   
+  name: "Alberta Health Services - Cross Cancer Institute"
+  locationurl: 
+ahsint:   
+  name: "Alberta Health Services - Internet"
+  locationurl: 
+ahskec:   
+  name: "Alberta Health Services - Kaye Edmonton Clinic"
+  locationurl: 
+ahsglenrse:   
+  name: "Alberta Health Services - Glenrose Rehabilitation Hospital"
+  locationurl: 
+ahsglenrs:   
+  name: "Alberta Health Services - Glenrose Rehabilitation Hospital"
+  locationurl: 
+aitfcalg:   
+  name: "Alberta Innovates Technology Futures - Calgary"
+  locationurl: 
+aitfc-fer:   
+  name: "Alberta Innovates Technology Futures - CFer Technologies"
+  locationurl: 
+aitfcfer:   
+  name: "Alberta Innovates Technology Futures - CFer Technologies"
+  locationurl: 
+aitfmw:   
+  name: "Alberta Innovates Technology Futures - Mill Woods"
+  locationurl: 
+aitfveg:   
+  name: "Alberta Innovates Technology Futures - Vegreville"
+  locationurl: 
+aitfdevon:   
+  name: "Alberta Innovates Technology Futures - Devon"
+  locationurl: 
+concordia:   
+  name: "Concordia University of Edmonton"
+  locationurl: 
+concordsem:   
+  name: "Concordia Lutheran Seminary"
+  locationurl: 
+covenantgn: 
+  name: "Covenant Health - Grey Nuns Community Hospital"
+  locationurl: https://www.neoslibraries.ca/member-libraries/covenant-health-library-services/grey-nuns-community-hospital-health-sciences-library/
+covenantmh:   
+  name: "Covenant Health - Misericordia Community Hospital"
+  locationurl: 
+cross:   
+  name: "Alberta Health Services - Cross Cancer Institute"
+  locationurl: 
+cuc:   
+  name: "Burman University"
+  locationurl: 
+burman:   
+  name: "Burman University"
+  locationurl: 
+gprc:   
+  name: "Grande Prairie Regional College"
+  locationurl: 
+gprcfrvw:   
+  name: "Grande Prairie Regional College - Fairview"
+  locationurl: 
+gprcgp:   
+  name: "Grande Prairie Regional College - Grande Prairie"
+  locationurl: 
+gprcint:   
+  name: "Grande Prairie Regional College - Internet"
+  locationurl: 
+grmacacc:   
+  name: "MacEwan University - Alberta College Campus"
+  locationurl: 
+grmaccac:   
+  name: "MacEwan University - Centre for Arts & Communications"
+  locationurl: 
+grmacint:   
+  name: "MacEwan University - Internet"
+  locationurl: 
+grmacsoc:   
+  name: "MacEwan University - South CampusOn the MoveExpect Delay"
+  locationurl: 
+grmactsv:   
+  name: "MacEwan University - Technical Services"
+  locationurl: 
+grmacewan:   
+  name: "MacEwan University - City Centre Campus"
+  locationurl: 
+justiceca:   
+  name: "Justice Canada"
+  locationurl: 
+keyano:   
+  name: "Keyano College"
+  locationurl: 
+king:   
+  name: "King's University"
+  locationurl: 
+kings:   
+  name: "King's University"
+  locationurl: 
+lakelndl:   
+  name: "Lakeland College - Lloydminster"
+  locationurl: 
+lakelndll:   
+  name: "Lakeland College - Lloydminster"
+  locationurl: 
+lakelndin:   
+  name: "Lakeland College - Internet"
+  locationurl: 
+lakelndvr:   
+  name: "Lakeland College - Vermilion"
+  locationurl: 
+neosfree:   
+  name: "NEOS Free Internet Resources"
+  locationurl: 
+neosfre:   
+  name: "NEOS Free Internet Resources"
+  locationurl: 
+newman:   
+  name: "Newman Theological College"
+  locationurl: 
+norqmain:   
+  name: "Norquest College - Main Building"
+  locationurl: 
+norqwest:   
+  name: "Norquest College - Westmount"
+  locationurl: 
+old:   
+  name: "Olds College"
+  locationurl: 
+olds:   
+  name: "Olds College"
+  locationurl: 
+reddeerc:   
+  name: "Red Deer College"
+  locationurl: 
+reddeer:   
+  name: "Red Deer College"
+  locationurl: 
+taylor:   
+  name: "Vanguard College - Taylor"
+  locationurl: 
+uaarchiv:   
+  name: "University of Alberta - Archives"
+  locationurl: "https://www.library.ualberta.ca/locations/archives"
+uaarchives:   
+  name: "University of Alberta - Archives"
+  locationurl: "https://www.library.ualberta.ca/locations/archives"
+uaaug:   
+  name: "University of Alberta - Augustana"
+  locationurl: "https://www.library.ualberta.ca/locations/augustana"
+uabard:   
+  name: "University of Alberta - Research and Collections Resource Facility"
+  locationurl: "https://www.library.ualberta.ca/locations/rcrf"
+uabsj:   
+  name: "University of Alberta - Bibliothèque Saint-Jean"
+  locationurl: "https://www.library.ualberta.ca/locations/bsj"
+uabusi:   
+  name: "University of Alberta - Winspear Business"
+  locationurl: "https://www.library.ualberta.ca/locations/winspear"
+uabusiness:   
+  name: "University of Alberta - Winspear Business"
+  locationurl: "https://www.library.ualberta.ca/locations/winspear"
+uaeduc:   
+  name: "University of Alberta - HT Coutts Education"
+  locationurl: "https://www.library.ualberta.ca/locations/coutts"
+uahlthsc:   
+  name: "University of Alberta JW Scott Health Sciences"
+  locationurl: "https://www.library.ualberta.ca/locations/scott"
+uahss:   
+  name: "University of Alberta - Rutherford Humanities & Social Science"
+  locationurl: "https://www.library.ualberta.ca/locations/rutherford"
+uainternet:   
+  name: "University of Alberta - Internet"
+  locationurl: 
+ualaw:   
+  name: "University of Alberta - JA Weir Law"
+  locationurl: "https://www.library.ualberta.ca/locations/law"
+uamath:   
+  name: "University of Alberta - Cameron Mathematics"
+  locationurl: "https://www.library.ualberta.ca/locations/cameron"
+uascitech:   
+  name: "University of Alberta - Cameron Science & Technology"
+  locationurl: "https://www.library.ualberta.ca/locations/cameron"
+uasjc:   
+  name: "University of Alberta - St Joseph's College"
+  locationurl: "https://www.library.ualberta.ca/locations/stjosephs"
+uaspcol:   
+  name: "University of Alberta - Bruce Peel Special Collections"
+  locationurl: "https://www.library.ualberta.ca/locations/bpsc"
+uaspcoll:   
+  name: "University of Alberta - Bruce Peel Special Collections"
+  locationurl: "https://www.library.ualberta.ca/locations/bpsc"
+uatechserv:   
+  name: "University of Alberta - Bibliographic Services"
+  locationurl: 
+vanguard:   
+  name: "Vanguard College"
+  locationurl: 
+nlcgr:   
+  name: "Northern Lakes College - Grouard"
+  locationurl: 
+nlcint:  
+  name: "Northern Lakes College - Internet"
+  locationurl: 
+nlcsl:   
+  name: "Northern Lakes College - Slave Lake"  
+  locationurl: 
