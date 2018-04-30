@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   get 'advanced' => 'advanced#index', as: 'advanced_search'
   match 'advanced/range_limit', :to => 'advanced#range_limit', :as => 'catalog_range_limit', :via=>[:get, :post]
 
+  resources :forms 
+  post "forms/send_email" => "forms#send_email"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

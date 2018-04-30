@@ -19,6 +19,9 @@
           <%= inner %>
         </li>
       <% end %>
+      <li class="send_correction">
+        <%= render "correction_form" %>
+      </li>
     </ul>
     </div>
     <div id="doc_<%= @document.id.to_s.parameterize %>" class="col-sm-5">
