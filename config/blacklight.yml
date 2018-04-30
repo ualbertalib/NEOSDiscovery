@@ -15,7 +15,7 @@
 
 development:
   adapter: solr
-  url: "http://amble.library.ualberta.ca:8080/solr/discovery"
+  url: "http://solrcloud-test.library.ualberta.ca:8080/solr/discovery-test"
 
 test: &test
   adapter: solr
