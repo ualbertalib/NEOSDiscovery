@@ -10,6 +10,9 @@
           <% if @holdable == "true" %>
       <%= render "place_hold" %>
     <% end %>
+          <% if @bookable == "true" %>
+      <%= render "book_item" %>
+    <% end %>
       <% if @document[:isbn_t] %>
         <img src="https://books.google.com/books?vid=ISBN<%= @document[:isbn_t].first %>&amp;printsec=frontcover&amp;img=1&amp;zoom=1">
       <% end %>
@@ -83,6 +86,9 @@
       <%= render "place_hold" %>
     <% end %>
 
+    <% if @bookable == "true" %>
+      <%= render "book_item" %>
+    <% end %>
   </div>
  
 

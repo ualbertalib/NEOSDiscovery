@@ -78,7 +78,7 @@ class SymphonyService
       type = get(item, "itemTypeID")
       location = get(item, "libraryID")
       public_note = get(item, "publicNote")
-      {item_id: item_id, status: status, call: call, location: location, type: type, copies: copies, due: due, summary_holdings: summary_holdings, public_note: public_note, holdable: holdable}
+      {item_id: item_id, status: status, call: call, location: location, type: type, copies: copies, due: due, summary_holdings: summary_holdings, public_note: public_note, holdable: holdable, bookable: bookable}
   end
 
   def populate_subitems(item)
@@ -92,7 +92,7 @@ class SymphonyService
       status == "CHECKEDOUT" ? due = get(subitem, "dueDate") : ""
       type = get(subitem, "itemTypeID")
       public_note = get(subitem, "publicNote")
-      subitems << {item_id: item_id, status: status, call: call, location: location, type: type, copies: copies, due: due, summary_holdings: summary_holdings, public_note: public_note, holdable: holdable}
+      subitems << {item_id: item_id, status: status, call: call, location: location, type: type, copies: copies, due: due, summary_holdings: summary_holdings, public_note: public_note, holdable: holdable, bookable: bookable}
     end
     subitems
   end
@@ -124,6 +124,10 @@ class SymphonyService
 
   def holdable
     @document.xpath("//xmlns:holdable").text
+  end
+
+  def bookable
+    @document.xpath("//xmlns:bookable").text
   end
 
   def nodes

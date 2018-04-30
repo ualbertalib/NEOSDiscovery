@@ -28,6 +28,7 @@ class CatalogController < ApplicationController
     @holdings = holdings(@document, :items)
     unless @holdings.nil? || @holdings.first.nil?
       @holdable = @holdings.first[:holdable]
+      @bookable = @holdings.first[:bookable]
       @holdings.sort! { |a,b| b[:location].downcase <=> a[:location].downcase }
     end
 
