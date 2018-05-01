@@ -3,6 +3,7 @@
        <%- if params.has_key?(:lib) %>
       <%- @library = params[:lib] %>
         <div class="col-sm-7 home-search">
+
           <%= form_tag search_action_url, method: :get, class: 'search-query-form clearfix', role: 'search' do %>
   <%= render_hash_as_hidden_fields(search_state.params_for_search.except(:q, :search_field, :qt, :page, :utf8)) %>
   <div class="input-group input-group-lg">
@@ -24,6 +25,7 @@
         <span class="glyphicon glyphicon-search"></span>
       </button>
     </span>
+
   </div>
 <% end %>
 
@@ -32,8 +34,11 @@
 <div class="navbar-form">
   <%= link_to 'More options', blacklight_advanced_search_engine.advanced_search_path(search_state.to_h), class: 'advanced_search btn btn-default'%>
 </div>
-
+<div class="col-md-12 feed">
+  <p>This is a beta version of the NEOS catalogue.</p> <p>Please give us <a href="https://goo.gl/forms/ZZyr3UP2bCjhsb003">your feedback</a> to help us make this service better!</p>
+</div>
         </div>
+
       <div class="col-sm-4 col-sm-offset-1 intro">
       
       <p class="welcome">Welcome to the NEOS Catalogue for the <strong><%= $libraryname %> Library</strong>. Use the search box to search the Catalogue. If you would like more information about the <%= $libraryname %> Library you can visit their <%= link_to "Website", $homeurl %>  or their <%= link_to "NEOS information page", $neosurl %>.</p>
