@@ -3,10 +3,10 @@ aegeo:
   locationurl: "http://ags.aer.ca/about-the-ags/contact-us.htm"
 aginternet:  
   name: "Alberta Government Library - Internet"
-  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-government-library/"
+  locationurl: "http://www.servicealberta.gov.ab.ca/alberta-government-library.cfm​ "
 aglcap:  
   name: "Alberta Government Library"
-  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-government-library/"
+  locationurl: "http://www.servicealberta.gov.ab.ca/alberta-government-library.cfm​ "
 ahsah:  
   name: "Alberta Health Services - Alberta Hospital Edmonton"
   locationurl: 
@@ -30,7 +30,7 @@ ahsrah:
   locationurl: 
 ahsreddr:  
   name: "Alberta Health Services - Red Deer Regional Hospital"
-  locationurl: 
+  locationurl: ​"https://krs.libguides.com/aboutus/rdrh​""
 ahssturg:  
   name: "Alberta Health Services - SturgeonIn TransitionExpect Delays"
   locationurl: 
@@ -39,7 +39,7 @@ ahsplc:
   locationurl: 
 ahsrvgh:  
   name: "Alberta Health Services - Rockyview General Hospital"
-  locationurl: 
+  locationurl: "​https://krs.libguides.com/aboutus/rgh​"
 ahstbcc:  
   name: "Alberta Health Services - Tom Baker Cancer Centre"
   locationurl: 
@@ -63,28 +63,28 @@ ahscross:
   locationurl: 
 ahsint:   
   name: "Alberta Health Services - Internet"
-  locationurl: 
+  locationurl: "​https://krs.libguides.com/home​"
 ahskec:   
   name: "Alberta Health Services - Kaye Edmonton Clinic"
-  locationurl: 
+  locationurl: "​https://krs.libguides.com/aboutus/kec​"
 ahsglenrse:   
   name: "Alberta Health Services - Glenrose Rehabilitation Hospital"
-  locationurl: 
+  locationurl: "​https://krs.libguides.com/aboutus/grh​"
 ahsglenrs:   
   name: "Alberta Health Services - Glenrose Rehabilitation Hospital"
-  locationurl: 
+  locationurl: "​https://krs.libguides.com/aboutus/grh​"
 aitfcalg:   
   name: "Alberta Innovates Technology Futures - Calgary"
   locationurl: 
 aitfc-fer:   
   name: "Alberta Innovates Technology Futures - CFer Technologies"
-  locationurl: 
+  locationurl: "​https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
 aitfcfer:   
   name: "Alberta Innovates Technology Futures - CFer Technologies"
-  locationurl: 
+  locationurl: "​https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
 aitfmw:   
   name: "Alberta Innovates Technology Futures - Mill Woods"
-  locationurl: 
+  locationurl: "​https://www.neoslibraries.ca/member-libraries/alberta-innovates/mill-woods-library/​"
 aitfveg:   
   name: "Alberta Innovates Technology Futures - Vegreville"
   locationurl: 
@@ -93,40 +93,40 @@ aitfdevon:
   locationurl: 
 concordia:   
   name: "Concordia University of Edmonton"
-  locationurl: 
+  locationurl: "​http://library.concordia.ab.ca/​"
 concordsem:   
   name: "Concordia Lutheran Seminary"
-  locationurl: 
+  locationurl: "​http://www.concordiasem.ab.ca/research/library_information.php​"
 covenantgn: 
   name: "Covenant Health - Grey Nuns Community Hospital"
-  locationurl: https://www.neoslibraries.ca/member-libraries/covenant-health-library-services/grey-nuns-community-hospital-health-sciences-library/
+  locationurl: ​"https://www.covenanthealth.ca/corporate-information/library-services"
 covenantmh:   
   name: "Covenant Health - Misericordia Community Hospital"
-  locationurl: 
+  locationurl: "​https://www.covenanthealth.ca/corporate-information/library-services​"
 cross:   
   name: "Alberta Health Services - Cross Cancer Institute"
   locationurl: 
 cuc:   
   name: "Burman University"
-  locationurl: 
+  locationurl: "​https://www.burmanu.ca/library/​"
 burman:   
   name: "Burman University"
-  locationurl: 
+  locationurl: "​https://www.burmanu.ca/library/​"
 gprc:   
   name: "Grande Prairie Regional College"
-  locationurl: 
+  locationurl: "​https://www.gprc.ab.ca/library"
 gprcfrvw:   
   name: "Grande Prairie Regional College - Fairview"
-  locationurl: 
+  locationurl: "​https://www.gprc.ab.ca/library"
 gprcgp:   
   name: "Grande Prairie Regional College - Grande Prairie"
-  locationurl: 
+  locationurl: "​https://www.gprc.ab.ca/library"
 gprcint:   
   name: "Grande Prairie Regional College - Internet"
-  locationurl: 
+  locationurl: "​https://www.gprc.ab.ca/library"
 grmacacc:   
   name: "MacEwan University - Alberta College Campus"
-  locationurl: 
+  locationurl: "​https://library.macewan.ca/locations#GR_MAC_ACC​"
 grmaccac:   
   name: "MacEwan University - Centre for Arts & Communications"
   locationurl: 
@@ -138,34 +138,34 @@ grmacsoc:
   locationurl: 
 grmactsv:   
   name: "MacEwan University - Technical Services"
-  locationurl: 
+  locationurl: "​https://library.macewan.ca/​"
 grmacewan:   
   name: "MacEwan University - City Centre Campus"
-  locationurl: 
+  locationurl: "​https://library.macewan.ca/​"
 justiceca:   
   name: "Justice Canada"
   locationurl: 
 keyano:   
   name: "Keyano College"
-  locationurl: 
+  locationurl: "​http://www.keyano.ca/Services/Library​"
 king:   
   name: "King's University"
-  locationurl: 
+  locationurl: "​https://www.kingsu.ca/library​"
 kings:   
   name: "King's University"
-  locationurl: 
+  locationurl: "​https://www.kingsu.ca/library​"
 lakelndl:   
   name: "Lakeland College - Lloydminster"
-  locationurl: 
+  locationurl: "​https://www.neoslibraries.ca/member-libraries/lakeland/lloydminster-campus-library/​"
 lakelndll:   
   name: "Lakeland College - Lloydminster"
-  locationurl: 
+  locationurl: "​https://www.neoslibraries.ca/member-libraries/lakeland/lloydminster-campus-library/​"
 lakelndin:   
   name: "Lakeland College - Internet"
-  locationurl: 
+  locationurl: "​​https://web.lakelandcollege.ca/commons/library/​"
 lakelndvr:   
   name: "Lakeland College - Vermilion"
-  locationurl: 
+  locationurl: "​https://www.neoslibraries.ca/member-libraries/lakeland/vermilion-campus-library/​"
 neosfree:   
   name: "NEOS Free Internet Resources"
   locationurl: 
@@ -174,28 +174,28 @@ neosfre:
   locationurl: 
 newman:   
   name: "Newman Theological College"
-  locationurl: 
+  locationurl: "​https://www.newman.edu/Library​"
 norqmain:   
   name: "Norquest College - Main Building"
-  locationurl: 
+  locationurl: "​https://library.norquest.ca/#main-library​"
 norqwest:   
   name: "Norquest College - Westmount"
-  locationurl: 
+  locationurl: "​https://library.norquest.ca/#westmount-library​"
 old:   
   name: "Olds College"
-  locationurl: 
+  locationurl: "​https://www.oldscollege.ca/student-life/learning-commons/index.html​"
 olds:   
   name: "Olds College"
-  locationurl: 
+  locationurl: "https://www.oldscollege.ca/student-life/learning-commons/index.html"
 reddeerc:   
   name: "Red Deer College"
-  locationurl: 
+  locationurl: "https://rdc.ab.ca/current-students/library/library​"
 reddeer:   
   name: "Red Deer College"
-  locationurl: 
+  locationurl: "https://rdc.ab.ca/current-students/library/library​"
 taylor:   
   name: "Vanguard College - Taylor"
-  locationurl: 
+  locationurl: "http://www.taylor-edu.ca/seminary/library"
 uaarchiv:   
   name: "University of Alberta - Archives"
   locationurl: "https://www.library.ualberta.ca/locations/archives"
@@ -252,13 +252,13 @@ uatechserv:
   locationurl: 
 vanguard:   
   name: "Vanguard College"
-  locationurl: 
+  locationurl: "​http://www.vanguardcollege.com/library/​"
 nlcgr:   
   name: "Northern Lakes College - Grouard"
-  locationurl: 
+  locationurl: "​https://www.neoslibraries.ca/member-libraries/northern-lakes-college/​"
 nlcint:  
   name: "Northern Lakes College - Internet"
-  locationurl: 
+  locationurl: "​https://www.northernlakescollege.ca/current-students/library-services​"
 nlcsl:   
   name: "Northern Lakes College - Slave Lake"  
-  locationurl: 
+  locationurl: ​"https://www.northernlakescollege.ca/current-students/library-services​""
