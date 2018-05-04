@@ -122,7 +122,7 @@ module Blacklight::FacetsHelperBehavior
     if facet_field == "location_tesim"
       path = path_for_facet(facet_field, item)
       content_tag(:span, :class => "facet-label") do
-        link_to_unless(options[:suppress_link], facet_display_value(facet_field, @locations[item.value]), path, :class=>"facet_select")
+        link_to_unless(options[:suppress_link], facet_display_value(facet_field, @locations[item.value]["name"]), path, :class=>"facet_select")
       end + render_facet_count(item.hits)
     elsif facet_field == "languagenote_tesim"
       path = path_for_facet(facet_field, item)
