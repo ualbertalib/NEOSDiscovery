@@ -205,7 +205,7 @@ uaarchives:
 uaaug:   
   name: "University of Alberta - Augustana"
   locationurl: "https://www.library.ualberta.ca/locations/augustana"
-uabard:   
+uarcrf:   
   name: "University of Alberta - Research and Collections Resource Facility"
   locationurl: "https://www.library.ualberta.ca/locations/rcrf"
 uabsj:   
