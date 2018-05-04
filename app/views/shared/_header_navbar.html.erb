@@ -10,10 +10,10 @@
   
       <%- if $brand %>
         <%- @library = $brand %>
-        <%= link_to image_tag(@library), root_path(:lib => @library) %>
+        <%= link_to image_tag(@library)+".jpg", root_path(:lib => @library) %>
         <p class="neos-tag">NEOS Catalogue</p>
       <%- else %>
-        <%= link_to image_tag("neos-logo", :class => "neos"), root_path %>
+        <%= link_to image_tag("neos-logo.jpg", :class => "neos"), root_path %>
       <%- end %>
     </div>
     <div class="collapse navbar-collapse" id="user-util-collapse">
