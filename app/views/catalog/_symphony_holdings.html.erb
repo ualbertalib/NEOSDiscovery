@@ -14,7 +14,6 @@
     <% else %>
       <% @current_loc = @locationname.split("College").first %>
     <% end %>
-    <% puts "CURRENT LOC: #{@current_loc}" %>
     <% if @current_loc.include? "Grande Prairie" then @current_loc = "gp" end %>
     <% if @current_loc.include? "Concordia" then @current_loc = "concordia" end %>
     <% if @current_loc.include? "Alberta Health" then @current_loc = "abhealth" end %>
@@ -28,11 +27,12 @@
     <% if @current_loc.include? "Free" then @current_loc = "free" end %>
     <% if @current_loc.include? "University of Alberta" then @current_loc = "universityofalberta" end %>
     <% if @current_loc.include? "Covenant" then @current_loc = "covenant" end %>
+    <% if @current_loc.include? "Innovates" then @current_loc = "innovates" end %>
       <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
+      <% puts @library %>
       <% @proxy = @library['proxy'] %>
     <% if @links %>
       <% @links.each{|link| %>
-        <% puts "LINK: #{@current_loc}" %>
         <% @current_link = "#{@proxy}#{link.last}" %>
 
       <% } %>
