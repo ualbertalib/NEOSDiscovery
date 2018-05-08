@@ -26,4 +26,4 @@ test: &test
 
 production:
   adapter: solr
-  url: "http://amble.library.ualberta.ca:8080/solr/discovery"
+  url: <%= Rails.application.config.solr %>
