@@ -23,4 +23,4 @@ test: &test
 
 production:
   adapter: solr
-  url: "http://solrcloud.library.ualberta.ca:8080/solr/discovery"
+  url: "http://solrcloud-prod.library.ualberta.ca:8080/solr/discovery-prod"
