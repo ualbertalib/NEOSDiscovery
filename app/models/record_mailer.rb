@@ -6,6 +6,8 @@ class RecordMailer < ActionMailer::Base
         
     subject = "From University of Alberta Libraries: #{documents.first.to_semantic_values[:title].first}"
 
+    puts details
+
     @count          = documents.length
     @documents      = documents
     @message        = details[:message]
