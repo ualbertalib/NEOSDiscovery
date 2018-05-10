@@ -176,10 +176,10 @@ newman:
   name: "Newman Theological College"
   locationurl: "https://www.newman.edu/Library"
 norqmain:   
-  name: "Norquest College - Main Building"
+  name: "NorQuest College - Main Building"
   locationurl: "https://library.norquest.ca"
 norqwest:   
-  name: "Norquest College - Westmount"
+  name: "NorQuest College - Westmount"
   locationurl: "​https://library.norquest.ca"
 old:   
   name: "Olds College"
