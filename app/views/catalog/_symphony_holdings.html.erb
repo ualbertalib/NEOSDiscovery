@@ -14,7 +14,6 @@
     <% else %>
       <% @current_loc = @locationname.split("College").first %>
     <% end %>
-    <% puts "CURRENT LOC: #{@current_loc}" %>
     <% if @current_loc.include? "Grande Prairie" then @current_loc = "gp" end %>
     <% if @current_loc.include? "Concordia" then @current_loc = "concordia" end %>
     <% if @current_loc.include? "Alberta Health" then @current_loc = "abhealth" end %>
@@ -28,15 +27,9 @@
     <% if @current_loc.include? "Free" then @current_loc = "free" end %>
     <% if @current_loc.include? "University of Alberta" then @current_loc = "universityofalberta" end %>
     <% if @current_loc.include? "Covenant" then @current_loc = "covenant" end %>
+    <% if @current_loc.include? "Innovates" then @current_loc = "innovates" end %>
       <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
       <% @proxy = @library['proxy'] %>
-    <% if @links %>
-      <% @links.each{|link| %>
-        <% puts "LINK: #{@current_loc}" %>
-        <% @current_link = "#{@proxy}#{link.last}" %>
-
-      <% } %>
-    <% end %>
 
     <% @unavailable = true if @statuses[item[:status].to_s.downcase] == "unavailable" %>
     <tr>
@@ -46,10 +39,26 @@
           <a href="<%= @locationurl %>" target="_blank"><span class="glyphicon glyphicon-info-sign"></span></a>
         <% end %>
       </p>
-        <% if item[:call] == "Internet Access" %>
-          <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong></td>
+    
+      <% if @links %>
+        <% @links.each{|name,link| %>
+          <% if name.include?(@library["name"]) then %>
+            <% @current_link = "#{@proxy}#{link}" %>
+            <% if item[:call] == "Internet Access" %>
+
+              <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong></td>
+            <% else %>
+      <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
+            <% end %>
+          <% end %>
+        <% } %>
         <% else %>
-          <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
+            <% if item[:call] == "Internet Access" %>
+
+              <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong></td>
+            <% else %>
+      <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
+            <% end %>
         <% end %>
         
         <div class="statuses">
