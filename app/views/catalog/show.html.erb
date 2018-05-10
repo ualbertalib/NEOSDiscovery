@@ -56,7 +56,7 @@
       <% if @holdings.nil? || @holdings.empty? %>
         <% unless @document["format"].include? "Database" %>
         <br />
-        <%= "No copies found. This item may be lost or missing, or the data may be temporarily unavailable. Please <a href='https://www.neoslibraries.ca/contact/' target='_blank'>ask us</a> for assistance.".html_safe %>
+        <%= "No copies found. This item may be lost or missing, or the data may be temporarily unavailable. Please contact <a href='https://www.neoslibraries.ca/contact/' target='_blank'>your library</a> for assistance.".html_safe %>
       <% end %>
 
       <% else %>
