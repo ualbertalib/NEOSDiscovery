@@ -217,6 +217,12 @@ span.a-label{
 .nav > li > a {
     padding: 5px 8px;
 }
+.navbar-nav li{
+  border-right:1px solid #fff;
+}
+.navbar-nav li.last{
+  border: none;
+}
 li.bookmark{
   padding-left: 8px;
 }
