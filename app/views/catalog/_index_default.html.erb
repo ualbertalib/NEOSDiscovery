@@ -7,6 +7,8 @@
         <dd class="blacklight-<%= field_name.parameterize %>"><%= render_index_field_value document, field: field_name %></dd>
       <% end -%>
     <% end -%>
+
+    <% unless controller.controller_name == "bookmarks" %>
 <!-- Display owning libraries -->
 <% if document.to_h["source_tesim"] and document.to_h["source_tesim"].first == "Symphony" %> 
   <dt class="blacklight-format">Copies owned by: </dt>
@@ -19,6 +21,7 @@
     <%= @held_by_locations.join(", ") %>
   <% end %>
 <% end %>
+  <% end %>
 
   </dl>
 </div>
