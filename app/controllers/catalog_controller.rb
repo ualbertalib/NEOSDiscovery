@@ -7,6 +7,7 @@ class CatalogController < ApplicationController
   include Blacklight::Catalog
   include Blacklight::Marc::Catalog
   include HoldingsHelper
+  include Blacklight::Ris::Catalog
 
   def index
     super

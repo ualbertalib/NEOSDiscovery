@@ -59,4 +59,5 @@ gem "blacklight_range_limit"
 gem 'traject', '2.3.3'
 gem 'sqlite3'
 gem 'blacklight_range_limit'
+gem 'blacklight-ris', :git => 'https://github.com/upenn-libraries/blacklight-ris.git'
 #gem 'zoom'

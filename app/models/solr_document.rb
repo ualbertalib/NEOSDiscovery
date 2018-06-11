@@ -31,4 +31,32 @@ class SolrDocument
   # and Blacklight::Document::SemanticFields#to_semantic_values
   # Recommendation: Use field names from Dublin Core
   use_extension(Blacklight::Document::DublinCore)
+
+ include Blacklight::Solr::Document::RisFields
+  use_extension(Blacklight::Solr::Document::RisExport)
+
+  ris_field_mappings.merge!(
+    # Procs are evaluated in context of SolrDocument instance
+    :TY => Proc.new {
+      format = fetch('format_a', [])
+      if format.member?('Book')
+        'BOOK'
+      elsif format.member?('Journal/Periodical')
+        'JOUR'
+      else
+        'GEN'
+      end
+    },
+    # use solr field named 'title'
+    :TI => 'title_display',
+    :AU => 'author_display',
+    :AU => 'author_addl_t',
+    :PY => 'pub_date',
+    # this assumes you're using blacklight-marc
+    #:CY => Proc.new { marclibrary.get_ris_cy_field(to_marc) },
+    :PB => 'publisher_tesim', #Proc.new { marclibrary.get_ris_pb_field(to_marc) },
+    :ET => 'edition',
+    :SN => 'isbn_tesim', #Proc.new { marclibrary.get_ris_sn_field(to_marc) },
+    :SN => 'issn_tesim'
+  )
 end
