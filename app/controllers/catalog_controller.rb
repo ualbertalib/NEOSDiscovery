@@ -128,7 +128,7 @@ class CatalogController < ApplicationController
         # :index_range can be an array or range of prefixes that will be used to create the navigation (note: It is case sensitive when searching values)
 
         config.add_facet_field 'electronic_tesim', :label => 'Access', collapse: false
-        config.add_facet_field 'institution_tesim', :label => 'Institution'
+        config.add_facet_field 'institution_tesim', :label => 'Institution', sort: 'index'
         config.add_facet_field 'location_tesim', :label => 'Library', sort: 'index'
         config.add_facet_field 'lc_1letter_facet', :label => 'Call Number', :limit => 10
         config.add_facet_field 'format', :label => 'Format', :limit => 10
