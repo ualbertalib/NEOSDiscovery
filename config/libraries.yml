@@ -45,7 +45,7 @@ norquest:
   proxy: "http://auth01.norquest.ca/login?url="
 nlc:
   name: "Northern Lakes College"
-  url: "https://www.northernlakescollege.ca/current-students/library-services"
+  url: "https://www.northernlakescollege.libguides.ca"
   neosurl: ""
   proxy: "http://ezproxy.asav.talonline.ca/login?url="
 olds:
