@@ -14,8 +14,10 @@ class CatalogController < ApplicationController
     load_lookup_tables
     if params.include?('lib')
         $brand=params['lib']
+        $brand.freeze
     else 
         $brand="neos"
+        $brand.freeze
     end
         $libraryname= @libraries[$brand]["name"]
         $homeurl = @libraries[$brand]["url"]
