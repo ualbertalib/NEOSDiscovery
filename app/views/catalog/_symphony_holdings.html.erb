@@ -42,7 +42,7 @@
     
       <% if @links %>
         <% @links.each{|name,link| %>
-          <% if (name.include?(@library["name"])) or (name.include?("NEOS")) then %>
+          <% if (name.include?(@library["name"])) or (name.include?("Free")) then %>
             <% @current_link = "#{@proxy}#{link}" %>
             <% if item[:call] == "Internet Access" %>
 
