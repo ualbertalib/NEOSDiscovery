@@ -49,6 +49,10 @@ class CatalogController < ApplicationController
         @subjects << subject.split("--")
       end
     end
+
+    if @document["author_addl_t"]
+      @additional_authors = @document["author_addl_t"]
+    end
   end
 
 
