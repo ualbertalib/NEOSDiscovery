@@ -170,7 +170,7 @@ class CatalogController < ApplicationController
         # config.add_show_field 'subtitle_display', :label => 'Subtitle'
         # config.add_show_field 'subtitle_vern_display', :label => 'Subtitle'
         config.add_show_field 'section_number_tesim', :label => "Section Number"
-        config.add_show_field 'section_name_tesim', :label => "Section Name"
+        #config.add_show_field 'section_name_tesim', :label => "Section Name"
         config.add_show_field 'alternate_display_tesim', :label => "Original"
         #config.add_show_field 'edition_tesim', :label => "Edition"
         config.add_show_field 'author_display', :label => 'Author'
@@ -183,6 +183,7 @@ class CatalogController < ApplicationController
         config.add_show_field 'published_display', :label => 'Published'
         config.add_show_field 'published_vern_display', :label => 'Published'
         config.add_show_field 'pub_date', :label => 'Year'
+        config.add_show_field 'summary_holdings_tesim', :label => 'Summary of Holdings'
         #config.add_show_field 'material_type_display', :label => 'Contains'
         #config.add_show_field 'size_tesim', :label => 'Size'
         #config.add_show_field 'description_tesim', :label => 'Other Details'
