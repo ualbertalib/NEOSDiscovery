@@ -78,13 +78,13 @@ aitfcalg:
   locationurl: 
 aitfc-fer:   
   name: "Alberta Innovates - CFer Technologies"
-  locationurl: "​https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
+  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
 aitfcfer:   
   name: "Alberta Innovates - CFer Technologies"
-  locationurl: "​https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
+  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
 aitfmw:   
   name: "Alberta Innovates - Mill Woods"
-  locationurl: "​https://www.neoslibraries.ca/member-libraries/alberta-innovates/mill-woods-library/​"
+  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/mill-woods-library/"
 aitfveg:   
   name: "Alberta Innovates - Vegreville"
   locationurl: 
@@ -113,6 +113,9 @@ burman:
   name: "Burman University"
   locationurl: "https://www.burmanu.ca/library"
 gprc:   
+  name: "Grande Prairie Regional College"
+  locationurl: "https://www.gprc.ab.ca/library"
+gprc_int:   
   name: "Grande Prairie Regional College"
   locationurl: "https://www.gprc.ab.ca/library"
 gprcfrvw:   

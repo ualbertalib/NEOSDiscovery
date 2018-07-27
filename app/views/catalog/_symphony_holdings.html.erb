@@ -4,9 +4,8 @@
     <th>Where is this?</th>
   </tr>
 
-
   <% @links = @urls.reduce Hash.new, :merge if @urls %>
-  <% for item in @holdings %>
+  <% for item in @holdings.reverse %>
     <% @locationname = @locations[item[:location].downcase.gsub("_","")]["name"] %>
     <% @locationurl = @locations[item[:location].downcase.gsub("_","")]["locationurl"] %>
     <% if @locationname.include?(" - ") %>
@@ -27,7 +26,7 @@
     <% if @current_loc.include? "Free" then @current_loc = "free" end %>
     <% if @current_loc.include? "University of Alberta" then @current_loc = "universityofalberta" end %>
     <% if @current_loc.include? "Covenant" then @current_loc = "covenant" end %>
-    <% if @current_loc.include? "Innovates" then @current_loc = "innovates" end %>
+      <% if @current_loc.include? "Innovates" then @current_loc = "innovates" end %>
       <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
       <% @proxy = @library['proxy'] %>
 
@@ -42,11 +41,23 @@
     
       <% if @links %>
         <% @links.each{|name,link| %>
-          <% if (name.include?(@library["name"])) or (name.include?("Free")) then %>
+                         <% if (name.include?(@library["name"])) then %> <%#or (name.include?("Free")) or (name.include?("NEOS")) then %>
             <% @current_link = "#{@proxy}#{link}" %>
             <% if item[:call] == "Internet Access" %>
 
-              <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong></td>
+              <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong><p style="font-size:10pt;">(<%= name %>)</p></td>
+            <% else %>
+      <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
+            <% end %>
+          <% end %>
+        <% } %>
+        <% @links.each{|name,link| %>
+                         <% if (name.include?("NEOS")) then %> <%#or (name.include?("Free")) or (name.include?("NEOS")) then %>
+            <% @current_link = "#{@proxy}#{link}" %>
+            <% if item[:call] == "Internet Access" %>
+
+              <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong><p style="font-size:10pt;">(<%= name %>)</p></td>
+      <%# @links.delete(name) %>
             <% else %>
       <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
             <% end %>
@@ -56,8 +67,8 @@
             <% if item[:call] == "Internet Access" %>
 
               <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong></td>
-            <% else %>
-      <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
+            <%# else %>
+            <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span> 
             <% end %>
         <% end %>
         
