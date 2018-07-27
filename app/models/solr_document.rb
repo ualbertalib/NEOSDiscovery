@@ -38,22 +38,24 @@ class SolrDocument
   ris_field_mappings.merge!(
     # Procs are evaluated in context of SolrDocument instance
     :TY => Proc.new {
-      format = fetch('format_a', [])
+      format = fetch('format', [])
       if format.member?('Book')
         'BOOK'
-      elsif format.member?('Journal/Periodical')
+      elsif format.member?('Journal')
         'JOUR'
+      elsif format.member?('Video or Projection')
+        'VIDEO'
       else
         'GEN'
       end
     },
     # use solr field named 'title'
-    :TI => 'title_display',
+    :TI => "#{title_display}: #{subtitle_display}",
     :AU => 'author_display',
     :AU => 'author_addl_t',
     :PY => 'pub_date',
     # this assumes you're using blacklight-marc
-    #:CY => Proc.new { marclibrary.get_ris_cy_field(to_marc) },
+    :CY => Proc.new { marclibrary.get_ris_cy_field(to_marc) },
     :PB => 'publisher_tesim', #Proc.new { marclibrary.get_ris_pb_field(to_marc) },
     :ET => 'edition',
     :SN => 'isbn_tesim', #Proc.new { marclibrary.get_ris_sn_field(to_marc) },
