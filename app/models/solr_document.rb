@@ -50,7 +50,7 @@ class SolrDocument
       end
     },
     # use solr field named 'title'
-    :TI => "#{title_display}: #{subtitle_display}",
+    :TI => 'title_display',
     :AU => 'author_display',
     :AU => 'author_addl_t',
     :PY => 'pub_date',
