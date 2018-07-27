@@ -55,7 +55,7 @@ class SolrDocument
     :AU => 'author_addl_t',
     :PY => 'pub_date',
     # this assumes you're using blacklight-marc
-    :CY => Proc.new { marclibrary.get_ris_cy_field(to_marc) },
+    :CY => 'published_display',
     :PB => 'publisher_tesim', #Proc.new { marclibrary.get_ris_pb_field(to_marc) },
     :ET => 'edition',
     :SN => 'isbn_tesim', #Proc.new { marclibrary.get_ris_sn_field(to_marc) },
