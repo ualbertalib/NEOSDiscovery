@@ -67,7 +67,7 @@
             <% if item[:call] == "Internet Access" %>
 
               <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong></td>
-            <%# else %>
+            <% else %>
             <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span> 
             <% end %>
         <% end %>
