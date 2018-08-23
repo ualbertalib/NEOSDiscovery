@@ -13,11 +13,11 @@ class CatalogController < ApplicationController
     super
     load_lookup_tables
     if params.include?('lib')
-        session[:brand]=params['lib']
-        $brand = session[:brand]
+        cookies[:brand]=params['lib']
+        $brand = cookies[:brand]
     else 
-        session[:brand]="neos"
-        $brand = session[:brand]
+        cookies[:brand]="neos"
+        $brand = cookies[:brand]
     end
         $libraryname= @libraries[$brand]["name"]
         $homeurl = @libraries[$brand]["url"]
