@@ -260,3 +260,11 @@ li.bookmark{
     display: block;
   }
 }
+@media print{
+  .modal-content{
+    background-color: #fff !important;
+  }
+  .full-record-book-jacket{
+    display: none;
+  }
+}
