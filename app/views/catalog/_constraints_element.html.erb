@@ -13,11 +13,7 @@
       <span class="filterName"><%= label %></span>
     <% end %>
     <% unless value.blank? %>
-      <% if label == "Library" %>
-        <%= content_tag :span, @locations[value]['name'], class: 'filterValue', title: value %>
-      <% else %>
         <%= content_tag :span, value, class: 'filterValue', title: value %>
-      <% end %>
     <% end %>
   </span>
   <% unless options[:remove].blank? %>
