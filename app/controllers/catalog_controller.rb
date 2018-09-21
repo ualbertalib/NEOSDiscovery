@@ -27,10 +27,7 @@ class CatalogController < ApplicationController
   def show
     super
     load_lookup_tables
-        if params.include?('lib')
-        cookies[:brand]=params['lib']
-        $brand = cookies[:brand]
-    else 
+    if !defined? (cookies[:brand])
         cookies[:brand]="neos"
         $brand = cookies[:brand]
     end
