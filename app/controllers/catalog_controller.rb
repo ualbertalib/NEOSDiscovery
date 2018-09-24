@@ -27,12 +27,6 @@ class CatalogController < ApplicationController
   def show
     super
     load_lookup_tables
-    if !defined? $brand && $brand.blank?
-        $brand = "neos"
-    end
-        $libraryname= @libraries[$brand]["name"]
-        $homeurl = @libraries[$brand]["url"]
-        $neosurl= @libraries[$brand]["neosurl"]
     @holdings = []
     @holdings = holdings(@document, :items)
     unless @holdings.nil? || @holdings.first.nil?

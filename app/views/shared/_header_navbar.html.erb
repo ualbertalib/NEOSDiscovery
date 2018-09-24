@@ -8,8 +8,8 @@
         <span class="icon-bar"></span>
       </button>
   
-      <%- if $brand %>
-        <%- @library = $brand %>
+      <%- if cookies[:brand] %>
+       <%- @library = cookies[:brand] %>
         <%= link_to image_tag(@library+".jpg"), root_path(:lib => @library) %>
         <p class="neos-tag">NEOS Catalogue BETA</p>
       <%- else %>

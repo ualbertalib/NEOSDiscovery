@@ -4,7 +4,10 @@
 			<%= link_to image_tag("neos-logo.jpg"), "https://www.neoslibraries.ca" %>
 		</div>
 		<div class="col-sm-6 footer-links">
-			<%- if @library -%>
+			 <%- if cookies[:brand] %>
+       		 <%- $libraryname = @libraries[cookies[:brand]]["name"] %>
+       		 <%- $homeurl = @libraries[cookies[:brand]]["url"] %>
+       		 <%- $neosurl = @libraries[cookies[:brand]]["neosurl"] %>
 				<%= link_to $libraryname+" Library Website", $homeurl %>  <%= link_to $libraryname+" Library NEOS information Website", $neosurl %> 
 			<%- end -%>
 		</div>
