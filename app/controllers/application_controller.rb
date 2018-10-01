@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
     @languages ||= YAML.load_file("#{Rails.root}/config/languages.yml")
     @locations ||= YAML.load_file("#{Rails.root}/config/locations.yml")
     @item_types ||= YAML.load_file("#{Rails.root}/config/item_types.yml")
-    @library_codes ||= YAML.load_file("#{Rails.root}/config/library_codes.yml")
     @circ_rules ||= YAML.load_file("#{Rails.root}/config/circ_rules.yml")
     @libraries ||= YAML.load_file("#{Rails.root}/config/libraries.yml")
     @collections ||= YAML.load_file("#{Rails.root}/config/collections.yml")
