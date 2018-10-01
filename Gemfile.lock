@@ -49,7 +49,13 @@ GEM
     autoprefixer-rails (7.1.2.3)
       execjs
     bcrypt (3.1.11)
+    better_errors (2.5.0)
+      coderay (>= 1.0.0)
+      erubi (>= 1.0.0)
+      rack (>= 0.9.0)
     bindex (0.5.0)
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
     blacklight (6.10.1)
       bootstrap-sass (~> 3.2)
       deprecation
@@ -76,10 +82,12 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    brakeman (4.3.1)
     builder (3.2.3)
     byebug (9.0.6)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
+    coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -88,6 +96,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    debug_inspector (0.0.3)
     deprecation (1.0.0)
       activesupport
     devise (4.3.0)
@@ -135,6 +144,10 @@ GEM
     kaminari-core (1.0.1)
     library_stdnums (1.6.0)
     libv8 (3.16.14.19)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     logger (1.2.8)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -195,6 +208,7 @@ GEM
       railties (>= 4.2.0, < 5.3)
     rsolr (1.1.2)
       builder (>= 2.1.2)
+    ruby_dep (1.5.0)
     rubyzip (1.2.1)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
@@ -267,11 +281,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors (>= 2.3.0)
+  binding_of_caller
   blacklight (>= 6.1)
   blacklight-marc (~> 6.0)
   blacklight-ris!
   blacklight_advanced_search (>= 6.3)
   blacklight_range_limit
+  brakeman
   byebug
   coffee-rails (~> 4.2.2)
   devise
@@ -279,6 +296,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jettywrapper (>= 2.0)
   jquery-rails
+  listen (~> 3.0)
   mysql2
   rails (= 5.1.2)
   rsolr (~> 1.0)
@@ -294,4 +312,4 @@ DEPENDENCIES
   web-console (~> 3.6)
 
 BUNDLED WITH
-   1.16.0
+   1.16.2
