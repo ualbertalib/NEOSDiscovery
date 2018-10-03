@@ -60,3 +60,11 @@ gem 'traject', '2.3.3'
 gem 'sqlite3'
 gem 'blacklight_range_limit'
 gem 'blacklight-ris', :git => 'https://github.com/upenn-libraries/blacklight-ris.git'
+
+group :development do
+  gem 'better_errors', '>= 2.3.0'
+  gem 'binding_of_caller'
+
+  gem 'brakeman'
+  gem 'listen', '~> 3.0'
+end

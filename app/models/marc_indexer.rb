@@ -195,7 +195,6 @@ class MarcIndexer < Blacklight::Marc::Indexer
     to_field "uniform_title_tesim", extract_marc("240a")
     to_field "performers_tesim", extract_marc("511a")
     to_field "publisher_number_tesim", extract_marc("028abq")
-    to_field "held_by_tesim", extract_marc("596a")
     to_field "arrangement_tesim", extract_marc("351a")
     to_field "time_of_event_tesim", extract_marc("518a")
     to_field "issuing_body_tesim", extract_marc("550a")
