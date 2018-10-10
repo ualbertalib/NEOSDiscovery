@@ -26,7 +26,9 @@ module Blacklight::UrlHelperBehavior
 
     field ||= document_show_link_field(doc)
     label = index_presenter(doc).label field, opts
-    link_to label, url_for_document(doc), document_link_params(doc, opts)
+    # modified to carry-over lib parameter for branding
+    # there may be unintended consequences to using solr_document_url for url_for_document
+    link_to label, solr_document_url(doc, lib: params[:lib]), document_link_params(doc, opts)
   end
 
   def document_link_params(doc, opts)
