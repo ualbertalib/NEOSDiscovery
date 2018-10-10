@@ -53,7 +53,7 @@ gem 'jettywrapper', '>= 2.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'rsolr', '~> 2.2'
 gem 'devise'
-gem 'devise-guests', '~> 0.3'
+gem 'devise-guests', '~> 0.6'
 gem 'blacklight-marc', '~> 6.0'
 gem "blacklight_range_limit"
 gem 'traject', '2.3.3'
