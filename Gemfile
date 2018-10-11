@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.1.2'
+gem 'rails', '5.2.1'
 # The mysql2 gem is required to connect ActiveRecord to our database
 gem 'mysql2'
 # Use SCSS for stylesheets
