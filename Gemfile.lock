@@ -311,7 +311,7 @@ DEPENDENCIES
   jettywrapper (>= 2.0)
   jquery-rails
   listen (~> 3.0)
-  mysql2
+  mysql2 (~> 0.5.2)
   rails (= 5.2.1)
   rollbar
   rsolr (~> 2.2)
