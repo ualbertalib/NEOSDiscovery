@@ -39,7 +39,7 @@ module Blacklight::UrlHelperBehavior
   ##
   # Link to the previous document in the current search context
   def link_to_previous_document(previous_document)
-    link_opts = session_tracking_params(previous_document, search_session['counter'].to_i - 1).merge(:class => "previous", :rel => 'prev', :lib => $brand)
+    link_opts = session_tracking_params(previous_document, search_session['counter'].to_i - 1).merge(:class => "previous", :rel => 'prev')
     link_to_unless previous_document.nil?, raw(t('views.pagination.previous')), url_for_document(previous_document), link_opts do
       content_tag :span, raw(t('views.pagination.previous')), :class => 'previous'
     end

@@ -1,49 +1,41 @@
 <div class="row">
   <div class="col-sm-12">
-       <%- if params.has_key?(:lib) %>
-      <%- @library = params[:lib] %>
+    <%- if params.has_key?(:lib) %>
+      <%- @library = $brand %>
         <div class="col-sm-7 home-search">
-
           <%= form_tag search_action_url, method: :get, class: 'search-query-form clearfix', role: 'search' do %>
-  <%= render_hash_as_hidden_fields(search_state.params_for_search.except(:q, :search_field, :qt, :page, :utf8)) %>
-  <div class="input-group input-group-lg">
-    <% if search_fields.length > 1 %>
-      <span class="input-group-addon for-search-field">
-        <label for="search_field" class="sr-only"><%= t('blacklight.search.form.search_field.label') %></label>
-        <%= select_tag(:search_field, options_for_select(search_fields, h(params[:search_field])), title: t('blacklight.search.form.search_field.title'), id: "search_field", class: "search_field") %>
-      </span>
-    <% elsif search_fields.length == 1 %>
-      <%= hidden_field_tag :search_field, search_fields.first.last %>
+          <%= render_hash_as_hidden_fields(search_state.params_for_search.except(:q, :search_field, :qt, :page, :utf8)) %>
+          <div class="input-group input-group-lg">
+            <% if search_fields.length > 1 %>
+              <span class="input-group-addon for-search-field">
+                <label for="search_field" class="sr-only"><%= t('blacklight.search.form.search_field.label') %></label>
+                <%= select_tag(:search_field, options_for_select(search_fields, h(params[:search_field])), title: t('blacklight.search.form.search_field.title'), id: "search_field", class: "search_field") %>
+              </span>
+            <% elsif search_fields.length == 1 %>
+              <%= hidden_field_tag :search_field, search_fields.first.last %>
+            <% end %>
+            <label for="q" class="sr-only"><%= t('blacklight.search.form.search.label') %></label>
+            <%= text_field_tag :q, params[:q], placeholder: t('blacklight.search.form.search.placeholder'), class: "search_q q form-control", id: "q", autofocus: should_autofocus_on_search_box?, data: { autocomplete_enabled: autocomplete_enabled?, autocomplete_path: blacklight.suggest_index_path }  %>
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary search-btn" id="search">
+                <span class="submit-search-text"><%= t('blacklight.search.form.submit') %></span>
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
     <% end %>
 
-    <label for="q" class="sr-only"><%= t('blacklight.search.form.search.label') %></label>
-    <%= text_field_tag :q, params[:q], placeholder: t('blacklight.search.form.search.placeholder'), class: "search_q q form-control", id: "q", autofocus: should_autofocus_on_search_box?, data: { autocomplete_enabled: autocomplete_enabled?, autocomplete_path: blacklight.suggest_index_path }  %>
-
-    <span class="input-group-btn">
-      <button type="submit" class="btn btn-primary search-btn" id="search">
-        <span class="submit-search-text"><%= t('blacklight.search.form.submit') %></span>
-        <span class="glyphicon glyphicon-search"></span>
-      </button>
-    </span>
-
-  </div>
-<% end %>
-
-
-
-<div class="navbar-form">
-  <%= link_to 'More options', blacklight_advanced_search_engine.advanced_search_path(search_state.to_h), class: 'advanced_search btn btn-default'%>
-</div>
-<div class="col-md-12 feed">
-  <p>This is a beta version of the NEOS catalogue.</p> <p>Please give us <a href="https://goo.gl/forms/ZZyr3UP2bCjhsb003">your feedback</a> to help us make this service better!</p>
-</div>
-        </div>
-
-      <div class="col-sm-4 col-sm-offset-1 intro">
-      
-      <p class="welcome">Welcome to the NEOS Catalogue for the <strong><%= $libraryname %> Library</strong>. Use the search box to search for items in our library and across the NEOS Library Consortium. If you would like more information about the <%= $libraryname %> Library you can visit their <%= link_to "Website", $homeurl %>  or their <%= link_to "NEOS information page", $neosurl %>.</p>
+    <div class="navbar-form">
+      <%= link_to 'More options', blacklight_advanced_search_engine.advanced_search_path(search_state.to_h), class: 'advanced_search btn btn-default'%>
     </div>
-    <%- else %>
+    <div class="col-md-12 feed">
+      <p>This is a beta version of the NEOS catalogue.</p> <p>Please give us <a href="https://goo.gl/forms/ZZyr3UP2bCjhsb003">your feedback</a> to help us make this service better!</p>
+    </div>
+  </div>
+  <div class="col-sm-4 col-sm-offset-1 intro"> 
+    <p class="welcome">Welcome to the NEOS Catalogue for the <strong><%= $libraryname %> Library</strong>. Use the search box to search for items in our library and across the NEOS Library Consortium. If you would like more information about the <%= $libraryname %> Library you can visit their <%= link_to "Website", $homeurl %>  or their <%= link_to "NEOS information page", $neosurl %>.</p>
+  </div>
+  <%- else %>
       <h2 class="welcome-head">NEOS Library Consortium Catalogue</h2>
       <p>Choose a library to begin:</p>
       <ul class="library-list">

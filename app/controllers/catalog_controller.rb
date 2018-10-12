@@ -13,11 +13,9 @@ class CatalogController < ApplicationController
     super
     load_lookup_tables
     if params.include?('lib')
-        cookies[:brand]=params['lib']
-        $brand = cookies[:brand]
+        $brand=params['lib']
     else 
-        cookies[:brand]="neos"
-        $brand = cookies[:brand]
+        $brand="neos"
     end
         $libraryname= @libraries[$brand]["name"]
         $homeurl = @libraries[$brand]["url"]
@@ -27,6 +25,14 @@ class CatalogController < ApplicationController
   def show
     super
     load_lookup_tables
+    if params.include?('lib')
+        $brand=params['lib']
+    else 
+        $brand="neos"
+    end
+        $libraryname= @libraries[$brand]["name"]
+        $homeurl = @libraries[$brand]["url"]
+        $neosurl= @libraries[$brand]["neosurl"]
     @holdings = []
     @holdings = holdings(@document, :items)
     unless @holdings.nil? || @holdings.first.nil?
