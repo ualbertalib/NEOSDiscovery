@@ -6,6 +6,12 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.47] - 2018-10-12
+### Fixed
+- Persist library branding accross user session [#107](https://github.com/ualbertalib/NEOSDiscovery/issues/107)
+- Text me this Item (changed configuration) [#132](https://github.com/ualbertalib/NEOSDiscovery/issues/132)
+- Correction Form [#154](https://github.com/ualbertalib/NEOSDiscovery/issues/154)
+
 ## [1.0.46] - 2018-10-09
 ### Added
 - Rollbar to resolve production errors in minutes (requires new secret) [#155](https://github.com/ualbertalib/discovery/issues/1287)
