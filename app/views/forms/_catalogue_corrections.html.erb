@@ -8,7 +8,7 @@
   <input name="item_id" type="hidden" value="<%= @item_id %>">
   <input type=submit value="Submit Typo or Broken Link" />
   <p>&nbsp;</p>
-  <p>Note: You will not receive a response. If you are experiencing problems and would like a response please contact the <%= link_to $libraryname+" Library", $homeurl %>.</p>
+  <p>Note: You will not receive a response. If you are experiencing problems and would like a response please contact the <%= link_to_unless $homeurl.nil?, +"#{$libraryname} Library", $homeurl %>.</p>
 <% end %>
 
 </html>
