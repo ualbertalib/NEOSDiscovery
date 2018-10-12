@@ -85,7 +85,7 @@ GEM
       sass (>= 3.3.4)
     brakeman (4.3.1)
     builder (3.2.3)
-    byebug (9.0.6)
+    byebug (10.0.2)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.2)
