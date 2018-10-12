@@ -40,7 +40,11 @@ module Blacklight::UrlHelperBehavior
   # Link to the previous document in the current search context
   def link_to_previous_document(previous_document)
     link_opts = session_tracking_params(previous_document, search_session['counter'].to_i - 1).merge(:class => "previous", :rel => 'prev')
-    link_to_unless previous_document.nil?, raw(t('views.pagination.previous')), url_for_document(previous_document), link_opts do
+    # modified to carry-over lib parameter for branding
+    # there may be unintended consequences to using solr_document_url for url_for_document
+    url = nil
+    url = solr_document_url(previous_document, lib: params[:lib]) unless previous_document.nil?
+    link_to_unless previous_document.nil?, raw(t('views.pagination.previous')), url, link_opts do
       content_tag :span, raw(t('views.pagination.previous')), :class => 'previous'
     end
   end
@@ -49,7 +53,11 @@ module Blacklight::UrlHelperBehavior
   # Link to the next document in the current search context
   def link_to_next_document(next_document)
     link_opts = session_tracking_params(next_document, search_session['counter'].to_i + 1).merge(:class => "next", :rel => 'next')
-    link_to_unless next_document.nil?, raw(t('views.pagination.next')), url_for_document(next_document), link_opts do
+    # modified to carry-over lib parameter for branding
+    # there may be unintended consequences to using solr_document_url for url_for_document
+    url = nil
+    url = solr_document_url(next_document, lib: params[:lib]) unless next_document.nil?
+    link_to_unless next_document.nil?, raw(t('views.pagination.next')), url, link_opts do
       content_tag :span, raw(t('views.pagination.next')), :class => 'next'
     end
   end
