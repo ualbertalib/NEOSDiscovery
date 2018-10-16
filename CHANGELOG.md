@@ -6,6 +6,10 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.48] - 2018-10-17
+### Fixed
+- Style issues with the popup/modal windows [#195](https://github.com/ualbertalib/NEOSDiscovery/issues/195)
+
 ## [1.0.47] - 2018-10-12
 ### Fixed
 - Persist library branding accross user session [#107](https://github.com/ualbertalib/NEOSDiscovery/issues/107)
