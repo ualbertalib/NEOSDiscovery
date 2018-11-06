@@ -1,3 +1,4 @@
+# from https://github.com/ualbertalib/discovery/blob/master/config/locations.yml and https://www.neoslibraries.ca/member-libraries
 aegeo:  
   name: "Alberta Geological Survey"
   locationurl: "http://ags.aer.ca/about-the-ags/contact-us.htm"
