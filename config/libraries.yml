@@ -1,3 +1,19 @@
+# from https://www.neoslibraries.ca/member-libraries
+abhealth:
+  name: "Alberta Health Services"
+  url: "https://krs.libguides.com/home"
+  neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-health-services/"
+  proxy: "http://ahs.idm.oclc.org/login?url="
+gov:
+  name: "Alberta Government"
+  url: "https://www.servicealberta.ca/alberta-government-library.cfm"
+  neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-government-library/"
+  proxy: "https://ezproxy.aee.talonline.ca/login?url="
+innovates:
+  name: "Alberta Innovates"
+  url: "http://www.albertatechfutures.ca/"
+  neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/"
+  proxy: ""
 burmanuniversity:
   name: "Burman University"
   url: "https://www.burmanu.ca/library"
@@ -8,6 +24,11 @@ concordia:
   url: "http://library.concordia.ab.ca/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/concordia/"
   proxy: "http://aec.talonline.ca/login?url="
+covenant:
+  name: "Covenant Health"
+  url: "https://www.covenanthealth.ca/"
+  neosurl: "https://www.neoslibraries.ca/member-libraries/covenant-health-library-services/"
+  proxy: "http://ahs.idm.oclc.org/login?url="
 gp:
   name: "Grande Prairie Regional College"
   url: "https://www.gprc.ab.ca/library/"
@@ -68,26 +89,6 @@ vanguard:
   url: "https://www.vanguardcollege.com/library/"
   neosurl: "https://www.neoslibraries.ca/member-libraries/vanguard-college-library/"
   proxy: ""
-gov:
-  name: "Alberta Government"
-  url: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-government-library/"
-  proxy: "https://ezproxy.aee.talonline.ca/login?url="
-innovates:
-  name: "Alberta Innovates"
-  url: "http://www.albertatechfutures.ca/"
-  neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/"
-  proxy: ""
-abhealth:
-  name: "Alberta Health Services"
-  url: "https://krs.libguides.com/home"
-  neosurl: "https://www.neoslibraries.ca/member-libraries/alberta-health-services/"
-  proxy: "http://ahs.idm.oclc.org/login?url="
-covenant:
-  name: "Covenant Health"
-  url: "https://www.covenanthealth.ca/"
-  neosurl: "https://www.neoslibraries.ca/member-libraries/covenant-health-library-services/"
-  proxy: "http://ahs.idm.oclc.org/login?url="
 free:
   name: "Free E-Resources"
   url: ""
