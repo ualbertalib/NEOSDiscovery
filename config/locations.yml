@@ -107,9 +107,6 @@ covenantmh:
 cross:
   name: "Cross Cancer Institute"
   locationurl:
-cuc:
-  name: "Canadian University College"
-  locationurl: "https://www.burmanu.ca/library"
 gprcgp:
   name: "Grande Prairie Regional College - Grande Prairie"
   locationurl: "https://www.gprc.ab.ca/library"
