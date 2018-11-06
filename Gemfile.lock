@@ -99,7 +99,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.2)
     crass (1.0.4)
     debug_inspector (0.0.3)
     deprecation (1.0.0)
@@ -122,9 +122,9 @@ GEM
       activesupport (>= 4.2.0)
     hashie (3.6.0)
     httpclient (2.8.3)
-    i18n (1.1.0)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.7.0)
+    jbuilder (2.8.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
     jettywrapper (2.0.4)
@@ -308,7 +308,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2.2)
   devise
   devise-guests (~> 0.6)
-  jbuilder (~> 2.0)
+  jbuilder (~> 2.8)
   jettywrapper (>= 2.0)
   jquery-rails
   listen (~> 3.0)
