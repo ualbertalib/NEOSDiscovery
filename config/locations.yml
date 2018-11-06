@@ -117,22 +117,22 @@ gprcint:
   name: "Grande Prairie Regional College - Internet"
   locationurl: "https://www.gprc.ab.ca/library"
 grmacacc:
-  name: "Grant MacEwan University - Alberta College Campus"
+  name: "MacEwan University - Alberta College Campus"
   locationurl: "https://library.macewan.ca/"
 grmaccac:
-  name: "Grant MacEwan University - Centre for Arts & Communications"
+  name: "MacEwan University - Centre for Arts & Communications"
   locationurl: "https://library.macewan.ca/"
 grmacint:
-  name: "Grant MacEwan University - Internet"
+  name: "MacEwan University - Internet"
   locationurl: "https://library.macewan.ca/"
 grmactsv:
-  name: "Grant MacEwan University - Technical Services"
+  name: "MacEwan University - Technical Services"
   locationurl: "https://library.macewan.ca/"
 grmacsoc:
-  name: "Grant MacEwan University - South Campus"
+  name: "MacEwan University - South Campus"
   locationurl: "https://library.macewan.ca/"
 grmacewan:
-  name: "Grant MacEwan University - City Centre Campus"
+  name: "MacEwan University - City Centre Campus"
   locationurl: "https://library.macewan.ca/"
 justiceca:   
   name: "Justice Canada"
