@@ -30,23 +30,22 @@ agltpn:
   locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
 ahsach:
   name: "Alberta Health Services - Alberta Children's Hospital"
-  locationurl:
+  locationurl: "http://krs.libguides.com/aboutus/ach"
 ahsahe:
   name: "Alberta Health Services - Alberta Hospital Edmonton"
   locationurl: 
 ahscenten:  
   name: "Alberta Health Services - Centennial Centre"
+  locationurl: 
 ahsrah:  
-  locationurl:
+  name: "Alberta Health Services - Royal Alexandra Hospital"
+  locationurl: 
 ahsctr15:
   name: "Alberta Health Services - Centre 15"
   locationurl:
 ahskec:
   name: "Alberta Health Services - Kaye Edmonton Clinic"
   locationurl: "https://krs.libguides.com/aboutus/kec"
-  name: "Alberta Health Services - Royal Alexandra Hospital"
-  locationurl: 
-ahsreddr:  
 ahsreddr:
   name: "Alberta Health Services - Red Deer Regional Hospital"
   locationurl: "https://krs.libguides.com/aboutus/rdrh"
@@ -58,7 +57,7 @@ ahssturg:
   locationurl:
 ahstbcc:
   name: "Alberta Health Services - Tom Baker Cancer Centre"
-  locationurl:
+  locationurl: "http://krs.libguides.com/aboutus/tbcc"
 ahserc:
   name: "Alberta Health Services"
   locationurl:
@@ -76,19 +75,19 @@ aitfcalg:
   locationurl:
 aitfcfer:
   name: "Alberta Innovates - Technology Futures - C-FER Technologies"
-  locationurl:
+  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
 aitfc-fer:
   name: "Alberta Innovates - Technology Futures - C-FER Technologies"
   locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
 aitfdevon:
   name: "Alberta Innovates - Technology Futures - Devon"
-  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
+  locationurl: 
 aitfmw:
   name: "Alberta Innovates - Technology Futures - Mill Woods"
   locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/mill-woods-library/"
 aitfveg:
   name: "Alberta Innovates - Technology Futures - Vegreville"
-  locationurl:
+  locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/vegreville-library-2/"
 burman:
   name: "Burman University"
   locationurl: "https://www.burmanu.ca/library"
@@ -100,7 +99,7 @@ concordsem:
   locationurl: "​http://www.concordiasem.ab.ca/research/library_information.php​"
 covenantgn: 
   name: "Covenant Health - Grey Nuns Community Hospital"
-  locationurl: ​"https://www.covenanthealth.ca/corporate-information/library-services"
+  locationurl: "​https://www.covenanthealth.ca/corporate-information/library-services​"
 covenantmh:   
   name: "Covenant Health - Misericordia Community Hospital"
   locationurl: "​https://www.covenanthealth.ca/corporate-information/library-services​"
