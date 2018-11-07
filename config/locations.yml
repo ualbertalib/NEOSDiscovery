@@ -32,18 +32,9 @@ agltpn:
 ahsach:
   name: "Alberta Health Services - Alberta Children's Hospital"
   locationurl: "http://krs.libguides.com/aboutus/ach"
-ahsahe:
-  name: "Alberta Health Services - Alberta Hospital Edmonton"
-  locationurl: 
-ahscenten:  
-  name: "Alberta Health Services - Centennial Centre"
-  locationurl: 
 ahsrah:  
   name: "Alberta Health Services - Royal Alexandra Hospital"
   locationurl: 
-ahsctr15:
-  name: "Alberta Health Services - Centre 15"
-  locationurl:
 ahskec:
   name: "Alberta Health Services - Kaye Edmonton Clinic"
   locationurl: "https://krs.libguides.com/aboutus/kec"
@@ -53,18 +44,9 @@ ahsreddr:
 ahsrvgh:  
   name: "Alberta Health Services - Rockyview General Hospital"
   locationurl: "https://krs.libguides.com/aboutus/rgh"
-ahssturg:
-  name: "Alberta Health Services - Sturgeon Community Hospital"
-  locationurl:
 ahstbcc:
   name: "Alberta Health Services - Tom Baker Cancer Centre"
   locationurl: "http://krs.libguides.com/aboutus/tbcc"
-ahserc:
-  name: "Alberta Health Services"
-  locationurl:
-ahscenten:
-  name: "Alberta Health Services"
-  locationurl:
 ahsint:
   name: "Alberta Health Services/Covenant Health - Internet"
   locationurl: "https://krs.libguides.com/home"
@@ -104,9 +86,6 @@ covenantgn:
 covenantmh:   
   name: "Covenant Health - Misericordia Community Hospital"
   locationurl: "​https://www.covenanthealth.ca/corporate-information/library-services​"
-cross:
-  name: "Cross Cancer Institute"
-  locationurl:
 gprcgp:
   name: "Grande Prairie Regional College - Grande Prairie"
   locationurl: "https://www.gprc.ab.ca/library"
