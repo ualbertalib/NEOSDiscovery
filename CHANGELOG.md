@@ -5,8 +5,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added 
+- Text to caution user about use of provided citations [#186](https://github.com/ualbertalib/NEOSDiscovery/issues/186)
+- Github issue templates [PR#206](https://github.com/ualbertalib/NEOSDiscovery/pull/206)
+
+### Changed
+- Locations, status and libraries data updated [#173](https://github.com/ualbertalib/NEOSDiscovery/issues/173)
+
 ### Removed
 - Removed beta labeling on NEOSDiscovery [#223](https://github.com/ualbertalib/NEOSDiscovery/issues/223)
+- Unused gems [PR#212](https://github.com/ualbertalib/NEOSDiscovery/pull/212)
+
+### Security
+- Bump Rack from 2.0.5 to 2.0.6 [PR#209](https://github.com/ualbertalib/NEOSDiscovery/pull/209)
+- Bump Loofah from 2.2.2 to 2.2.3 [PR#203](https://github.com/ualbertalib/NEOSDiscovery/pull/203)
+- Bump rails from 5.2.1 to 5.2.2 [PR#220](https://github.com/ualbertalib/NEOSDiscovery/pull/220)
 
 ## [1.0.48] - 2018-10-17
 ### Fixed
