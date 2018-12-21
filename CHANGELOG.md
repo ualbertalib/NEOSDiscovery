@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.49] - 2018-12-19
 ### Added 
 - Text to caution user about use of provided citations [#186](https://github.com/ualbertalib/NEOSDiscovery/issues/186)
 - Github issue templates [PR#206](https://github.com/ualbertalib/NEOSDiscovery/pull/206)
