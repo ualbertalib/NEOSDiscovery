@@ -3,10 +3,10 @@
     <%= render_nav_actions do |config, action|%>
       <li><%= action %></li>
     <% end %>
-    
-    <li><a href="https://myaccount.library.ualberta.ca/barcode?neos=true">Login</a></li>
-    <li><a href="https://www.neoslibraries.ca/catalogue-help/">Help</a></li>
-    <li class="last"><a href="https://goo.gl/forms/0eHLBasn4V1N1Cxp1" target="_blank">Feedback</a></li>
+    <li><%= link_to 'Course Reserves', 'https://neosreserves.library.ualberta.ca/' %></li>
+    <li><%= link_to 'Login', 'https://myaccount.library.ualberta.ca/barcode?neos=true' %></li>
+    <li><%= link_to 'Help', 'https://www.neoslibraries.ca/catalogue-help/' %></li>
+    <li class="last"><%= link_to 'Feedback', 'https://goo.gl/forms/0eHLBasn4V1N1Cxp1', target: '_blank' %></li>
   </ul>
 
 

@@ -7,7 +7,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ## [Unreleased]
 ### Added
 -  Added our own custom error pages for 404/500 [#200](https://github.com/ualbertalib/NEOSDiscovery/issues/200)
-
+-  Link to Course Reserves page [#40](https://github.com/ualbertalib/NEOSDiscovery/issues/40)
 
 ## [1.0.49] - 2018-12-19
 ### Added 
