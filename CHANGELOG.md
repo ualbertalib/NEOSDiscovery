@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.50] - 2019-02-07
 ### Added
 -  Added our own custom error pages for 404/500 [#200](https://github.com/ualbertalib/NEOSDiscovery/issues/200)
 -  Link to Course Reserves page [#40](https://github.com/ualbertalib/NEOSDiscovery/issues/40)
