@@ -23,7 +23,7 @@ gem 'traject', '2.3.4'
 
 # Authentication
 gem 'devise'
-gem 'devise-guests', '~> 0.6'
+gem 'devise-guests', '~> 0.7'
 
 # Performance monitoring
 gem 'rollbar'
