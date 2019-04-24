@@ -6,6 +6,8 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.52] - 2019-4-26
+
 ### Security
 - Bumps nokogiri from 1.10.2 to 1.10.3. [PR#265](https://github.com/ualbertalib/NEOSDiscovery/pull/265)
 
