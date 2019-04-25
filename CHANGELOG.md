@@ -9,6 +9,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ### Security
 - Bumps nokogiri from 1.10.2 to 1.10.3. [PR#265](https://github.com/ualbertalib/NEOSDiscovery/pull/265)
 
+### Changed
+- Northern Lakes College Library url [#263](https://github.com/ualbertalib/NEOSDiscovery/issues/263)
+
 ### Removed
 -  Subtitles from display [PR#1510](https://github.com/ualbertalib/discovery/pull/1510)
 
