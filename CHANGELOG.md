@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## Changed
+- removed link from Series title on catalog show page [#274](https://github.com/ualbertalib/NEOSDiscovery/issues/274)
+
 ## [1.0.52] - 2019-4-26
 
 ### Security
