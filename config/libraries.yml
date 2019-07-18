@@ -40,7 +40,7 @@ keyano:
   neosurl: "https://www.neoslibraries.ca/member-libraries/keyano-college-library/"
   proxy: "http://ezproxy.afmk.talonline.ca/login?url="
 kings:
-  name: "The King's University"
+  name: "King's University"
   url: "https://www.kingsu.ca/library"
   neosurl: "https://www.neoslibraries.ca/member-libraries/the-kings-university-library/"
   proxy: "http://aekc.talonline.ca/login?url="
