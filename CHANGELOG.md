@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.54] - 2019-07-19
+
 ### Added
 - Added missing statuses [PR#290](https://github.com/ualbertalib/NEOSDiscovery/pull/290)
 
