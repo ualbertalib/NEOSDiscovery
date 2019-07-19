@@ -6,7 +6,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 ### Added
-- Added missing statuses [PR#](https://github.com/ualbertalib/NEOSDiscovery/pull/)
+- Added missing statuses [PR#290](https://github.com/ualbertalib/NEOSDiscovery/pull/290)
 
 ## [1.0.53] - 2019-07-09
 
