@@ -7,6 +7,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ## [Unreleased]
 ### Fixed
 - Fixed broken link in locations.yml for concordia lutheran seminary [#286](https://github.com/ualbertalib/NEOSDiscovery/issues/286)
+- Fix for no links for electronic resources for King's [#285](https://github.com/ualbertalib/NEOSDiscovery/issues/285)
 
 ## [1.0.53] - 2019-07-09
 
