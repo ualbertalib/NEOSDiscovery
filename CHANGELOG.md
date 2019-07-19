@@ -8,6 +8,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ### Added
 - Added missing statuses [PR#290](https://github.com/ualbertalib/NEOSDiscovery/pull/290)
 
+### Fixed
+- Fix for no links for electronic resources for King's [#285](https://github.com/ualbertalib/NEOSDiscovery/issues/285)
+
 ## [1.0.53] - 2019-07-09
 
 ## Changed
