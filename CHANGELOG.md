@@ -9,6 +9,15 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ### Added
 - Added javascript to ensure the cursor goes to the main search box [#197](https://github.com/ualbertalib/NEOSDiscovery/issues/197)
 
+## [1.0.54] - 2019-07-19
+
+### Added
+- Added missing statuses [PR#290](https://github.com/ualbertalib/NEOSDiscovery/pull/290)
+
+### Fixed
+- Fixed broken link in locations.yml for concordia lutheran seminary [#286](https://github.com/ualbertalib/NEOSDiscovery/issues/286)
+- Fix for no links for electronic resources for King's [#285](https://github.com/ualbertalib/NEOSDiscovery/issues/285)
+
 ## [1.0.53] - 2019-07-09
 
 ## Changed
