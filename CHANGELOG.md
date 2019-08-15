@@ -8,6 +8,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [1.0.53] - 2019-07-09
 
+### Added
+- Added javascript to ensure the cursor goes to the main search box [#197](https://github.com/ualbertalib/NEOSDiscovery/issues/197)
+
 ## Changed
 - removed link from Series title on catalog show page [#274](https://github.com/ualbertalib/NEOSDiscovery/issues/274)
 
