@@ -11,6 +11,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ### Added
 - Added missing pop-up and artists statuses [#257](https://github.com/ualbertalib/NEOSDiscovery/issues/257)
+- Added javascript to ensure the cursor goes to the main search box [#197](https://github.com/ualbertalib/NEOSDiscovery/issues/197)
 
 ## [1.0.54] - 2019-07-19
 
