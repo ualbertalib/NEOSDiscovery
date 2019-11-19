@@ -8,6 +8,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ### Security
 - Bumps nokogiri from 1.10.3 to 1.10.4 [PR#295](https://github.com/ualbertalib/NEOSDiscovery/pull/295)
+- Bumps nokogiri from 1.10.4 to 1.10.5 [PR#312](https://github.com/ualbertalib/NEOSDiscovery/pull/312)
 
 ### Added
 - Added missing pop-up and artists statuses [#257](https://github.com/ualbertalib/NEOSDiscovery/issues/257)
