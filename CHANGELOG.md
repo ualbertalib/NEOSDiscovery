@@ -10,6 +10,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 - Bumps nokogiri from 1.10.3 to 1.10.4 [PR#295](https://github.com/ualbertalib/NEOSDiscovery/pull/295)
 - Bumps nokogiri from 1.10.4 to 1.10.5 [PR#312](https://github.com/ualbertalib/NEOSDiscovery/pull/312)
 
+### Changed
+- Updated statuses and locations based on emailed symphony policy file [PR#314](https://github.com/ualbertalib/NEOSDiscovery/pull/314)
+
 ### Added
 - Added missing pop-up and artists statuses [#257](https://github.com/ualbertalib/NEOSDiscovery/issues/257)
 - Added javascript to ensure the cursor goes to the main search box [#197](https://github.com/ualbertalib/NEOSDiscovery/issues/197)
