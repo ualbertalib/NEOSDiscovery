@@ -153,7 +153,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.13.0)
     multipart-post (2.0.0)
-    mysql2 (0.5.2)
+    mysql2 (0.5.3)
     nio4r (2.5.2)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
@@ -275,7 +275,7 @@ DEPENDENCIES
   devise-guests (~> 0.7)
   jquery-rails
   listen (~> 3.2)
-  mysql2 (~> 0.5.2)
+  mysql2 (~> 0.5.3)
   rails (= 5.2.4)
   rollbar
   rsolr (~> 2.2)

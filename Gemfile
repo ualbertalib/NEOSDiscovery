@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '5.2.4'
 
 # Database stuff
-gem 'mysql2', '~> 0.5.2'
+gem 'mysql2', '~> 0.5.3'
 
 # Assets (CSS/JS) stuff
 gem 'jquery-rails'
