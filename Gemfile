@@ -34,7 +34,7 @@ gem 'sdoc', '~> 1.0.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3', '~> 1.4.1' # Active Record has a version constraint not specified in gemspec
+  gem 'sqlite3', '~> 1.4.2' # Active Record has a version constraint not specified in gemspec
 end
 
 group :development do
