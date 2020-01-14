@@ -18,7 +18,7 @@ gem 'blacklight-marc', '~> 6.0'
 gem 'blacklight-ris', git: 'https://github.com/upenn-libraries/blacklight-ris.git'
 gem 'blacklight_advanced_search', '>= 6.3'
 gem 'blacklight_range_limit'
-gem 'rsolr', '~> 2.2'
+gem 'rsolr', '~> 2.3'
 gem 'traject', '2.3.4'
 
 # Authentication
