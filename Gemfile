@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # Rails stuff
-gem 'rails', '5.2.3'
-
+gem 'rails', '= 5.2.3'
+gem 'sprockets', '= 3.7.2'
 # Database stuff
-gem 'mysql2', '~> 0.5.2'
+gem 'mysql2', '~> 0.5.3'
 
 # Assets (CSS/JS) stuff
 gem 'jquery-rails'
@@ -18,7 +18,7 @@ gem 'blacklight-marc', '~> 6.0'
 gem 'blacklight-ris', git: 'https://github.com/upenn-libraries/blacklight-ris.git'
 gem 'blacklight_advanced_search', '>= 6.3'
 gem 'blacklight_range_limit'
-gem 'rsolr', '~> 2.2'
+gem 'rsolr', '~> 2.3'
 gem 'traject', '2.3.4'
 
 # Authentication
@@ -34,7 +34,7 @@ gem 'sdoc', '~> 1.0.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3', '~> 1.4.1' # Active Record has a version constraint not specified in gemspec
+  gem 'sqlite3', '~> 1.4.2' # Active Record has a version constraint not specified in gemspec
 end
 
 group :development do
