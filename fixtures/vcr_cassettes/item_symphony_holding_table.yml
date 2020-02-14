@@ -1,0 +1,218 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://solrcloud-test.library.ualberta.ca:8080/solr/discovery-test/select?id=1002481&qt=document&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - Fri, 14 Feb 2020 05:00:43 GMT
+      Etag:
+      - '"NjE5ODAwMDAwMDAwMDAwMFNvbHI="'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '9999'
+    body:
+      encoding: UTF-8
+      string: '{"responseHeader":{"zkConnected":true,"status":0,"QTime":12,"params":{"q":"{!raw
+        f=id v=$id}","qt":"document","echoParams":"all","fl":"*","id":"1002481","collection":"discovery-test-2019-08-22","rows":"1","wt":"json"}},"response":{"numFound":1,"start":0,"maxScore":14.242968,"docs":[{"aacr_pub_date":["1966"],"pub_date":["1966"],"pub_date_sort":1966,"lc_callnum_display":["PR
+        3095 B4 1966 ACHCU","PR 3095 B4 1966 AENABC","PR 3095 B39 1966"],"subject_addl_t":["Stage
+        history To 1625","Technique","Dramatic production"],"opensearch_display":["Stage
+        history To 1625","Technique","Dramatic production","Shakespeare, William,
+        -- 1564-1616 -- Stage history -- To 1625","Shakespeare, William, -- 1564-1616
+        -- Technique","Shakespeare, William, -- 1564-1616 -- Dramatic production","Globe
+        Theatre (London, England : 1599-1644)","Shakespeare at the Globe : 1599-1609
+        / Bernard Beckerman","Beckerman, Bernard.","Shakespeare, William, 1564-1616","Globe
+        Theatre (London, England : 1599-1644)"],"subject_t":["Shakespeare, William,
+        -- 1564-1616 -- Stage history -- To 1625","Shakespeare, William, -- 1564-1616
+        -- Technique","Shakespeare, William, -- 1564-1616 -- Dramatic production","Globe
+        Theatre (London, England : 1599-1644)"],"title_display":["Shakespeare at the
+        Globe : 1599-1609"],"author_display":["Beckerman, Bernard"],"published_display":["New
+        York"],"title_t":["Shakespeare at the Globe : 1599-1609 / Bernard Beckerman"],"publisher_tesim":["Collier
+        Books"],"id":"1002481","format":["Book"],"author_t":["Beckerman, Bernard."],"contains_tesim":["254
+        p. ; 22 cm"],"size_tesim":["22 cm"],"subject_topic_facet":["Shakespeare, William,
+        1564-1616","Globe Theatre (London, England : 1599-1644)"],"location_tesim":["University
+        of Alberta Rutherford-Humanities & Social Science","Vanguard College","Burman
+        University"],"responsibility_display":["Bernard Beckerman."],"electronic_tesim":["At
+        Library"],"language_facet":["English"],"material_type_display":["254 p."],"source_tesim":["Symphony"],"source":["Symphony"],"institution_tesim":["Burman
+        University","University of Alberta","Vanguard College"],"_version_":1642604989437181952,"timestamp":"2019-08-22T21:43:10.430Z","marc_display":"<?xml
+        version=\"1.0\" encoding=\"UTF-8\"?><collection xmlns=\"http://www.loc.gov/MARC21/slim\"><record><leader>01954cam
+        a22004091  4500</leader><controlfield tag=\"001\">1002481</controlfield><controlfield
+        tag=\"008\">880413t19661962nyu    g          0 eng d</controlfield><datafield
+        tag=\"010\" ind1=\" \" ind2=\" \"><subfield code=\"a\">   62007159 /L</subfield></datafield><datafield
+        tag=\"035\" ind1=\" \" ind2=\" \"><subfield code=\"a\">ocm05019600</subfield></datafield><datafield
+        tag=\"040\" ind1=\" \" ind2=\" \"><subfield code=\"a\">LC</subfield><subfield
+        code=\"b\">eng</subfield></datafield><datafield tag=\"043\" ind1=\" \" ind2=\"
+        \"><subfield code=\"a\">e-uk-en</subfield></datafield><datafield tag=\"045\"
+        ind1=\" \" ind2=\" \"><subfield code=\"a\">t9u0</subfield></datafield><datafield
+        tag=\"049\" ind1=\" \" ind2=\" \"><subfield code=\"a\">AEU</subfield><subfield
+        code=\"b\">eng</subfield></datafield><datafield tag=\"050\" ind1=\" \" ind2=\"0\"><subfield
+        code=\"a\">PR3095</subfield><subfield code=\"b\">.B4</subfield></datafield><datafield
+        tag=\"082\" ind1=\" \" ind2=\" \"><subfield code=\"a\">792.094216</subfield></datafield><datafield
+        tag=\"090\" ind1=\" \" ind2=\" \"><subfield code=\"a\">PR 3095 B4 1966</subfield><subfield
+        code=\"b\">ACHCU</subfield></datafield><datafield tag=\"090\" ind1=\" \" ind2=\"
+        \"><subfield code=\"a\">PR 3095 B4 1966</subfield><subfield code=\"b\">AENABC</subfield></datafield><datafield
+        tag=\"090\" ind1=\"0\" ind2=\" \"><subfield code=\"a\">PR 3095 B39 1966</subfield></datafield><datafield
+        tag=\"100\" ind1=\"1\" ind2=\" \"><subfield code=\"a\">Beckerman, Bernard.</subfield></datafield><datafield
+        tag=\"245\" ind1=\"1\" ind2=\"0\"><subfield code=\"a\">Shakespeare at the
+        Globe :</subfield><subfield code=\"b\">1599-1609 /</subfield><subfield code=\"c\">Bernard
+        Beckerman.</subfield></datafield><datafield tag=\"260\" ind1=\" \" ind2=\"
+        \"><subfield code=\"a\">New York :</subfield><subfield code=\"b\">Collier
+        Books,</subfield><subfield code=\"c\">1966, c1962.</subfield></datafield><datafield
+        tag=\"300\" ind1=\" \" ind2=\" \"><subfield code=\"a\">254 p. ;</subfield><subfield
+        code=\"c\">22 cm.</subfield></datafield><datafield tag=\"336\" ind1=\" \"
+        ind2=\" \"><subfield code=\"a\">text</subfield><subfield code=\"b\">txt</subfield><subfield
+        code=\"2\">rdacontent</subfield></datafield><datafield tag=\"337\" ind1=\"
+        \" ind2=\" \"><subfield code=\"a\">unmediated</subfield><subfield code=\"b\">n</subfield><subfield
+        code=\"2\">rdamedia</subfield></datafield><datafield tag=\"338\" ind1=\" \"
+        ind2=\" \"><subfield code=\"a\">volume</subfield><subfield code=\"b\">nc</subfield><subfield
+        code=\"2\">rdacarrier</subfield></datafield><datafield tag=\"596\" ind1=\"
+        \" ind2=\" \"><subfield code=\"a\">23 43 59</subfield></datafield><datafield
+        tag=\"600\" ind1=\"1\" ind2=\"0\"><subfield code=\"a\">Shakespeare, William,</subfield><subfield
+        code=\"d\">1564-1616</subfield><subfield code=\"x\">Stage history</subfield><subfield
+        code=\"y\">To 1625.</subfield></datafield><datafield tag=\"600\" ind1=\"1\"
+        ind2=\"0\"><subfield code=\"a\">Shakespeare, William,</subfield><subfield
+        code=\"d\">1564-1616</subfield><subfield code=\"x\">Technique.</subfield></datafield><datafield
+        tag=\"600\" ind1=\"1\" ind2=\"0\"><subfield code=\"a\">Shakespeare, William,</subfield><subfield
+        code=\"d\">1564-1616</subfield><subfield code=\"x\">Dramatic production.</subfield></datafield><datafield
+        tag=\"610\" ind1=\"2\" ind2=\"0\"><subfield code=\"a\">Globe Theatre (London,
+        England : 1599-1644)</subfield></datafield><datafield tag=\"926\" ind1=\"
+        \" ind2=\" \"><subfield code=\"a\">PR 3095 B39 1966</subfield><subfield code=\"w\">LC</subfield><subfield
+        code=\"c\">1</subfield><subfield code=\"i\">0162001016151</subfield><subfield
+        code=\"d\">12/14/2010</subfield><subfield code=\"e\">12/13/2010</subfield><subfield
+        code=\"l\">ON_SHELF</subfield><subfield code=\"m\">UAHSS</subfield><subfield
+        code=\"n\">47</subfield><subfield code=\"p\">$150.00</subfield><subfield code=\"r\">Y</subfield><subfield
+        code=\"s\">Y</subfield><subfield code=\"t\">BOOK</subfield><subfield code=\"u\">4/18/1988</subfield></datafield><datafield
+        tag=\"926\" ind1=\" \" ind2=\" \"><subfield code=\"a\">PR 3095 B39 1966</subfield><subfield
+        code=\"w\">LC</subfield><subfield code=\"c\">2</subfield><subfield code=\"i\">000024114811</subfield><subfield
+        code=\"d\">4/28/2017</subfield><subfield code=\"e\">3/14/2017</subfield><subfield
+        code=\"l\">ON_SHELF</subfield><subfield code=\"m\">UAHSS</subfield><subfield
+        code=\"n\">42</subfield><subfield code=\"p\">$150.00</subfield><subfield code=\"r\">Y</subfield><subfield
+        code=\"s\">Y</subfield><subfield code=\"t\">BOOK</subfield><subfield code=\"u\">7/26/1990</subfield></datafield><datafield
+        tag=\"926\" ind1=\" \" ind2=\" \"><subfield code=\"a\">PR 3095 B39 1966</subfield><subfield
+        code=\"w\">LC</subfield><subfield code=\"c\">3</subfield><subfield code=\"i\">000024114829</subfield><subfield
+        code=\"d\">11/30/2003</subfield><subfield code=\"e\">11/27/2003</subfield><subfield
+        code=\"l\">ON_SHELF</subfield><subfield code=\"m\">UAHSS</subfield><subfield
+        code=\"n\">2</subfield><subfield code=\"p\">$150.00</subfield><subfield code=\"r\">Y</subfield><subfield
+        code=\"s\">Y</subfield><subfield code=\"t\">BOOK</subfield><subfield code=\"u\">9/7/1988</subfield></datafield><datafield
+        tag=\"926\" ind1=\" \" ind2=\" \"><subfield code=\"a\">PR 3095 B39 1966</subfield><subfield
+        code=\"w\">LC</subfield><subfield code=\"c\">4</subfield><subfield code=\"i\">000024114837</subfield><subfield
+        code=\"d\">12/3/2007</subfield><subfield code=\"e\">11/26/2007</subfield><subfield
+        code=\"l\">ON_SHELF</subfield><subfield code=\"m\">UAHSS</subfield><subfield
+        code=\"n\">4</subfield><subfield code=\"p\">$150.00</subfield><subfield code=\"r\">Y</subfield><subfield
+        code=\"s\">Y</subfield><subfield code=\"t\">BOOK</subfield><subfield code=\"u\">4/18/1988</subfield></datafield><datafield
+        tag=\"926\" ind1=\" \" ind2=\" \"><subfield code=\"a\">PR 3095 B39 1966</subfield><subfield
+        code=\"w\">LC</subfield><subfield code=\"c\">5</subfield><subfield code=\"i\">000024114845</subfield><subfield
+        code=\"d\">12/3/2007</subfield><subfield code=\"e\">11/27/2007</subfield><subfield
+        code=\"l\">ON_SHELF</subfield><subfield code=\"m\">UAHSS</subfield><subfield
+        code=\"n\">12</subfield><subfield code=\"p\">$150.00</subfield><subfield code=\"r\">Y</subfield><subfield
+        code=\"s\">Y</subfield><subfield code=\"t\">BOOK</subfield><subfield code=\"u\">4/18/1988</subfield></datafield><datafield
+        tag=\"926\" ind1=\" \" ind2=\" \"><subfield code=\"a\">PR 3095 B4 1966</subfield><subfield
+        code=\"w\">LC</subfield><subfield code=\"c\">1</subfield><subfield code=\"i\">0163900164134</subfield><subfield
+        code=\"d\">2/13/2014</subfield><subfield code=\"f\">2/13/2014</subfield><subfield
+        code=\"g\">2</subfield><subfield code=\"l\">ON_SHELF</subfield><subfield code=\"m\">VANGUARD</subfield><subfield
+        code=\"n\">1</subfield><subfield code=\"p\">$150.00</subfield><subfield code=\"r\">Y</subfield><subfield
+        code=\"s\">Y</subfield><subfield code=\"t\">BOOK</subfield><subfield code=\"u\">6/26/1996</subfield><subfield
+        code=\"0\">TAYLOR</subfield></datafield><datafield tag=\"926\" ind1=\" \"
+        ind2=\" \"><subfield code=\"a\">PR 3095 .B4 1966</subfield><subfield code=\"w\">LC</subfield><subfield
+        code=\"c\">1</subfield><subfield code=\"i\">32860000453984</subfield><subfield
+        code=\"d\">11/1/2011</subfield><subfield code=\"f\">11/1/2011</subfield><subfield
+        code=\"g\">1</subfield><subfield code=\"l\">ON_SHELF</subfield><subfield code=\"m\">BURMAN</subfield><subfield
+        code=\"n\">1</subfield><subfield code=\"p\">$150.00</subfield><subfield code=\"r\">Y</subfield><subfield
+        code=\"s\">Y</subfield><subfield code=\"t\">BOOK</subfield><subfield code=\"u\">6/18/1997</subfield></datafield></record></collection>"}]}}
+
+'
+    http_version: 
+  recorded_at: Fri, 14 Feb 2020 21:40:39 GMT
+- request:
+    method: get
+    uri: https://ws.library.ualberta.ca/symws3/rest/standard/lookupTitleInfo?clientID=Primo&includeAvailabilityInfo=true&includeItemInfo=true&includeMarcHoldings=true&marcEntryFilter=ALL&titleID=1002481
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Feb 2020 21:40:39 GMT
+      Server:
+      - Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><LookupTitleInfoResponse
+        xmlns="http://schemas.sirsidynix.com/symws/standard"><TitleInfo><titleID>1002481</titleID><TitleAvailabilityInfo><totalCopiesAvailable>7</totalCopiesAvailable><libraryWithAvailableCopies>Burman
+        University</libraryWithAvailableCopies><libraryWithAvailableCopies>University
+        of Alberta Rutherford-Humanities &amp; Social Science</libraryWithAvailableCopies><libraryWithAvailableCopies>Vanguard
+        College</libraryWithAvailableCopies><totalResvCopiesAvailable>0</totalResvCopiesAvailable><locationOfFirstAvailableItem>ON_SHELF</locationOfFirstAvailableItem><holdable>true</holdable><bookable>false</bookable></TitleAvailabilityInfo><CallInfo><libraryID>BURMAN</libraryID><classificationID>LC</classificationID><callNumber>PR
+        3095 .B4 1966</callNumber><numberOfCopies>1</numberOfCopies><ItemInfo><itemID>32860000453984</itemID><itemTypeID>BOOK</itemTypeID><currentLocationID>ON_SHELF</currentLocationID><homeLocationID>ON_SHELF</homeLocationID><chargeable>true</chargeable><fixedTimeBooking>false</fixedTimeBooking></ItemInfo></CallInfo><CallInfo><libraryID>UAHSS</libraryID><classificationID>LC</classificationID><callNumber>PR
+        3095 B39 1966</callNumber><numberOfCopies>5</numberOfCopies><ItemInfo><itemID>0162001016151</itemID><itemTypeID>BOOK</itemTypeID><currentLocationID>ON_SHELF</currentLocationID><homeLocationID>ON_SHELF</homeLocationID><chargeable>true</chargeable><fixedTimeBooking>false</fixedTimeBooking></ItemInfo><ItemInfo><itemID>000024114811</itemID><itemTypeID>BOOK</itemTypeID><currentLocationID>ON_SHELF</currentLocationID><homeLocationID>ON_SHELF</homeLocationID><chargeable>true</chargeable><fixedTimeBooking>false</fixedTimeBooking></ItemInfo><ItemInfo><itemID>000024114829</itemID><itemTypeID>BOOK</itemTypeID><currentLocationID>ON_SHELF</currentLocationID><homeLocationID>ON_SHELF</homeLocationID><chargeable>true</chargeable><fixedTimeBooking>false</fixedTimeBooking></ItemInfo><ItemInfo><itemID>000024114837</itemID><itemTypeID>BOOK</itemTypeID><currentLocationID>ON_SHELF</currentLocationID><homeLocationID>ON_SHELF</homeLocationID><chargeable>true</chargeable><fixedTimeBooking>false</fixedTimeBooking></ItemInfo><ItemInfo><itemID>000024114845</itemID><itemTypeID>BOOK</itemTypeID><currentLocationID>ON_SHELF</currentLocationID><homeLocationID>ON_SHELF</homeLocationID><chargeable>true</chargeable><fixedTimeBooking>false</fixedTimeBooking></ItemInfo></CallInfo><CallInfo><libraryID>VANGUARD</libraryID><classificationID>LC</classificationID><callNumber>PR
+        3095 B4 1966</callNumber><numberOfCopies>1</numberOfCopies><ItemInfo><itemID>0163900164134</itemID><itemTypeID>BOOK</itemTypeID><currentLocationID>ON_SHELF</currentLocationID><homeLocationID>ON_SHELF</homeLocationID><chargeable>true</chargeable><fixedTimeBooking>false</fixedTimeBooking></ItemInfo></CallInfo><BibliographicInfo><MarcEntryInfo><label>Leader</label><entryID>000</entryID><indicators>  </indicators><text>am1
+        0c a</text></MarcEntryInfo><MarcEntryInfo><label>key</label><entryID>001</entryID><indicators>  </indicators><text>1002481</text></MarcEntryInfo><MarcEntryInfo><label>Data
+        source</label><entryID>003</entryID><indicators>  </indicators><text>CaAEU</text></MarcEntryInfo><MarcEntryInfo><label>Fixed
+        field data</label><entryID>008</entryID><indicators>  </indicators><text>880413t19661962nyu    g          0
+        eng d</text></MarcEntryInfo><MarcEntryInfo><label>LCCN</label><entryID>010</entryID><indicators>  </indicators><text>62007159
+        /L</text></MarcEntryInfo><MarcEntryInfo><label>Local system #</label><entryID>035</entryID><indicators>  </indicators><text>ocm05019600</text></MarcEntryInfo><MarcEntryInfo><label>Cataloging
+        Source</label><entryID>040</entryID><indicators>  </indicators><text>LC eng</text></MarcEntryInfo><MarcEntryInfo><label>Geographic
+        Area Code</label><entryID>043</entryID><indicators>  </indicators><text>e-uk-en</text></MarcEntryInfo><MarcEntryInfo><label>Content
+        time period</label><entryID>045</entryID><indicators>  </indicators><text>t9u0</text></MarcEntryInfo><MarcEntryInfo><label>Local
+        holdings</label><entryID>049</entryID><indicators>  </indicators><text>AEU
+        eng</text></MarcEntryInfo><MarcEntryInfo><label>LC Call Number</label><entryID>050</entryID><indicators>
+        0</indicators><text>PR3095 .B4</text></MarcEntryInfo><MarcEntryInfo><label>Dewey
+        Decimal Classification Number</label><entryID>082</entryID><indicators>  </indicators><text>792.094216</text></MarcEntryInfo><MarcEntryInfo><label>Local
+        LC call number</label><entryID>090</entryID><indicators>  </indicators><text>PR
+        3095 B4 1966 ACHCU</text><entryTypeCodes>L</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Local
+        LC call number</label><entryID>090</entryID><indicators>  </indicators><text>PR
+        3095 B4 1966 AENABC</text><entryTypeCodes>L</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Local
+        LC call number</label><entryID>090</entryID><indicators>0 </indicators><text>PR
+        3095 B39 1966</text><entryTypeCodes>L</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Personal
+        Author</label><entryID>100</entryID><indicators>1 </indicators><text>Beckerman,
+        Bernard.</text><entryTypeCodes>MAR</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Title</label><entryID>245</entryID><indicators>10</indicators><text>Shakespeare
+        at the Globe : 1599-1609 / Bernard Beckerman.</text><entryTypeCodes>RMT</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Publication
+        info</label><entryID>260</entryID><indicators>  </indicators><text>New York
+        : Collier Books, 1966, c1962.</text><entryTypeCodes>Y</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Physical
+        description</label><entryID>300</entryID><indicators>  </indicators><text>254
+        p. ; 22 cm.</text></MarcEntryInfo><MarcEntryInfo><label>Content type</label><entryID>336</entryID><indicators>  </indicators><text>text
+        txt</text></MarcEntryInfo><MarcEntryInfo><label>Media type</label><entryID>337</entryID><indicators>  </indicators><text>unmediated
+        n</text></MarcEntryInfo><MarcEntryInfo><label>Carrier type</label><entryID>338</entryID><indicators>  </indicators><text>volume
+        nc</text></MarcEntryInfo><MarcEntryInfo><label>Held by</label><entryID>596</entryID><indicators>  </indicators><text>BURMAN
+        UAHSS VANGUARD</text><entryTypeCodes>H</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Personal
+        subject</label><entryID>600</entryID><indicators>10</indicators><text>Shakespeare,
+        William, 1564-1616--Stage history--To 1625.</text><entryTypeCodes>RS</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Personal
+        subject</label><entryID>600</entryID><indicators>10</indicators><text>Shakespeare,
+        William, 1564-1616--Technique.</text><entryTypeCodes>RS</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Personal
+        subject</label><entryID>600</entryID><indicators>10</indicators><text>Shakespeare,
+        William, 1564-1616--Dramatic production.</text><entryTypeCodes>RS</entryTypeCodes></MarcEntryInfo><MarcEntryInfo><label>Corporate
+        subject</label><entryID>610</entryID><indicators>20</indicators><text>Globe
+        Theatre (London, England : 1599-1644)</text><entryTypeCodes>RS</entryTypeCodes></MarcEntryInfo></BibliographicInfo></TitleInfo></LookupTitleInfoResponse>'
+    http_version: 
+  recorded_at: Fri, 14 Feb 2020 21:40:39 GMT
+recorded_with: VCR 5.0.0

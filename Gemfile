@@ -32,6 +32,11 @@ gem 'rollbar'
 gem 'sdoc', '~> 1.0.0', group: :doc
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.8'
+  gem 'capybara', '>= 2.4.0'
+  gem 'vcr'
+  gem 'webmock'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'sqlite3', '~> 1.4.2' # Active Record has a version constraint not specified in gemspec

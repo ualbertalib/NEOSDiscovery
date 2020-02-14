@@ -1,0 +1,131 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://solrcloud-test.library.ualberta.ca:8080/solr/discovery-test/select?id=954921333007&qt=document&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - Fri, 14 Feb 2020 05:00:43 GMT
+      Etag:
+      - '"NjU5ODAwMDAwMDAwMDAwMFNvbHI="'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '5708'
+    body:
+      encoding: UTF-8
+      string: '{"responseHeader":{"zkConnected":true,"status":0,"QTime":5,"params":{"q":"{!raw
+        f=id v=$id}","qt":"document","echoParams":"all","fl":"*","id":"954921333007","collection":"discovery-test-2019-08-22","rows":"1","wt":"json"}},"response":{"numFound":1,"start":0,"maxScore":13.732142,"docs":[{"subject_addl_t":["Business
+        Management","Economics","General and Others"],"opensearch_display":["Business
+        Management","Economics","General and Others","Business, Economy and Management","Business,
+        Economy and Management","Academy of Management Journal"],"title_addl_t":["Academy
+        of Management Journal","ACAD MANAGE J","ACADEMY OF MANAGEMENT JOURNAL (AMJ)","ACADEMY
+        OF MANAGEMENT JOURNAL","JOURNAL OF THE ACADEMY OF MANAGEMENT","ACAD. MANAGE.
+        J"],"format":["Journal"],"subject_t":["Business, Economy and Management"],"issn_tesim":["0001-4273"],"issn_t":["0001-4273","0001-4273"],"subject_topic_facet":["Business,
+        Economy and Management"],"location_tesim":["University of Alberta Internet"],"electronic_tesim":["Online"],"language_facet":["English"],"title_display":["Academy
+        of Management Journal"],"published_display":["UNITED STATES"],"title_t":["Academy
+        of Management Journal"],"id":"954921333007","source_tesim":["SFX"],"source":["SFX"],"_version_":1658479534031241216,"timestamp":"2020-02-14T03:02:15.902Z","marc_display":"<?xml
+        version=\"1.0\" encoding=\"UTF-8\"?><collection xmlns=\"http://www.loc.gov/MARC21/slim\"><record><leader>00000nas-a2200000z--4500</leader><controlfield
+        tag=\"008\">200213uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield><datafield
+        tag=\"010\" ind1=\" \" ind2=\" \"><subfield code=\"a\">   58003817 </subfield></datafield><datafield
+        tag=\"245\" ind1=\" \" ind2=\"0\"><subfield code=\"a\">Academy of Management
+        Journal</subfield></datafield><datafield tag=\"210\" ind1=\" \" ind2=\" \"><subfield
+        code=\"a\">ACAD MANAGE J</subfield></datafield><datafield tag=\"210\" ind1=\"
+        \" ind2=\" \"><subfield code=\"a\">ACADEMY OF MANAGEMENT JOURNAL (AMJ)</subfield></datafield><datafield
+        tag=\"210\" ind1=\" \" ind2=\" \"><subfield code=\"a\">ACADEMY OF MANAGEMENT
+        JOURNAL</subfield></datafield><datafield tag=\"210\" ind1=\" \" ind2=\" \"><subfield
+        code=\"a\">JOURNAL OF THE ACADEMY OF MANAGEMENT  </subfield></datafield><datafield
+        tag=\"210\" ind1=\" \" ind2=\" \"><subfield code=\"a\">ACAD. MANAGE. J</subfield></datafield><datafield
+        tag=\"260\" ind1=\" \" ind2=\" \"><subfield code=\"a\">UNITED STATES</subfield><subfield
+        code=\"b\">Academy of Management</subfield></datafield><datafield tag=\"022\"
+        ind1=\" \" ind2=\" \"><subfield code=\"a\">0001-4273</subfield></datafield><datafield
+        tag=\"776\" ind1=\" \" ind2=\" \"><subfield code=\"x\">1948-0989</subfield></datafield><datafield
+        tag=\"090\" ind1=\" \" ind2=\" \"><subfield code=\"a\">954921333007</subfield></datafield><datafield
+        tag=\"866\" ind1=\" \" ind2=\" \"><subfield code=\"a\">Available from 1963
+        until 1985. </subfield><subfield code=\"s\">2550000000000007</subfield><subfield
+        code=\"t\">2550000000000007</subfield><subfield code=\"x\">ABI/INFORM Collection:Full
+        Text</subfield><subfield code=\"z\">2550000000159517</subfield></datafield><datafield
+        tag=\"866\" ind1=\" \" ind2=\" \"><subfield code=\"a\">Available from 1987
+        until 2001. </subfield><subfield code=\"s\">2550000000000007</subfield><subfield
+        code=\"t\">2550000000000007</subfield><subfield code=\"x\">ABI/INFORM Collection:Full
+        Text</subfield><subfield code=\"z\">2550000000159516</subfield></datafield><datafield
+        tag=\"866\" ind1=\" \" ind2=\" \"><subfield code=\"a\">Available from 1963.
+        </subfield><subfield code=\"s\">1000000000001224</subfield><subfield code=\"t\">1000000000000630</subfield><subfield
+        code=\"x\">Business Source Complete:Full Text</subfield><subfield code=\"z\">1000000000123030</subfield></datafield><datafield
+        tag=\"866\" ind1=\" \" ind2=\" \"><subfield code=\"a\">Available from 1963
+        until 1985. </subfield><subfield code=\"s\">2610000000000087</subfield><subfield
+        code=\"t\">2610000000000087</subfield><subfield code=\"x\">Entrepreneurship
+        Database:Full Text</subfield><subfield code=\"z\">2550000000176352</subfield></datafield><datafield
+        tag=\"866\" ind1=\" \" ind2=\" \"><subfield code=\"a\">Available from 1987
+        until 2001. </subfield><subfield code=\"s\">2610000000000087</subfield><subfield
+        code=\"t\">2610000000000087</subfield><subfield code=\"x\">Entrepreneurship
+        Database:Full Text</subfield><subfield code=\"z\">2550000000176351</subfield></datafield><datafield
+        tag=\"866\" ind1=\" \" ind2=\" \"><subfield code=\"a\">Available from 1963
+        volume: 6 issue: 1. Most recent 6 year(s) not available. </subfield><subfield
+        code=\"s\">111081201237001</subfield><subfield code=\"t\">111081201237000</subfield><subfield
+        code=\"x\">JSTOR Arts and Sciences IV:Full Text</subfield><subfield code=\"z\">111082312354000</subfield></datafield><datafield
+        tag=\"866\" ind1=\" \" ind2=\" \"><subfield code=\"a\">Available from 1963
+        volume: 6 issue: 1. Most recent 6 year(s) not available. </subfield><subfield
+        code=\"s\">111006221384001</subfield><subfield code=\"t\">111006221384000</subfield><subfield
+        code=\"x\">JSTOR Business Collection:Full Text</subfield><subfield code=\"z\">111006223850027</subfield></datafield><datafield
+        tag=\"650\" ind1=\" \" ind2=\"4\"><subfield code=\"a\">Business, Economy and
+        Management</subfield><subfield code=\"x\">Business Management</subfield></datafield><datafield
+        tag=\"650\" ind1=\" \" ind2=\"4\"><subfield code=\"a\">Business, Economy and
+        Management</subfield><subfield code=\"x\">Economics</subfield></datafield><datafield
+        tag=\"650\" ind1=\" \" ind2=\"4\"><subfield code=\"a\">Business, Economy and
+        Management</subfield><subfield code=\"x\">General and Others</subfield></datafield></record></collection>"}]}}
+
+'
+    http_version: 
+  recorded_at: Fri, 14 Feb 2020 21:40:39 GMT
+- request:
+    method: get
+    uri: https://ws.library.ualberta.ca/symws3/rest/standard/lookupTitleInfo?clientID=Primo&includeAvailabilityInfo=true&includeItemInfo=true&includeMarcHoldings=true&marcEntryFilter=ALL&titleID=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Fri, 14 Feb 2020 21:40:39 GMT
+      Server:
+      - Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Fault xmlns="http://schemas.sirsidynix.com/rest"><code>com.sirsidynix.ilswslegacy.rest.ParameterException.badInteger</code><string>The
+        parameter titleID must be a well formed integer</string></Fault>
+    http_version: 
+  recorded_at: Fri, 14 Feb 2020 21:40:39 GMT
+recorded_with: VCR 5.0.0
