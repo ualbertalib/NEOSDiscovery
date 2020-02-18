@@ -12,6 +12,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ### Added
 - add regression tests [PR#330][https://github.com/ualbertalib/NEOSDiscovery/pull/330]
 
+### Changed
+- change what appears in the open search description [#258](https://github.com/ualbertalib/NEOSDiscovery/issues/258)
+
 ## [1.0.55] - 2019-11-26
 ### Security
 - Bumps nokogiri from 1.10.3 to 1.10.4 [PR#295](https://github.com/ualbertalib/NEOSDiscovery/pull/295)
