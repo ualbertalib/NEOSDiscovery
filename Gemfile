@@ -34,7 +34,7 @@ gem 'sdoc', '~> 1.0.0', group: :doc
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'capybara', '>= 2.4.0'
-  gem 'vcr'
+  gem 'vcr', '5.0'
   gem 'webmock'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

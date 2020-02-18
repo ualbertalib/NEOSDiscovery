@@ -14,6 +14,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ### Changed
 - change what appears in the open search description [#258](https://github.com/ualbertalib/NEOSDiscovery/issues/258)
+- pin version of VCR until we can determine if we can except an ethical license
 
 ## [1.0.55] - 2019-11-26
 ### Security
