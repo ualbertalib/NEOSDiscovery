@@ -9,6 +9,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ### Fixed
 - returned aginternet to the locations file [PR#316](https://github.com/ualbertalib/NEOSDiscovery/pull/316)
 
+### Added
+- add regression tests [PR#330][https://github.com/ualbertalib/NEOSDiscovery/pull/330]
+
 ### Changed
 - change what appears in the open search description [#258](https://github.com/ualbertalib/NEOSDiscovery/issues/258)
 
