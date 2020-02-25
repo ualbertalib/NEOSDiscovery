@@ -1,99 +1,49 @@
+<%# TODO: make all '<a href=' a link_to %>
 <div id="holdings">
 
-<div class="numb"></div>
-<table>
-  <tr>
-    <th>Where is this?</th>
-  </tr>
-
-  <% @links = @urls.reduce Hash.new, :merge if @urls %>
-  <% for item in @holdings.reverse %>
-    <% @locationname = @locations.dig(item[:location].downcase.gsub("_",""), "name") || "Unknown"%>
-    <% @locationurl = @locations.dig(item[:location].downcase.gsub("_",""), "locationurl")  %>
-    <% if @locationname.include?(" - ") %>
-      <% @current_loc = @locationname.split(" - ").first %>
-    <% else %>
-      <% @current_loc = @locationname.split("College").first %>
-    <% end %>
-    <% if @current_loc.include? "Grande Prairie" then @current_loc = "gp" end %>
-    <% if @current_loc.include? "Concordia" then @current_loc = "concordia" end %>
-    <% if @current_loc.include? "Alberta Health" then @current_loc = "abhealth" end %>
-    <% if @current_loc.include? "Northern Lakes" then @current_loc = "nlc" end %>
-    <% if @current_loc.include? "Newman" then @current_loc = "newman" end %>
-    <% if @current_loc.include? "Government" then @current_loc = "gov" end %>
-    <% if @current_loc.include? "King" then @current_loc = "kings" end %>
-    <% if @current_loc.include? "Nor" then @current_loc = "norquest" end %>
-    <% if @current_loc.include? "Lake" then @current_loc = "lakeland" end %>
-    <% if @current_loc.include? "MacEwan" then @current_loc = "macewanuniversity" end %>
-    <% if @current_loc.include? "Free" then @current_loc = "free" end %>
-    <% if @current_loc.include? "University of Alberta" then @current_loc = "universityofalberta" end %>
-    <% if @current_loc.include? "Covenant" then @current_loc = "covenant" end %>
-    <% if @current_loc.include? "Innovates" then @current_loc = "innovates" end %>
-    <% @library = @libraries[@current_loc.downcase.gsub(/\s+/, "")] %>
-    <% @proxy = @library.dig('proxy') if @library%>
-
-    <% @unavailable = true if @statuses[item[:status].to_s.downcase] == "unavailable" %>
+  <div class="numb"></div>
+  <table>
     <tr>
-      <td>
-        <p class="lib-loc">
-          <%= @locationname %>
-          <% if @locationurl %>
-            <a href="<%= @locationurl %>" target="_blank">
-              <span class="glyphicon glyphicon-info-sign">
-              </span>
-            </a>
-          <% end %>
-        </p>
-        <% if @links %>
-         <% @links.each{|name,link| %>
-            <% if @library && (name.include?(@library["name"])) %>
-              <% @current_link = "#{@proxy}#{link}" %>
-              <% if item[:call] == "Internet Access" %>
-                <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong><p style="font-size:10pt;">(<%= name %>)</p>
-              <% end %>
-            <% end %>
-          <% } %>
-          <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
-          <% @links.each{|name,link| %>
-            <% if (name.include?("NEOS")) or (name.include?("Free")) or (name.include?("NEOS")) then %>
-              <% @current_link = "#{@proxy}#{link}" %>
-              <% if item[:call] == "Internet Access" %>
-                <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong><p style="font-size:10pt;">(<%= name %>)</p></td>
-              <%# @links.delete(name) %>
-              <% else %>
-                <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
-              <% end %>
-            <% end %>
-          <% } %>
-        <% else %>
-          <% if item[:call] == "Internet Access" %>
-            <strong><a href="<%= @current_link %>" target="_blank" class="loc-call"><span class="glyphicon glyphicon-share-alt"></span> Click here for Internet Access</a></strong></td>
-          <% else %>
-            <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
-          <% end %>
-        <% end %>
+      <th>Where is this?</th>
+    </tr>
 
-        <div class="statuses">
-          <span class="a-label">status: </span>
-          <% if item[:status] == "CHECKEDOUT" %>
-            <% if item[:due] %>
-              Due: <%= Date.parse(item[:due]) %>
-            <% else %>
-              Unknown/Never
+    <% for item in @holdings.reverse %>
+      <tr>
+        <td>
+          <p class="lib-loc">
+            <%= location_name(item) %>
+            <% if location_url(item) %>
+              <a href="<%= location_url(item) %>" target="_blank">
+                <span class="glyphicon glyphicon-info-sign">
+                </span>
+              </a>
             <% end %>
-          <% else %>
-            <%= @statuses[item[:status].to_s.downcase] %>
-            <% if @unavailable %>
+          </p>
+          <% links(location_name(item)).each do |name,link| %>
+            <% if item[:call] == "Internet Access" %>
+              <strong>
+                <a href="<%= electronic_access_url(proxy?(name), proxy(item), link ) %>" target="_blank" class="loc-call">
+                  <span class="glyphicon glyphicon-share-alt"></span>
+                  Click here for Internet Access
+                </a>
+              </strong>
+              <p style="font-size:10pt;">(<%= name %>)</p>
+            <% end %>
+          <% end %>
+          <span class="loc-call"><span class="a-label">call number: </span><%= item[:call] %></span>
+
+          <div class="statuses">
+            <span class="a-label">status: </span>
+            <%= status(item) %>
+            <% if unavailable?(item) %>
               <p style="font-size: small"><strong>Note: For access, please contact <%= link_to $libraryname+" Library", $homeurl %></strong></p>
             <% end %>
             <% if item[:public_note] %>
               <p style="font-size:small"><strong>Note: <%= item[:public_note] %></strong></p>
             <% end %>
-          <% end %>
-        </div>
-      </td>
-    </tr>
-    <% @unavailable = false %>
-  <% end %>
-</table>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </table>
 </div>
