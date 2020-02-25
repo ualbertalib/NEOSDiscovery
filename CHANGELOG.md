@@ -15,6 +15,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ### Added
 - add regression tests [PR#330][https://github.com/ualbertalib/NEOSDiscovery/pull/330]
 - add initialization for rollbar proxy [#271](https://github.com/ualbertalib/NEOSDiscovery/issues/271)
+- Add version file and meta generator tag 
 
 ### Changed
 - change what appears in the open search description [#258](https://github.com/ualbertalib/NEOSDiscovery/issues/258)
