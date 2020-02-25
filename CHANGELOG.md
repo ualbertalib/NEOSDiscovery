@@ -17,6 +17,7 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ### Changed
 - change what appears in the open search description [#258](https://github.com/ualbertalib/NEOSDiscovery/issues/258)
+- refactor holdings table logic into a helper [#320](https://github.com/ualbertalib/NEOSDiscovery/issues/320)
 
 ## [1.0.55] - 2019-11-26
 ### Security
