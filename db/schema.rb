@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2016_05_06_175925) do
+ActiveRecord::Schema.define(version: 2020_02_25_224334) do
 
   create_table "bookmarks", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -23,6 +23,41 @@ ActiveRecord::Schema.define(version: 2016_05_06_175925) do
     t.index ["user_id"], name: "index_bookmarks_on_user_id"
   end
 
+  create_table "circulation_rules", force: :cascade do |t|
+    t.string "short_code"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "item_types", force: :cascade do |t|
+    t.string "short_code"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "libraries", force: :cascade do |t|
+    t.string "short_code"
+    t.string "name"
+    t.string "url"
+    t.string "neos_url"
+    t.string "proxy"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string "short_code"
+    t.string "name"
+    t.string "url"
+    t.integer "library_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["library_id"], name: "index_locations_on_library_id"
+    t.index ["short_code"], name: "index_locations_on_short_code", unique: true
+  end
+
   create_table "searches", force: :cascade do |t|
     t.text "query_params"
     t.integer "user_id"
@@ -30,6 +65,13 @@ ActiveRecord::Schema.define(version: 2016_05_06_175925) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_searches_on_user_id"
+  end
+
+  create_table "statuses", force: :cascade do |t|
+    t.string "short_code"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
