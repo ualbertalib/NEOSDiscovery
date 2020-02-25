@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.3
+      - Faraday v1.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,17 +19,17 @@ http_interactions:
       message: OK
     headers:
       Last-Modified:
-      - Fri, 14 Feb 2020 05:00:43 GMT
+      - Fri, 21 Feb 2020 05:00:43 GMT
       Etag:
-      - '"NjU5ODAwMDAwMDAwMDAwMFNvbHI="'
+      - '"MTM1ODAwMDAwMDAwMDAwMFNvbHI="'
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
       - '5708'
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"zkConnected":true,"status":0,"QTime":5,"params":{"q":"{!raw
-        f=id v=$id}","qt":"document","echoParams":"all","fl":"*","id":"954921333007","collection":"discovery-test-2019-08-22","rows":"1","wt":"json"}},"response":{"numFound":1,"start":0,"maxScore":13.732142,"docs":[{"subject_addl_t":["Business
+      string: '{"responseHeader":{"zkConnected":true,"status":0,"QTime":6,"params":{"q":"{!raw
+        f=id v=$id}","qt":"document","echoParams":"all","fl":"*","id":"954921333007","collection":"discovery-test-2019-08-22","rows":"1","wt":"json"}},"response":{"numFound":1,"start":0,"maxScore":13.699866,"docs":[{"subject_addl_t":["Business
         Management","Economics","General and Others"],"opensearch_display":["Business
         Management","Economics","General and Others","Business, Economy and Management","Business,
         Economy and Management","Academy of Management Journal"],"title_addl_t":["Academy
@@ -38,9 +38,9 @@ http_interactions:
         J"],"format":["Journal"],"subject_t":["Business, Economy and Management"],"issn_tesim":["0001-4273"],"issn_t":["0001-4273","0001-4273"],"subject_topic_facet":["Business,
         Economy and Management"],"location_tesim":["University of Alberta Internet"],"electronic_tesim":["Online"],"language_facet":["English"],"title_display":["Academy
         of Management Journal"],"published_display":["UNITED STATES"],"title_t":["Academy
-        of Management Journal"],"id":"954921333007","source_tesim":["SFX"],"source":["SFX"],"_version_":1658479534031241216,"timestamp":"2020-02-14T03:02:15.902Z","marc_display":"<?xml
+        of Management Journal"],"id":"954921333007","source_tesim":["SFX"],"source":["SFX"],"_version_":1659113690850394112,"timestamp":"2020-02-21T03:01:54.967Z","marc_display":"<?xml
         version=\"1.0\" encoding=\"UTF-8\"?><collection xmlns=\"http://www.loc.gov/MARC21/slim\"><record><leader>00000nas-a2200000z--4500</leader><controlfield
-        tag=\"008\">200213uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield><datafield
+        tag=\"008\">200220uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield><datafield
         tag=\"010\" ind1=\" \" ind2=\" \"><subfield code=\"a\">   58003817 </subfield></datafield><datafield
         tag=\"245\" ind1=\" \" ind2=\"0\"><subfield code=\"a\">Academy of Management
         Journal</subfield></datafield><datafield tag=\"210\" ind1=\" \" ind2=\" \"><subfield
@@ -90,8 +90,8 @@ http_interactions:
         Management</subfield><subfield code=\"x\">General and Others</subfield></datafield></record></collection>"}]}}
 
 '
-    http_version: 
-  recorded_at: Fri, 14 Feb 2020 21:40:39 GMT
+    http_version: null
+  recorded_at: Fri, 21 Feb 2020 22:18:08 GMT
 - request:
     method: get
     uri: https://ws.library.ualberta.ca/symws3/rest/standard/lookupTitleInfo?clientID=Primo&includeAvailabilityInfo=true&includeItemInfo=true&includeMarcHoldings=true&marcEntryFilter=ALL&titleID=
@@ -111,7 +111,7 @@ http_interactions:
       message: Internal Server Error
     headers:
       Date:
-      - Fri, 14 Feb 2020 21:40:39 GMT
+      - Fri, 21 Feb 2020 22:18:08 GMT
       Server:
       - Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
       Access-Control-Allow-Origin:
@@ -126,6 +126,6 @@ http_interactions:
       encoding: UTF-8
       string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Fault xmlns="http://schemas.sirsidynix.com/rest"><code>com.sirsidynix.ilswslegacy.rest.ParameterException.badInteger</code><string>The
         parameter titleID must be a well formed integer</string></Fault>
-    http_version: 
-  recorded_at: Fri, 14 Feb 2020 21:40:39 GMT
-recorded_with: VCR 5.0.0
+    http_version: null
+  recorded_at: Fri, 21 Feb 2020 22:18:08 GMT
+recorded_with: VCR 5.1.0

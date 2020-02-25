@@ -6,14 +6,19 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Security
+- Bumps nokogiri from 1.10.7 to 1.10.8 [PR#337](https://github.com/ualbertalib/NEOSDiscovery/pull/337)
+
 ### Fixed
 - returned aginternet to the locations file [PR#316](https://github.com/ualbertalib/NEOSDiscovery/pull/316)
 
 ### Added
-- add regression tests [PR#330][https://github.com/ualbertalib/NEOSDiscovery/pull/330]
+- add regression tests [PR#330](https://github.com/ualbertalib/NEOSDiscovery/pull/330)
+- add initialization for rollbar proxy [#271](https://github.com/ualbertalib/NEOSDiscovery/issues/271)
 
 ### Changed
 - change what appears in the open search description [#258](https://github.com/ualbertalib/NEOSDiscovery/issues/258)
+- refactor holdings table logic into a helper [#320](https://github.com/ualbertalib/NEOSDiscovery/issues/320)
 - pin version of VCR until we can determine if we can except an ethical license [PR#334](https://github.com/ualbertalib/NEOSDiscovery/pull/334)
 
 ## [1.0.55] - 2019-11-26

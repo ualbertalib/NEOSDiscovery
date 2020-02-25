@@ -10,6 +10,24 @@ RSpec.describe 'Item has proper holding table', type: :feature do
       expect(first('#holdings table td')).to have_text('call number: PR 3095 .B4 1966')
       expect(first('#holdings table td')).to have_text('status: on shelf')
       expect(first('#holdings table td')).to have_css("a[href='https://www.burmanu.ca/library']")
+
+      visit '/catalog/8679451'
+      page.assert_selector('#holdings table td', count: 12)
+      expect(first('#holdings table td')).to have_text('Burman University')
+      expect(first('#holdings table td')).to have_link('Click here for Internet Access', href: 'http://ezproxy.achcu.talonline.ca/login?url=https://fod.infobase.com/PortalPlayLists.aspx?wID=152898&xtid=187246')
+      expect(first('#holdings table td')).to have_text('call number: Internet Access')
+      expect(first('#holdings table td')).to have_text('status: internet')
+      expect(first('#holdings table td')).to have_css("a[href='https://www.burmanu.ca/library']")
+
+      visit '/catalog/3951085'
+      page.assert_selector('#holdings table td', count: 3)
+      expect(first('#holdings table td')).to have_text('Grande Prairie Regional College - Internet')
+      expect(first('#holdings table td')).to have_link('Click here for Internet Access', href: 'http://www.cbd.int/doc/bioday/2007/ibd-2007-booklet-01-en.pdf')
+      expect(first('#holdings table td')).to have_text('call number: Internet Access')
+      expect(first('#holdings table td')).to have_text('status: internet')
+      expect(first('#holdings table td')).to have_css("a[href='https://www.gprc.ab.ca/library']")
+
+      page
     end
   end
 
@@ -22,31 +40,4 @@ RSpec.describe 'Item has proper holding table', type: :feature do
     end
   end
 
-  scenario 'Requestable items have proper holding tables' do
-    VCR.use_cassette('item_requestable_holding_table') do
-      visit '/catalog/10068'
-
-      page.assert_selector('#holdings table td', count: 1)
-      expect(first('#holdings table td')).to have_text('University of Alberta Research and Collections Resource Facility')
-      expect(first('#holdings table td')).to have_text('call number: LB 01 459 (1 reel)')
-      expect(first('#holdings table td')).to have_text('status: on shelf')
-      expect(first('#holdings table td')).to have_css("a[href='https://www.library.ualberta.ca/locations/rcrf']")
-
-      visit '/catalog/1000719'
-
-      page.assert_selector('#holdings table td', count: 1)
-      expect(first('#holdings table td')).to have_text('University of Alberta Research and Collections Resource Facility')
-      expect(first('#holdings table td')).to have_text('call number: F 1465.3 G6 M296 1988')
-      expect(first('#holdings table td')).to have_text('status: Read On Site')
-      expect(first('#holdings table td')).to have_css("a[href='https://www.library.ualberta.ca/locations/rcrf']")
-
-      visit '/catalog/1001675'
-
-      page.assert_selector('#holdings table td', count: 2)
-      expect(all('#holdings table td').last).to have_text('University of Alberta Bruce Peel Special Collections')
-      expect(all('#holdings table td').last).to have_text('call number: TL 789.3 S917 1987')
-      expect(all('#holdings table td').last).to have_text('status: Read On Site')
-      expect(all('#holdings table td').last).to have_css("a[href='https://www.library.ualberta.ca/locations/bpsc']")
-    end
-  end
 end
