@@ -6,20 +6,24 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.58] - 2020-02-25
+
 ### Security
 - Bumps nokogiri from 1.10.7 to 1.10.8 [PR#337](https://github.com/ualbertalib/NEOSDiscovery/pull/337)
 
-### Fixed
-- returned aginternet to the locations file [PR#316](https://github.com/ualbertalib/NEOSDiscovery/pull/316)
-
 ### Added
-- add regression tests [PR#330][https://github.com/ualbertalib/NEOSDiscovery/pull/330]
+- add regression tests [PR#330](https://github.com/ualbertalib/NEOSDiscovery/pull/330)
 - add initialization for rollbar proxy [#271](https://github.com/ualbertalib/NEOSDiscovery/issues/271)
 - Add version file and meta generator tag 
 
 ### Changed
 - change what appears in the open search description [#258](https://github.com/ualbertalib/NEOSDiscovery/issues/258)
 - refactor holdings table logic into a helper [#320](https://github.com/ualbertalib/NEOSDiscovery/issues/320)
+
+## [1.0.56 / 1.0.57] - 2020-01-21
+
+### Fixed
+- returned aginternet to the locations file [PR#316](https://github.com/ualbertalib/NEOSDiscovery/pull/316)
 
 ## [1.0.55] - 2019-11-26
 ### Security
