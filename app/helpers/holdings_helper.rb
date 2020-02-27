@@ -18,11 +18,18 @@ module HoldingsHelper
   end
 
   def location_name(item)
-    Location.find_by!(short_code: item[:location].downcase.gsub('_', '')).name || 'Unknown'
+    Location.find_by!(short_code: item[:location].downcase.delete('_').to_sym).name
+  rescue ActiveRecord::RecordNotFound => e
+    Rollbar.error("Error retriving name for Location #{item[:location].downcase.delete('_').to_sym}", e)
+    Location.create(
+      short_code: item[:location].downcase.delete('_').to_sym,
+      name: 'Unknown'
+    )
+    'Unknown'
   end
 
   def location_url(item)
-    Location.find_by!(short_code: item[:location].downcase.gsub('_', '')).url
+    Location.find_by(short_code: item[:location].downcase.gsub('_', ''))&.url
   end
 
   def links(name)
@@ -93,7 +100,7 @@ module HoldingsHelper
   }.freeze
 
   def proxy(item)
-    Library.find_by!(short_code: LIBRARIES[item[:location]]).proxy
+    library(item).proxy
   end
 
   def free?(name)
@@ -122,11 +129,15 @@ module HoldingsHelper
         'Unknown/Never'
       end
     else
-      Status.find_by!(short_code: [item[:status].to_s.downcase])
+      Status.find_by!(short_code: [item[:status].to_s.downcase]).name
     end
+  rescue ActiveRecord::RecordNotFound => e
+    Rollbar.error("Error retriving name for Status #{item[:status].to_s.downcase}", e)
+    Status.create(short_code: item[:status].to_s.downcase, name: 'Unknown')
+    'Unknown'
   end
 
   def unavailable?(item)
-    Status.find_by!(short_code: item[:status].to_s.downcase) == 'unavailable'
+    Status.find_by(short_code: item[:status].to_s.downcase).name == 'unavailable'
   end
 end
