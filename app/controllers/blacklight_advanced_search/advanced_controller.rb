@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Need to sub-class CatalogController so we get all other plugins behavior
 # for our own "inside a search context" lookup of facets.
 class BlacklightAdvancedSearch::AdvancedController < CatalogController
@@ -5,7 +7,6 @@ class BlacklightAdvancedSearch::AdvancedController < CatalogController
   helper RangeLimitHelper
 
   def index
-    load_lookup_tables
     @response = get_advanced_search_facets unless request.method == :post
   end
 

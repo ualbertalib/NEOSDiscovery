@@ -18,11 +18,11 @@ module HoldingsHelper
   end
 
   def location_name(item)
-    @locations.dig(item[:location].downcase.gsub('_', ''), 'name') || 'Unknown'
+    Location.find_by!(short_code: item[:location].downcase.gsub('_', '')).name || 'Unknown'
   end
 
   def location_url(item)
-    @locations.dig(item[:location].downcase.gsub('_', ''), 'locationurl')
+    Location.find_by!(short_code: item[:location].downcase.gsub('_', '')).url
   end
 
   def links(name)
@@ -93,7 +93,7 @@ module HoldingsHelper
   }.freeze
 
   def proxy(item)
-    @libraries.dig(LIBRARIES[item[:location]], 'proxy')
+    Library.find_by!(short_code: LIBRARIES[item[:location]]).proxy
   end
 
   def free?(name)
@@ -111,7 +111,7 @@ module HoldingsHelper
   end
 
   def library(item)
-    @libraries[LIBRARIES[item[:location]]]
+    Library.find_by!(short_code: LIBRARIES[item[:location]])
   end
 
   def status(item)
@@ -122,11 +122,11 @@ module HoldingsHelper
         'Unknown/Never'
       end
     else
-      @statuses[item[:status].to_s.downcase]
+      Status.find_by!(short_code: [item[:status].to_s.downcase])
     end
   end
 
   def unavailable?(item)
-    @statuses[item[:status].to_s.downcase] == 'unavailable'
+    Status.find_by!(short_code: item[:status].to_s.downcase) == 'unavailable'
   end
 end
