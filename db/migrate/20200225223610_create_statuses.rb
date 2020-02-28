@@ -1,8 +1,8 @@
 class CreateStatuses < ActiveRecord::Migration[5.2]
   def change
     create_table :statuses do |t|
-      t.string :short_code
-      t.string :name
+      t.string :short_code, null: false
+      t.string :name, null: false
 
       t.timestamps null: false
     end

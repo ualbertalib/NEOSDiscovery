@@ -1,8 +1,8 @@
 class CreateLocations < ActiveRecord::Migration[5.2]
   def change
     create_table :locations do |t|
-      t.string :short_code
-      t.string :name
+      t.string :short_code, null: false
+      t.string :name, null: false
       t.string :url
       t.references :library, index: true, foreign_key: true
 

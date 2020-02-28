@@ -23,23 +23,9 @@ ActiveRecord::Schema.define(version: 2020_02_25_224334) do
     t.index ["user_id"], name: "index_bookmarks_on_user_id"
   end
 
-  create_table "circulation_rules", force: :cascade do |t|
-    t.string "short_code"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "item_types", force: :cascade do |t|
-    t.string "short_code"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "libraries", force: :cascade do |t|
-    t.string "short_code"
-    t.string "name"
+    t.string "short_code", null: false
+    t.string "name", null: false
     t.string "url"
     t.string "neos_url"
     t.string "proxy"
@@ -48,8 +34,8 @@ ActiveRecord::Schema.define(version: 2020_02_25_224334) do
   end
 
   create_table "locations", force: :cascade do |t|
-    t.string "short_code"
-    t.string "name"
+    t.string "short_code", null: false
+    t.string "name", null: false
     t.string "url"
     t.integer "library_id"
     t.datetime "created_at", null: false
@@ -68,8 +54,8 @@ ActiveRecord::Schema.define(version: 2020_02_25_224334) do
   end
 
   create_table "statuses", force: :cascade do |t|
-    t.string "short_code"
-    t.string "name"
+    t.string "short_code", null: false
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

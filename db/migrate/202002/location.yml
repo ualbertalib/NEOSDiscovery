@@ -1,7 +1,4 @@
 # from https://github.com/ualbertalib/discovery/blob/master/config/locations.yml and https://www.neoslibraries.ca/member-libraries
-aegeo:
-  name: "Alberta Geological Survey"
-  locationurl: "http://ags.aer.ca/about-the-ags/contact-us.htm"
 aginternet:
   name: "Alberta Government Library - Internet"
   locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
@@ -10,41 +7,13 @@ aglcap:
   name: "Alberta Government Library - Capital Boulevard"
   locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
   library: gov
-aglcom:
-  name: "Alberta Government Library - Commerce Place"
-  locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  library: gov
-aglgwl:
-  name: "Alberta Government Library - Great West Life"
-  locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  library: gov
-agllb:
-  name: "Alberta Government Library - Labour Building"
-  locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  library: gov
-aglmnc:
-  name: "Alberta Government Library - Monenco Bldg Calgary"
-  locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  library: gov
-aglncc:
-  name: "Alberta Government Library - Neil Crawford Centre"
-  locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  library: gov
-aglssp:
-  name: "Alberta Government Library - 107 Street"
-  locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  library: gov
-agltpn:
-  name: "Alberta Government Library - Telus Plaza North"
-  locationurl: "https://www.servicealberta.ca/alberta-government-library.cfm"
-  library: gov
 ahsach:
   name: "Alberta Health Services - Alberta Children's Hospital"
   locationurl: "http://krs.libguides.com/aboutus/ach"
   library: abhealth
-ahsrah:
-  name: "Alberta Health Services - Royal Alexandra Hospital"
-  locationurl:
+ahsint:
+  name: "Alberta Health Services/Covenant Health - Internet"
+  locationurl: "https://krs.libguides.com/home"
   library: abhealth
 ahskec:
   name: "Alberta Health Services - Kaye Edmonton Clinic"
@@ -62,18 +31,10 @@ ahstbcc:
   name: "Alberta Health Services - Tom Baker Cancer Centre"
   locationurl: "http://krs.libguides.com/aboutus/tbcc"
   library: abhealth
-ahsint:
-  name: "Alberta Health Services/Covenant Health - Internet"
-  locationurl: "https://krs.libguides.com/home"
-  library: abhealth
 ahsglenrse:
   name: "Alberta Health Services - Glenrose Rehabilitation Hospital"
   locationurl: "https://krs.libguides.com/aboutus/grh"
   library: abhealth
-aitfcalg:
-  name: "Alberta Innovates - Technology Futures - Calgary"
-  locationurl:
-  library: innovates
 aitfcfer:
   name: "Alberta Innovates - Technology Futures - C-FER Technologies"
   locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
@@ -81,10 +42,6 @@ aitfcfer:
 aitfc-fer:
   name: "Alberta Innovates - Technology Futures - C-FER Technologies"
   locationurl: "https://www.neoslibraries.ca/member-libraries/alberta-innovates/c-fer-library"
-  library: innovates
-aitfdevon:
-  name: "Alberta Innovates - Technology Futures - Devon"
-  locationurl:
   library: innovates
 aitfmw:
   name: "Alberta Innovates - Technology Futures - Mill Woods"
@@ -102,6 +59,10 @@ concordia:
   name: "Concordia University of Edmonton"
   locationurl: "http://library.concordia.ab.ca"
   library: concordia
+concordin:
+  name: "Concordia Internet Library"
+  locationurl: "https://concordia.ab.ca/library/"
+  library: concordia
 concordsem:
   name: "Concordia Lutheran Seminary"
   locationurl: "http://www.concordiasem.ab.ca/research/library_information.php"
@@ -114,12 +75,12 @@ covenantmh:
   name: "Covenant Health - Misericordia Community Hospital"
   locationurl: "​https://www.covenanthealth.ca/corporate-information/library-services​"
   library: covenant
-gprcgp:
-  name: "Grande Prairie Regional College - Grande Prairie"
-  locationurl: "https://www.gprc.ab.ca/library"
-  library: gp
 gprcfrvw:
   name: "Grande Prairie Regional College - Fairview"
+  locationurl: "https://www.gprc.ab.ca/library"
+  library: gp
+gprcgp:
+  name: "Grande Prairie Regional College - Grande Prairie"
   locationurl: "https://www.gprc.ab.ca/library"
   library: gp
 gprcint:
@@ -130,10 +91,6 @@ grmacacc:
   name: "MacEwan University - Alberta College Campus"
   locationurl: "https://library.macewan.ca/"
   library: macewanuniversity
-grmaccac:
-  name: "MacEwan University - Centre for Arts & Communications"
-  locationurl: "https://library.macewan.ca/"
-  library: macewanuniversity
 grmacint:
   name: "MacEwan University - Internet"
   locationurl: "https://library.macewan.ca/"
@@ -142,17 +99,10 @@ grmactsv:
   name: "MacEwan University - Technical Services"
   locationurl: "https://library.macewan.ca/"
   library: macewanuniversity
-grmacsoc:
-  name: "MacEwan University - South Campus"
-  locationurl: "https://library.macewan.ca/"
-  library: macewanuniversity
 grmacewan:
   name: "MacEwan University - City Centre Campus"
   locationurl: "https://library.macewan.ca/"
   library: macewanuniversity
-justiceca:
-  name: "Justice Canada"
-  locationurl:
 keyano:
   name: "Keyano College"
   locationurl: "http://www.keyano.ca/Services/Library​"
@@ -210,11 +160,8 @@ reddeerc:
   locationurl: "https://rdc.ab.ca/current-students/library"
   library: reddeer
 taylor:
-  name: "Taylor College and Seminary"
-  locationurl: "http://www.taylor-edu.ca/seminary/library"
-vanguard:
-  name: "Vanguard College"
-  locationurl: "http://www.vanguardcollege.com/library"
+  name: "Vanguard College - Taylor"
+  locationurl: "https://www.vanguardcollege.com/library/"
   library: vanguard
 uaarchives:
   name: "University of Alberta Archives"
@@ -223,10 +170,6 @@ uaarchives:
 uaaug:
   name: "University of Alberta Augustana"
   locationurl: "https://www.library.ualberta.ca/locations/augustana"
-  library: universityofalberta
-uabard:
-  name: "University of Alberta Research and Collections Resource Facility"
-  locationurl: "https://www.library.ualberta.ca/locations/rcrf"
   library: universityofalberta
 uabsj:
   name: "University of Alberta Bibliotheque Saint-Jean"
@@ -237,7 +180,7 @@ uabusiness:
   locationurl: "https://www.library.ualberta.ca/locations/winspear"
   library: universityofalberta
 uaeduc:
-  name: "University of Alberta HT Coutts Education"
+  name: "University of Alberta HT Coutts - Education and KSR"
   locationurl: "https://www.library.ualberta.ca/locations/coutts"
   library: universityofalberta
 uahlthsc:
@@ -260,6 +203,10 @@ uamath:
   name: "University of Alberta Mathematics"
   locationurl: "https://www.library.ualberta.ca/locations/cameron"
   library: universityofalberta
+uarcrf:
+  name: "University of Alberta Research and Collections Resource Facility"
+  locationurl: "https://www.library.ualberta.ca/locations/rcrf"
+  library: universityofalberta
 uascitech:
   name: "University of Alberta Cameron - Science & Technology"
   locationurl: "https://www.library.ualberta.ca/locations/cameron"
@@ -276,11 +223,7 @@ uatechserv:
   name: "University of Alberta Bibliographic Services"
   locationurl:
   library: universityofalberta
-uarcrf:
-  name: "University of Alberta Research and Collections Resource Facility"
-  locationurl: "https://www.library.ualberta.ca/locations/rcrf"
-  library: universityofalberta
-usic tech lab:
-  name: "University of Alberta Cameron - Science & Technology - Lab"
-  locationurl:
-  library: universityofalberta
+vanguard:
+  name: "Vanguard College"
+  locationurl: "http://www.vanguardcollege.com/library"
+  library: vanguard

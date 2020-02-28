@@ -1,8 +1,8 @@
 class CreateLibraries < ActiveRecord::Migration[5.2]
   def change
     create_table :libraries do |t|
-      t.string :short_code
-      t.string :name
+      t.string :short_code, null: false
+      t.string :name, null: false
       t.string :url
       t.string :neos_url
       t.string :proxy
