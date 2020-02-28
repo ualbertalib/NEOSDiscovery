@@ -40,10 +40,10 @@
       <p>Choose a library to begin:</p>
       <ul class="library-list">
         <% @display_libs = {} %>
-        <% neos_libraries.each do |library| %>
+        <% @neos_libraries.each do |library| %>
           <li>
-            <%= link_to image_tag("library-images/"+library.short_code+".jpg"), "/?lib="+library.short_code %>
-            <%= link_to library.name, "/?lib="+library.short_code %>
+            <%= link_to image_tag("library-images/"+library.short_code+".jpg"), root_url(lib: library.short_code) %>
+            <%= link_to library.name, root_url(lib: library.short_code) %>
           </li>
         <%- end %>
       </ul>
