@@ -17,14 +17,6 @@ module HoldingsHelper
     end
   end
 
-  def location_name(item)
-    location(item).name
-  end
-
-  def location_url(item)
-    location(item).url
-  end
-
   def location(item)
     Location.find_by!(short_code: item[:location].downcase.delete('_').to_sym)
   rescue ActiveRecord::RecordNotFound => e
@@ -49,8 +41,8 @@ module HoldingsHelper
     end || {}
   end
 
-  def proxy(item)
-    library(item).proxy
+  def proxy(location)
+    location.library.proxy
   end
 
   def free?(name)
@@ -65,10 +57,6 @@ module HoldingsHelper
     return url unless enable_proxy
 
     proxy + url
-  end
-
-  def library(item)
-    location(item).library
   end
 
   def status(item)
