@@ -18,13 +18,21 @@ module HoldingsHelper
   end
 
   def location(item)
-    Location.find_by!(short_code: item[:location].downcase.delete('_').to_sym)
-  rescue ActiveRecord::RecordNotFound => e
-    Rollbar.error("Error retriving name for Location #{item[:location].downcase.delete('_').to_sym}", e)
-    Location.create(
-      short_code: item[:location].downcase.delete('_').to_sym,
-      name: 'Unknown'
-    )
+    @location ||= Hash.new do |h, key|
+      location = Location.includes(:library).find_by(short_code: key) || begin
+        Rollbar.error("Error retriving name for Location #{key}", e)
+        Location.create(
+          short_code: key,
+          name: 'Unknown'
+        )
+      end
+      h[key] = {
+        name:  location.name,
+        url:   location.url,
+        proxy: location.library.proxy
+      }
+    end
+    @location[item[:location].downcase.delete('_').to_sym]
   end
 
   def links(name)
@@ -41,10 +49,6 @@ module HoldingsHelper
     end || {}
   end
 
-  def proxy(location)
-    location.library.proxy
-  end
-
   def free?(name)
     name.include?('NEOS') || name.include?('Free')
   end
@@ -54,7 +58,8 @@ module HoldingsHelper
   end
 
   def electronic_access_url(enable_proxy, proxy, url)
-    return url unless enable_proxy
+    return url unless enable_proxy 
+    return url if proxy.nil?
 
     proxy + url
   end
@@ -67,7 +72,7 @@ module HoldingsHelper
         'Unknown/Never'
       end
     else
-      Status.find_by!(short_code: [item[:status].to_s.downcase]).name
+      status_for_shortcode(item[:status].to_s.downcase)
     end
   rescue ActiveRecord::RecordNotFound => e
     Rollbar.error("Error retriving name for Status #{item[:status].to_s.downcase}", e)
@@ -76,6 +81,13 @@ module HoldingsHelper
   end
 
   def unavailable?(item)
-    Status.find_by(short_code: item[:status].to_s.downcase).name == 'unavailable'
+    status_for_shortcode(item[:status].to_s.downcase) == 'unavailable'
+  end
+
+  def status_for_shortcode(short_code)
+    @statuses ||= Hash.new do |h, key|
+      h[key] = Status.find_by!(short_code: key).name
+    end
+    @statuses[short_code]
   end
 end
