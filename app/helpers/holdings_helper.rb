@@ -17,12 +17,22 @@ module HoldingsHelper
     end
   end
 
-  def location_name(item)
-    @locations.dig(item[:location].downcase.gsub('_', ''), 'name') || 'Unknown'
-  end
-
-  def location_url(item)
-    @locations.dig(item[:location].downcase.gsub('_', ''), 'locationurl')
+  def location(item)
+    @location ||= Hash.new do |h, key|
+      location = Location.includes(:library).find_by(short_code: key) || begin
+        Rollbar.error("Error retriving name for Location #{key}", e)
+        Location.create(
+          short_code: key,
+          name: 'Unknown'
+        )
+      end
+      h[key] = {
+        name:  location.name,
+        url:   location.url,
+        proxy: location.library.proxy
+      }
+    end
+    @location[item[:location].downcase.delete('_').to_sym]
   end
 
   def links(name)
@@ -39,63 +49,6 @@ module HoldingsHelper
     end || {}
   end
 
-  # prefix of location to group
-  LIBRARIES = {
-    'AGINTERNET' => 'gov',
-    'AGL_CAP' => 'gov',
-    'AHS_ACH' => 'abhealth',
-    'AHS_INT' => 'abhealth',
-    'AHS_KEC' => 'abhealth',
-    'AHS_REDDR' => 'abhealth',
-    'AHS_RVG' => 'abhealth',
-    'AHS_TBCC' => 'abhealth',
-    'AHSGLENRSE' => 'abhealth',
-    'BURMAN' => 'burmanuniversity',
-    'CONCORDIA' => 'concordia',
-    'CONCORDSEM' => 'concordia',
-    'CONCORD_IN' => 'concordia',
-    'COVENANTMH' => 'covenant',
-    'GPRC_GP' => 'gp',
-    'GPRC_FRVW' => 'gp',
-    'GPRC_INT' => 'gp',
-    'GR_MAC_ACC' => 'macewanuniversity',
-    'GR_MAC_INT' => 'macewanuniversity',
-    'GR_MACEWAN' => 'macewanuniversity',
-    'KEYANO' => 'keyano',
-    'KINGS' => 'kings',
-    'LAKELND_IN' => 'lakeland',
-    'LAKELND_LL' => 'lakeland',
-    'LAKELND_VR' => 'lakeland',
-    'NEWMAN' => 'newman',
-    'NLC_INT' => 'nlc',
-    'NLC_SL' => 'nlc',
-    'NLC_GR' => 'nlc',
-    'NORQ_MAIN' => 'norquest',
-    'OLDS' => 'olds',
-    'RED_DEER_C' => 'reddeer',
-    'UAARCHIVES' => 'universityofalberta',
-    'UAAUG' => 'universityofalberta',
-    'UABSJ' => 'universityofalberta',
-    'UABUSINESS' => 'universityofalberta',
-    'UAEDUC' => 'universityofalberta',
-    'UAHLTHSC' => 'universityofalberta',
-    'UAHSS' => 'universityofalberta',
-    'UAINTERNET' => 'universityofalberta',
-    'UALAW' => 'universityofalberta',
-    'UARCRF' => 'universityofalberta',
-    'UASCITECH' => 'universityofalberta',
-    'UASJC' => 'universityofalberta',
-    'UASPCOLL' => 'universityofalberta',
-    'AITF_C-FER' => 'innovates',
-    'AITF_MW' => 'innovates',
-    'AITF_VEG' => 'innovates',
-    'VANGUARD' => 'vanguard'
-  }.freeze
-
-  def proxy(item)
-    @libraries.dig(LIBRARIES[item[:location]], 'proxy')
-  end
-
   def free?(name)
     name.include?('NEOS') || name.include?('Free')
   end
@@ -105,13 +58,10 @@ module HoldingsHelper
   end
 
   def electronic_access_url(enable_proxy, proxy, url)
-    return url unless enable_proxy
+    return url unless enable_proxy 
+    return url if proxy.nil?
 
     proxy + url
-  end
-
-  def library(item)
-    @libraries[LIBRARIES[item[:location]]]
   end
 
   def status(item)
@@ -122,11 +72,22 @@ module HoldingsHelper
         'Unknown/Never'
       end
     else
-      @statuses[item[:status].to_s.downcase]
+      status_for_shortcode(item[:status].to_s.downcase)
     end
+  rescue ActiveRecord::RecordNotFound => e
+    Rollbar.error("Error retriving name for Status #{item[:status].to_s.downcase}", e)
+    Status.create(short_code: item[:status].to_s.downcase, name: 'Unknown')
+    'Unknown'
   end
 
   def unavailable?(item)
-    @statuses[item[:status].to_s.downcase] == 'unavailable'
+    status_for_shortcode(item[:status].to_s.downcase) == 'unavailable'
+  end
+
+  def status_for_shortcode(short_code)
+    @statuses ||= Hash.new do |h, key|
+      h[key] = Status.find_by!(short_code: key).name
+    end
+    @statuses[short_code]
   end
 end

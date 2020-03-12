@@ -38,8 +38,10 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
 
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+
   gem 'sqlite3', '~> 1.4.2' # Active Record has a version constraint not specified in gemspec
 end
 
