@@ -30,7 +30,7 @@ gem 'devise-guests', '~> 0.7'
 gem 'rollbar'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 1.0.0', group: :doc
+gem 'sdoc', '~> 1.1.0', group: :doc
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.9'
