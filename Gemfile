@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Rails stuff
-gem 'rails', '5.2.4.1'
+gem 'rails', '5.2.4.2'
 gem 'sprockets', '< 4.0'
 
 # Database stuff
