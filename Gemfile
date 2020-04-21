@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Rails stuff
-gem 'rails', '5.2.4.1'
+gem 'rails', '5.2.4.2'
 gem 'sprockets', '< 4.0'
 
 # Database stuff
@@ -30,16 +30,18 @@ gem 'devise-guests', '~> 0.7'
 gem 'rollbar'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 1.0.0', group: :doc
+gem 'sdoc', '~> 1.1.0', group: :doc
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.8'
+  gem 'rspec-rails', '~> 4.0'
   gem 'capybara', '>= 2.4.0'
   gem 'vcr', '5.0'
   gem 'webmock'
 
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+
   gem 'sqlite3', '~> 1.4.2' # Active Record has a version constraint not specified in gemspec
 end
 

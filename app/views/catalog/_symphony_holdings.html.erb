@@ -11,18 +11,19 @@
       <tr>
         <td>
           <p class="lib-loc">
-            <%= location_name(item) %>
-            <% if location_url(item) %>
-              <a href="<%= location_url(item) %>" target="_blank">
+
+            <%= location(item)[:name] %>
+            <% if location(item)[:url] %>
+              <a href="<%= location(item)[:url] %>" target="_blank">
                 <span class="glyphicon glyphicon-info-sign">
                 </span>
               </a>
             <% end %>
           </p>
-          <% links(location_name(item)).each do |name,link| %>
+          <% links(location(item)[:name]).each do |name,link| %>
             <% if item[:call] == "Internet Access" %>
               <strong>
-                <a href="<%= electronic_access_url(proxy?(name), proxy(item), link ) %>" target="_blank" class="loc-call">
+                <a href="<%= electronic_access_url(proxy?(name), location(item)[:proxy], link ) %>" target="_blank" class="loc-call">
                   <span class="glyphicon glyphicon-share-alt"></span>
                   Click here for Internet Access
                 </a>

@@ -11,28 +11,33 @@ class CatalogController < ApplicationController
 
   def index
     super
-    load_lookup_tables
-    $brand = if params.include?('lib')
-               params['lib']
-             else
-               'neos'
-             end
-    $libraryname = @libraries[$brand]['name']
-    $homeurl = @libraries[$brand]['url']
-    $neosurl = @libraries[$brand]['neosurl']
+    library = begin
+      Library.find_by!(short_code: params[:lib])
+    rescue ActiveRecord::RecordNotFound
+      Library.find_by!(short_code: 'neos')
+    end
+    $brand = library.short_code
+    $libraryname = library.name
+    $homeurl = library.url
+    $neosurl = library.neos_url
+
+    @neos_libraries = Library.all
+           .reject { |library| free?(library.name) }
+           .sort_by(&:name)
   end
 
   def show
     super
-    load_lookup_tables
-    $brand = if params.include?('lib')
-               params['lib']
-             else
-               'neos'
-             end
-    $libraryname = @libraries[$brand]['name']
-    $homeurl = @libraries[$brand]['url']
-    $neosurl = @libraries[$brand]['neosurl']
+    library = begin
+      Library.find_by!(short_code: params[:lib])
+    rescue ActiveRecord::RecordNotFound
+      Library.find_by!(short_code: 'neos')
+    end
+    $brand = library.short_code
+    $libraryname = library.name
+    $homeurl = library.url
+    $neosurl = library.neos_url
+
     @holdings = []
     @holdings = holdings(@document, :items)
     unless @holdings.nil? || @holdings.first.nil?

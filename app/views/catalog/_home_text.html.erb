@@ -40,13 +40,10 @@
       <p>Choose a library to begin:</p>
       <ul class="library-list">
         <% @display_libs = {} %>
-        <%- @libraries.each do |key, value| %>
-          <% @display_libs[value["name"]] = key unless key == "free" || key == "neos" %>
-        <% end %>
-        <% @display_libs.sort.each do |value, key| %>
+        <% @neos_libraries.each do |library| %>
           <li>
-            <%= link_to image_tag("library-images/"+key+".jpg"), "/?lib="+key %>
-            <%= link_to value, "/?lib="+key %>
+            <%= link_to image_tag("library-images/"+library.short_code+".jpg"), root_url(lib: library.short_code) %>
+            <%= link_to library.name, root_url(lib: library.short_code) %>
           </li>
         <%- end %>
       </ul>
