@@ -35,7 +35,7 @@ gem 'sdoc', '~> 1.1.0', group: :doc
 group :development, :test do
   gem 'rspec-rails', '~> 4.0'
   gem 'capybara', '>= 2.4.0'
-  gem 'vcr', '5.0'
+  gem 'vcr', '5.1.0'
   gem 'webmock'
 
   gem 'pry'
