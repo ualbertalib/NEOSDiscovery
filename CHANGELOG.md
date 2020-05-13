@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Fixed
+-  "The Economist" rollbar error, short_code normalization, and an undeclared e [PR#375](https://github.com/ualbertalib/NEOSDiscovery/pull/375)
+
 ## [1.0.58] - 2020-02-25
 
 ### Security
