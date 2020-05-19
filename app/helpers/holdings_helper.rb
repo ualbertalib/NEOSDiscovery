@@ -42,7 +42,7 @@ module HoldingsHelper
       name = 'Concordia University of Edmonton'
     end
 
-    # :links will get all the links, at this point we want just the one that matches
+    # @urls has ALL the links, at this point we want just the one that matches
     # the name we passed or the free resource
     @urls&.inject(:merge)&.select do |k|
       free?(k) || name.include?(k.partition(' Access ').first)
