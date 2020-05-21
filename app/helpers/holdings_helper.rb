@@ -20,7 +20,7 @@ module HoldingsHelper
   def location(item)
     @location ||= Hash.new do |h, key|
       location = Location.includes(:library).find_by(short_code: key) || begin
-        Rollbar.error("Error retriving name for Location #{key}", e)
+        Rollbar.error("Error retriving name for Location #{key}")
         Location.create(
           short_code: key,
           name: 'Unknown'
@@ -29,10 +29,10 @@ module HoldingsHelper
       h[key] = {
         name:  location.name,
         url:   location.url,
-        proxy: location.library.proxy
+        proxy: location.library&.proxy
       }
     end
-    @location[item[:location].downcase.delete('_').to_sym]
+    @location[item[:location]]
   end
 
   def links(name)
@@ -42,9 +42,9 @@ module HoldingsHelper
       name = 'Concordia University of Edmonton'
     end
 
-    # :links will get all the links, at this point we want just the one that matches
+    # @urls has ALL the links, at this point we want just the one that matches
     # the name we passed or the free resource
-    holdings(@document, :links).inject(:merge).select do |k|
+    @urls&.inject(:merge)&.select do |k|
       free?(k) || name.include?(k.partition(' Access ').first)
     end || {}
   end
