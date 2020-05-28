@@ -6,6 +6,11 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.60] - 2020-05-28
+
+### Security 
+- Bump kaminari from 1.2.0 to 1.2.1 [PR#382](https://github.com/ualbertalib/NEOSDiscovery/pull/382)
+
 ## [1.0.59] - 2020-05-21
 
 ### Changed
