@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Security
+- Resolved brakeman warning [PR#384](https://github.com/ualbertalib/NEOSDiscovery/pull/384)
+
 ## [1.0.60] - 2020-05-28
 
 ### Security 
