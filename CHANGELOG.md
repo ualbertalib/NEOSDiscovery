@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Security
+- Resolved brakeman warning [PR#384](https://github.com/ualbertalib/NEOSDiscovery/pull/384)
+
 ### Fixed
 - safe navigation operator for potential nil location_tesim [PR#383](https://github.com/ualbertalib/NEOSDiscovery/pull/383)
 
