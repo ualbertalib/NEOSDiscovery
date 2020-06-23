@@ -11,6 +11,7 @@ RSpec.describe 'Item has proper holding table', type: :feature do
       expect(first('#holdings table td')).to have_text('status: on shelf')
       expect(first('#holdings table td')).to have_css("a[href='https://www.burmanu.ca/library']")
 
+      # this one isn't in the test set
       visit '/catalog/8679451'
       page.assert_selector('#holdings table td', count: 12)
       expect(first('#holdings table td')).to have_text('Burman University')
@@ -19,15 +20,22 @@ RSpec.describe 'Item has proper holding table', type: :feature do
       expect(first('#holdings table td')).to have_text('status: internet')
       expect(first('#holdings table td')).to have_css("a[href='https://www.burmanu.ca/library']")
 
-      visit '/catalog/3951085'
-      page.assert_selector('#holdings table td', count: 3)
-      expect(first('#holdings table td')).to have_text('Grande Prairie Regional College - Internet')
-      expect(first('#holdings table td')).to have_link('Click here for Internet Access', href: 'http://www.cbd.int/doc/bioday/2007/ibd-2007-booklet-01-en.pdf')
+      visit '/catalog/1007482'
+      page.assert_selector('#holdings table td', count: 2)
+      expect(first('#holdings table td')).to have_text('University of Alberta Internet')
+      expect(first('#holdings table td')).to have_link('Click here for Internet Access', href: 'http://www.peabody.yale.edu/scipubs/bulletins_postillas/ypmB04_1935.pdf')
       expect(first('#holdings table td')).to have_text('call number: Internet Access')
       expect(first('#holdings table td')).to have_text('status: internet')
-      expect(first('#holdings table td')).to have_css("a[href='https://www.gprc.ab.ca/library']")
+      expect(first('#holdings table td')).to have_css("a[href='https://www.library.ualberta.ca/services/off-campus-access']")
 
-      page
+      visit '/catalog/2714245'
+      page.assert_selector('#holdings table td', count: 1)
+      expect(first('#holdings table td')).to have_text('Alberta Government Library - Internet')
+      expect(first('#holdings table td')).to have_link('Click here for Internet Access', href: 'https://ezproxy.aee.talonline.ca/login?url=http://purl.access.gpo.gov/GPO/LPS31752')
+      expect(first('#holdings table td')).to have_text('call number: Internet Access')
+      expect(first('#holdings table td')).to have_text('status: internet')
+      expect(first('#holdings table td')).to have_css("a[href='https://www.servicealberta.ca/alberta-government-library.cfm']")
+
     end
   end
 
