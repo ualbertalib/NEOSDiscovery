@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Rails stuff
 gem 'rails', '5.2.4.3'
-gem 'sprockets', '< 4.0'
+gem 'sprockets', '< 5.0'
 
 # Database stuff
 gem 'mysql2', '~> 0.5.3'
