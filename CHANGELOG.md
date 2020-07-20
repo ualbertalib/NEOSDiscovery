@@ -6,6 +6,8 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.62] - 2020-07-20
+
 ### Fixed
 - journal internet access links [#393](https://github.com/ualbertalib/NEOSDiscovery/issues/393)
 
