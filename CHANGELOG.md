@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Changed
+- log level from debug to warn [PR#412](https://github.com/ualbertalib/NEOSDiscovery/pull/412)
+
 ## [1.0.62] - 2020-07-20
 
 ### Fixed
