@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Changed
+- log level from debug to warn []()
+
 ## [1.0.62] - 2020-07-20
 
 ### Fixed
