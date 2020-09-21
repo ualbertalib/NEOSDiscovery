@@ -7,7 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module SearchApp
-  VERSION = '1.0.62'.freeze # used in application layout meta generator tag
+  VERSION = '1.0.63'.freeze # used in application layout meta generator tag
 
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
