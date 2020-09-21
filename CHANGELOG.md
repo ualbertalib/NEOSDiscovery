@@ -9,6 +9,12 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 ### Changed
 - log level from debug to warn [PR#412](https://github.com/ualbertalib/NEOSDiscovery/pull/412)
 
+## [1.0.63] - 2020-09-21
+
+### Changed
+- Removed feedback link as it is not monitored (requested by Scott through email)
+- Updated Grand Praire and UofA Library logos
+
 ## [1.0.62] - 2020-07-20
 
 ### Fixed
