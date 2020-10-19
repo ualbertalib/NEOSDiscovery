@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Fixed
+- changed colors in uofa logo.
+
 ## [1.0.63] - 2020-09-21
 
 ### Changed
