@@ -247,7 +247,7 @@ GEM
       sprockets-rails
       tilt
     scrub_rb (1.0.1)
-    sdoc (1.1.0)
+    sdoc (2.0.0)
       rdoc (>= 5.0)
     slop (3.6.0)
     spring (2.1.1)
@@ -330,7 +330,7 @@ DEPENDENCIES
   rsolr (~> 2.3)
   rspec-rails (~> 4.0)
   sassc-rails (~> 2.1)
-  sdoc (~> 1.1.0)
+  sdoc (~> 2.0.0)
   spring
   sprockets (< 5.0)
   sqlite3 (~> 1.4.2)
