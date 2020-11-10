@@ -49,7 +49,7 @@ group :development do
   gem 'better_errors', '>= 2.3.0'
   gem 'binding_of_caller'
   gem 'brakeman'
-  gem 'listen', '~> 3.2'
+  gem 'listen', '~> 3.3'
   gem 'spring'
   gem 'web-console', '~> 3.7'
 end
