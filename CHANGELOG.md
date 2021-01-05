@@ -6,6 +6,10 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Changed
+- make solr configuration more configurable and similar to Discovery
+
+
 ## [1.0.64] - 2020-11-05
 
 ### Fixed
