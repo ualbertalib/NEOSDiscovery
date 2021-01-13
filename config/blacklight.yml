@@ -20,6 +20,9 @@ test: &test
   adapter: solr
   url: <%= ENV['SOLR_URL'] || "http://solrcloud-test.library.ualberta.ca:8080/solr/discovery-test" %> # temporarily out of service starting Oct 4, 2017; being upgrade to v6.6
 
+staging:
+  <<: *test
+
 production:
   adapter: solr
   url: "http://solrcloud-prod.library.ualberta.ca:8080/solr/discovery-prod"
