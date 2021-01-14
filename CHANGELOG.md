@@ -6,6 +6,14 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.66] - 2021-01-13
+
+### Changed
+- revert solr url configuration change 
+
+### Added
+- staging Rails environment
+
 ## [1.0.65] - 2021-01-05
 
 ### Changed
