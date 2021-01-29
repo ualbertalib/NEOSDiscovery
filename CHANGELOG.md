@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Added
+- CirculationRules and ItemType models to align with Discovery []()
+
 ## [1.0.66] - 2021-01-13
 
 ### Changed
