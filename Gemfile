@@ -33,7 +33,7 @@ gem 'rollbar'
 gem 'sdoc', '~> 2.0.4', group: :doc
 
 group :development, :test do
-  gem 'rspec-rails', '~> 4.1'
+  gem 'rspec-rails', '~> 5.0'
   gem 'capybara', '>= 2.4.0'
   gem 'vcr', '5.0'
   gem 'webmock'
