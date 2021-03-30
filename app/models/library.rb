@@ -1,2 +1,2 @@
-class Library < ActiveRecord::Base
+class Library < DiscoveryDBBase    
 end
