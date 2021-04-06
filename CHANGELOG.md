@@ -6,6 +6,11 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.67] - 2021-04-06
+
+### Changed
+- dependency bumps for maintenance
+
 ## [1.0.66] - 2021-01-13
 
 ### Changed
