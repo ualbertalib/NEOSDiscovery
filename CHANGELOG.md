@@ -6,6 +6,10 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+
+### Changed
+- silence blacklight deprecation warnings [#135](https://github.com/ualbertalib/NEOSDiscovery/issues/135)
+
 ## [1.0.67] - 2021-04-06
 
 ### Changed
