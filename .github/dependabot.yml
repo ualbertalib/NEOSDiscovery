@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: blacklight
+    versions:
+    - "> 6.10.1"
+  - dependency-name: blacklight_range_limit
+    versions:
+    - "< 8, >= 7.a"
+  - dependency-name: vcr
+    versions:
+    - ">= 5.1.a, < 5.2"
+  - dependency-name: vcr
+    versions:
+    - ">= 6.a, < 7"
