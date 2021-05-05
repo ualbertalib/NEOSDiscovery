@@ -6,6 +6,8 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.69] - 2021-05-05
+
 ### Security
 - bump Rails to 5.2.6 to address CVEs 
 
