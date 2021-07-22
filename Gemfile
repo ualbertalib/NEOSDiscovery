@@ -15,7 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Blacklight stuff
 gem 'blacklight', '~> 6.10.1'
-gem 'blacklight-marc', '~> 6.0'
+gem 'blacklight-marc', '~> 6.3'
 gem 'blacklight-ris', git: 'https://github.com/upenn-libraries/blacklight-ris.git'
 gem 'blacklight_advanced_search', '>= 6.3'
 gem 'blacklight_range_limit'
