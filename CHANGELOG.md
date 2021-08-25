@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Fixed
+- Maintain branding across advanced search (and all actions) [OTRS#61391](https://helpdesk.library.ualberta.ca/otrs/index.pl?Action=AgentTicketZoom;TicketID=61391)
+
 ## [1.0.69] - 2021-05-05
 
 ### Security
