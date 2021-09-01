@@ -9,34 +9,18 @@ class CatalogController < ApplicationController
   include HoldingsHelper
   include Blacklight::Ris::Catalog
 
+  before_action :branding
+
   def index
     super
-    library = begin
-      Library.find_by!(short_code: params[:lib])
-    rescue ActiveRecord::RecordNotFound
-      Library.find_by!(short_code: 'neos')
-    end
-    $brand = library.short_code
-    $libraryname = library.name
-    $homeurl = library.url
-    $neosurl = library.neos_url
 
     @neos_libraries = Library.all
-           .reject { |library| free?(library.name) }
-           .sort_by(&:name)
+                             .reject { |library| free?(library.name) }
+                             .sort_by(&:name)
   end
 
   def show
     super
-    library = begin
-      Library.find_by!(short_code: params[:lib])
-    rescue ActiveRecord::RecordNotFound
-      Library.find_by!(short_code: 'neos')
-    end
-    $brand = library.short_code
-    $libraryname = library.name
-    $homeurl = library.url
-    $neosurl = library.neos_url
 
     @holdings = []
     @holdings = holdings(@document, :items)
@@ -57,9 +41,21 @@ class CatalogController < ApplicationController
       end
     end
 
-    if @document['author_addl_t']
-      @additional_authors = @document['author_addl_t']
+    @additional_authors = @document['author_addl_t'] if @document['author_addl_t']
+  end
+
+  private
+
+  def branding
+    library = begin
+      Library.find_by!(short_code: params[:lib])
+    rescue ActiveRecord::RecordNotFound
+      Library.find_by!(short_code: 'neos')
     end
+    $brand = library.short_code
+    $libraryname = library.name
+    $homeurl = library.url
+    $neosurl = library.neos_url
   end
 
   configure_blacklight do |config|
@@ -297,4 +293,4 @@ class CatalogController < ApplicationController
     config.autocomplete_enabled = true
     config.autocomplete_path = 'suggest'
   end
-    end
+end
