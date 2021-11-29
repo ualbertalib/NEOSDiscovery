@@ -252,7 +252,7 @@ GEM
     sdoc (2.2.0)
       rdoc (>= 5.0)
     slop (3.6.0)
-    spring (2.1.1)
+    spring (3.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
