@@ -6,6 +6,14 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.71] - 2022-02-04
+
+### Changed
+- dependency bumps for maintenance
+
+### Security
+- address brakeman warnings [di_internal#61](https://github.com/ualbertalib/di_internal/issues/61#issuecomment-494452697)
+
 ## [1.0.70] - 2021-08-25
 
 ### Fixed
