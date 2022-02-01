@@ -6,7 +6,14 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
-## [1.0.71] - 2022-02-04
+## [1.0.72] - 2022-02-01
+
+### Changed
+- dependency bumps for maintenance
+### Fixed
+- faraday configuration error
+
+## [1.0.71] - 2022-01-04
 
 ### Changed
 - dependency bumps for maintenance
