@@ -6,6 +6,9 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+### Removed
+- Disable suggest [#562](https://github.com/ualbertalib/NEOSDiscovery/issues/562)
+
 ## [1.0.72] - 2022-02-01
 
 ### Changed

@@ -285,12 +285,6 @@ class CatalogController < ApplicationController
     config.add_sort_field 'author_sort asc, title_sort asc', label: 'author'
     config.add_sort_field 'title_sort asc, pub_date_sort desc', label: 'title'
 
-    # If there are more than this many search results, no spelling ("did you
-    # mean") suggestion is offered.
-    config.spell_max = 5
 
-    # Configuration for autocomplete suggestor
-    config.autocomplete_enabled = true
-    config.autocomplete_path = 'suggest'
   end
 end
