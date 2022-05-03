@@ -23,12 +23,18 @@ but the rails server is not.
 
 At this time there is not a comprehensive test suite.  There were tests which only cover the holdings table but they don't seem to be passing.
 
-These are the main functions of the application
-![welcome page](doc/welcome_page.png)
-![search landing page](doc/search_landing_page.png)
-![search](doc/search_page.png)
-![item](doc/item_page.png)
-![bookmark](doc/bookmarks.png)
+## These are the main functions of the application
+
+### Welcome page 
+![welcome page](docs/welcome_page.png)
+### Search landing page 
+![search landing page](docs/search_landing_page.png)
+### Search results 
+![search](docs/search_page.png)
+### Item detail page and holdings table
+![item](docs/item_page.png)
+### Bookmarks 
+![bookmark](docs/bookmarks.png)
 
 
 # Releases
