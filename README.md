@@ -1,9 +1,9 @@
-# Discoery interface for NEOS Libraries
+# Discovery interface for NEOS Libraries
 
 This is the code base for the NEOS Libraries discovery platform. Based on [Project Blacklight](projectblacklight.org).
 
 *   Depends on [Ruby](https://www.ruby-lang.org/en/) 2.6.x
-*   Depends on [Bundle](https://bundler.io/) 1.17.3
+*   Depends on [Bundler](https://bundler.io/) 1.17.3
 *   Depends on an instance of [Solr](https://lucene.apache.org/solr/) with [this configuration](https://github.com/ualbertalib/blacklight_solr_conf)
 *   Depends on a SQL database (sqlite in development and MySQL in staging/production)
 
