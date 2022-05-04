@@ -6,6 +6,15 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.73] - 2022-05-04
+
+### Security
+- bump Rails to 5.2.7.1 to address CVEs 
+
+### Changed
+- update README.md documentation
+- Red Deer Polytechnic image
+
 ### Removed
 - Disable suggest [#562](https://github.com/ualbertalib/NEOSDiscovery/issues/562)
 
