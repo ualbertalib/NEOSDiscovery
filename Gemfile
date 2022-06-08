@@ -5,7 +5,7 @@ gem 'rails', '~> 5.2.8'
 gem 'sprockets', '< 5.0'
 
 # Database stuff
-gem 'mysql2', '~> 0.5.3'
+gem 'mysql2', '~> 0.5.4'
 
 # Assets (CSS/JS) stuff
 gem 'jquery-rails'
