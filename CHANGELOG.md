@@ -6,6 +6,11 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.74] - 2022-07-13
+
+### Security
+- Bump rails from 5.2.8 to 5.2.8.1
+
 ## [1.0.73] - 2022-05-04
 
 ### Security
