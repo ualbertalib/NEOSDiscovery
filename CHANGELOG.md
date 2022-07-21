@@ -6,6 +6,10 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+## [1.0.75] - 2022-07-21
+### Fixed 
+- Address regression from the Rails 5.2.8.1 upgrade impacting storage of ActiveSupport::HashWithIndifferentAccess yaml serializations (that impacts the Search model in Blacklight) 
+
 ## [1.0.74] - 2022-07-13
 
 ### Security

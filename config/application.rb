@@ -27,5 +27,9 @@ module SearchApp
     config.symphony_timeout = 4
 
     config.active_record.sqlite3.represent_boolean_as_integer = true
+    
+    # Rails 5.2.8.1 necessitates the specification of permitted classes as part of 
+    # https://discuss.rubyonrails.org/t/cve-2022-32224-possible-rce-escalation-bug-with-serialized-columns-in-active-record/81017
+    config.active_record.yaml_column_permitted_classes = [ActiveSupport::HashWithIndifferentAccess, Symbol]
   end
 end
