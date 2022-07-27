@@ -35,7 +35,8 @@ At this time there is not a comprehensive test suite.  There were tests which on
 ![item](docs/item_page.png)
 ### Bookmarks 
 ![bookmark](docs/bookmarks.png)
-
+### History (search history should contain you search) 
+![history](docs/history_page.png)
 
 # Releases
 
