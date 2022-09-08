@@ -42,7 +42,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
 
-  gem 'sqlite3', '~> 1.4.4' # Active Record has a version constraint not specified in gemspec
+  gem 'sqlite3', '~> 1.5.0' # Active Record has a version constraint not specified in gemspec
 end
 
 group :development do
