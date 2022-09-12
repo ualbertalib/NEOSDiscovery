@@ -5,7 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.76]
 - update README.md testing: add search history 
+- bump dependencies
 
 ## [1.0.75] - 2022-07-21
 ### Fixed 
