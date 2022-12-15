@@ -6,6 +6,8 @@ and releases in NEOSDiscovery project adheres to [Semantic Versioning](http://se
 
 ## [Unreleased]
 
+- bump dependencies
+
 ## [1.0.77] - 2022-10-28
 
 - bump depenendencies
